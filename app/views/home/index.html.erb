@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
-    <!--CSS Stylesheet-->
-    <link rel="stylesheet" href="style.css">
-
-    <!--Icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="shortcut icon" href="images/shrimp.ico" type="img/ico">
-
-    <!--First website Max built and designed from scratch! 💫-->
-    <title>MAXINE KHO</title>
-
-<body>
-<!--Logo-->
 <div class="logo">
     <a class="black" href="/">Maxine Kho</a>
 </div>
@@ -31,7 +14,8 @@
 <!--Header-->
 <div class="header">
     <div class="header-photo">
-        <img src="images/max-cropped.png" alt="maxine's photo" id="profile_photo"><br>
+
+        <img src="<%= image_path("images/max-cropped.png") %>" alt="maxine's photo" id="profile_photo"><br>
     </div>
     <div class="header-intro">
         <h1>I'm <strong>Maxine–</strong></h1>
@@ -102,24 +86,7 @@
     <br><br><br><br><br><br><br><br><br>
 </div>
 
-<!--Footer-->
-<footer>
-    <div class="sm-links">
-        <a href="https://www.behance.net/maxinekho" target="_blank"><i class="fab fa-behance"></i></a>
-        <a href="https://www.linkedin.com/in/maxinekho/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://medium.com/@mck428" target="_blank"><i class="fab fa-medium-m"></i></a>
-    </div>
-    <div class="message">
-        Say hello– <a href="mailto:maxinekho@nyu.edu">maxinekho@nyu.edu </a>👋🏽
-    </div>
-    <div class="copyright">
-        © 2018 Maxine Kho
-    </div>
-    <br>
-</footer>
+<%= render "footer" %>
 
 <!--Script Link-->
 <script src="projects/script.js"></script>
-
-</body>
-</html>
