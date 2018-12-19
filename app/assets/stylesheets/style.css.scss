@@ -22,7 +22,7 @@ body {
 
 .bio {
     font-weight: normal;
-    font-size: 2.5em;
+    font-size: 2.3em;
     line-height: 1.2em;
 }
 
@@ -53,8 +53,7 @@ body {
 
 #profile_photo{
     max-height: 200px;
-    border-radius: 50%;
-    /*grid-column-start: 1;*/
+    border-radius: 40%;
 }
 
 .header-intro {
@@ -121,7 +120,6 @@ a.view-project-button:hover {
 
 .container__project-image {
     width: 100%;
-    /*flex-shrink: 0;*/
 }
 
 /*Project Colors*/
@@ -313,7 +311,6 @@ div.sm-links {
     }
 
     #profile_photo{
-        /*max-height: 200px;*/
         float: left;
         margin-right: 1em;
         max-width: 7em;
@@ -325,7 +322,6 @@ div.sm-links {
     }
 
     .header-intro {
-        /*width: 100%;*/
         margin: 0;
         padding: 1em;
         font-size: 50%;
@@ -347,7 +343,6 @@ div.sm-links {
     .container__project-text {
         padding: 4em 1em;
         display: flex;
-        /*align-items: center;*/
         width: 70%;
         font-size: 0.7em;
         margin-left: 3em;
