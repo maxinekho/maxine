@@ -12,7 +12,6 @@ Rails.application.config.assets.precompile += %w( modal.js )
 Rails.application.config.assets.precompile += %w( progress.js )
 
 
-
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
