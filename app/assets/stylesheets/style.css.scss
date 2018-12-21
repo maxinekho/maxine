@@ -15,7 +15,6 @@ body {
 
 .header {
     display: inline-flex;
-    justify-content: center;
     align-items: center;
     margin-top: 10em;
 }
@@ -52,12 +51,12 @@ body {
 }
 
 #profile_photo{
-    max-height: 200px;
-    border-radius: 40%;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
 
 .header-intro {
-    font-size: medium;
     padding: 0 5em;
     margin-left: 2.5em;
 }
