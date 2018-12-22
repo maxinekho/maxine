@@ -1,6 +1,4 @@
-<%= javascript_include_tag "script" %>
-<%= javascript_include_tag "modal" %>
-<%= javascript_include_tag "progress" %>
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
 
 
 <!--Stylesheet-->
@@ -9,7 +7,6 @@
 <!--Navigation-->
 <nav class="top-nav">
     <a class="black inactive-nav" href="/">MAXINE KHO</a>
-    <a class="black inactive-nav" href="/resume" target="_blank">RESUME</a>
 </nav>
 <br><br><br>
 
@@ -213,23 +210,23 @@
 <!--Next Project-->
 <div class="two-col">
     <div class="container__project-image">
-        <img src="<%= image_path("images/opentable.png") %>" alt="opentable" class="img-project drop-shadow">
+        <img src="<%= image_path("images/opentable.png") %>" alt="opentable" class="img-project">
     </div>
     <div class="container__project-text">
         <h3 class="open-table-tab-color"><strong>↓ NEXT PROJECT</strong></h3><br>
         <div class="project__text-title"><div class="open-table-tab-color"><strong>OpenTable Tab</strong></div>&nbsp;
                 –– Streamlining the social smart-dining experience<br><br></div>
         <div class="project__text-details">
-            <h3>PROJECT: Weekly Design Challenge</h3>
-            <h3>ROLE: Product Designer, User Researcher</h3>
-            <h3>DURATION: Feb-May 2018</h3><br><br>
+            <h3 class="open-table-tab-color">PROJECT</h3>A 13-week design challenge
+            <h3 class="open-table-tab-color">ROLE</h3>Product Designer, User Researcher
+            <h3 class="open-table-tab-color">DURATION</h3>Feb-May 2018<br><br><br>
         </div>
-        <a href="opentable.html.erb" class="view__link view__link-padding">View Project &rarr;</a>
+        <a href="/projects/opentable" class="view__link view__link-padding">View Project &rarr;</a>
     </div>
 </div>
 <br><br><br><br><br><br><br><br>
 
 <!--Back to Top Link-->
-<button onclick="scrollUp()" id="backToTop" title="Go to top">&#8593;</button>
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593;</button>
 
 <%= render "home/footer" %>
