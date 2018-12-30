@@ -6,9 +6,14 @@
 
 <!--Navigation-->
 <nav class="top-nav">
-    <a class="black inactive-nav" href="/">MAXINE KHO</a>
+  <section class="nav-title">
+    <a class="black">MAXINE KHO</a>
+  </section>
+  <section class="nav-links">
+    <a class="black inactive-nav" href="/">WORK</a>
+    <a class="black inactive-nav" href="/resume">RESUME</a>
+  </section>
 </nav>
-<br><br><br>
 
 <!--Progress Bar-->
 <div class="progress-indicator">
@@ -35,35 +40,36 @@
 
 <!--Title + Content-->
 <div class="container">
-    <h1><strong>Designing an enterprise system with high data density 📊</strong></h1>
-    <br>
-    <!--Project Intro + Summary-->
-    <div class="two-col">
-        <!--Project Intro-->
-        <div class="intro">
-            <p>NYU has ongoing, large-scale capital projects to support the needs and academic mission of the university. NYU uses tax free bond money to reimburse money spent on building maintenance and construction projects.
+  <br><br><br><br><br>
+<h1><strong>Designing an enterprise system with high data density 📊</strong></h1>
+<br>
+<!--Project Intro + Summary-->
+<div class="two-col">
+    <!--Project Intro-->
+    <div class="intro">
+        <p>NYU has ongoing, large-scale capital projects to support the needs and academic mission of the university. NYU uses tax free bond money to reimburse money spent on building maintenance and construction projects.
 
-                Tax exempt bonds have many regulations on exactly how the Bond money can be used. To avoid regulation violations, Treasury users currently work in a legacy system to manage bonds and generate reports and requests.</p>
+            Tax exempt bonds have many regulations on exactly how the Bond money can be used. To avoid regulation violations, Treasury users currently work in a legacy system to manage bonds and generate reports and requests.</p>
 
-            <h5>What does this legacy process look like?</h5>
-        </div>
-        <!--Project Summary-->
-        <div id="project-summary">
-            <h4><strong>ABOUT</strong><br>
-                <strong>Duration:</strong> June 2018-Present (Ongoing)<br>
-                <strong>Role:</strong> Product Designer<br>
-                <strong>Team:</strong> Developers (3), UX Supervisor, Product Owner<br>
-                <strong>For:</strong> University's Treasury team<br><br>
+        <h5>What does this legacy process look like?</h5>
+    </div>
+    <!--Project Summary-->
+    <div id="project-summary">
+        <h4><strong>ABOUT</strong><br>
+            <strong>Duration:</strong> June 2018-Present (Ongoing)<br>
+            <strong>Role:</strong> Product Designer<br>
+            <strong>Team:</strong> Developers (3), UX Supervisor, Product Owner<br>
+            <strong>For:</strong> University's Treasury team<br><br>
 
-                <strong>SKILLS USED</strong><br>
-                Information Architecture<br>
-                Visual Design<br>
-                Wireframing (using Sketch)<br>
-                Flowcharting and diagramming<br>
-                <a href= "#prototype-treasury" class="blue">Prototyping (using HTML/CSS and InVision)<br></a>
-                User Testing<br></h4>
-        </div>
-    </div><br><br>
+            <strong>SKILLS USED</strong><br>
+            Information Architecture<br>
+            Visual Design<br>
+            Wireframing (using Sketch)<br>
+            Flowcharting and diagramming<br>
+            <a href= "#prototype-treasury" class="blue">Prototyping (using HTML/CSS and InVision)<br></a>
+            User Testing<br></h4>
+    </div>
+</div><br><br>
 
     <!--Project Content-->
     <h2><strong>Initial Observations</strong></h2>
@@ -117,7 +123,7 @@
     <h5>Legacy Process: <strong>Microsoft Access database</strong></h5>
     In the legacy process, Treasury views bond information on this 22-column “Bonds” table on the Microsoft Access database.
 
-    <img src="<%= image_path("images/project-treasury/access.png") %>" alt="Microsoft Access database table with 22 columns" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/access.png") %>" alt="Microsoft Access database table with 22 columns" class="zoomImages" id="prototype-treasury">
 
     <h3 class="image-caption"><em>Treasury assesses bond information on this Microsoft Access table</em></h3><br><br>
 
@@ -127,7 +133,7 @@
     <img src="<%= image_path("images/project-treasury/view-bond.png") %>" class="zoomImages">
 
     <div class="center">
-        <a class="btn__prototype btnRippleEffect" id="prototype-treasury" type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
+        <a class="btn__prototype btnRippleEffect"  type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
             View Prototype
         </a><br><br><br><br>
     </div>
@@ -188,7 +194,7 @@
 
     <div class="two-col">
         <div>
-            <img src="<%= image_path("images/project-treasury/view_bond_sketch.png") %>" class="zoomImages">
+            <img src="<%= image_path("images/project-treasury/sketch_bond.png") %>" class="zoomImages">
             <h3 class="image-caption"><em>Organizing sets of data on a Bond View page</em></h3>
         </div>
         <div>
