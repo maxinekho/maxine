@@ -6,7 +6,7 @@ Rails.application.config.assets.version = '1.0'
 # Add additional assets to the asset load path
 # Rails.application.config.assets.paths << Emoji.images_path
 Rails.application.config.assets.precompile += %w( style-project.css.scss )
-Rails.application.config.assets.precompile += %w( style-cv.css.scss )
+Rails.application.config.assets.precompile += %w( style-resume.css.scss )
 Rails.application.config.assets.precompile += %w( script.js )
 Rails.application.config.assets.precompile += %w( modal.js )
 Rails.application.config.assets.precompile += %w( progress.js )

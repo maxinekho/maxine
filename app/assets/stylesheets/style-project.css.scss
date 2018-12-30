@@ -308,7 +308,7 @@ video {
 
 .close:hover,
 .close:focus {
-    color: red;
+    opacity: 0.7;
     text-decoration: none;
     cursor: pointer;
 }
@@ -323,20 +323,20 @@ video {
 /* Tooltip container */
 .tooltip {
     top: 0;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
 }
 
 /* Tooltip text */
 .tooltip .tooltip-text {
     top: 9em;
-    right: 30px;
+    right: 2em;
     visibility: hidden;
-    width: 70px;
+    font-size: 0.8em;
+    width: 4em;
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+    padding: 0.5em 0;
+    border-radius: 3px;
     position: absolute;
     z-index: 1;
 }

@@ -30,11 +30,9 @@ document.addEventListener("turbolinks:load", function() {
     }
 
 
-    function scrollUp() {
+    let backTop = document.getElementById("backToTop");
+    backTop.onclick = function scrollUp() {
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-})
-
-
-
+});
