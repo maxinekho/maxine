@@ -58,7 +58,7 @@ body {
 /* Scroll Indicator */
 .progress-bar {
     height: 4px;
-    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     width: 0;
 }
 
@@ -254,7 +254,7 @@ video {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 7em; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -280,7 +280,7 @@ video {
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
+    padding: 3em 0;
     height: 150px;
 }
 

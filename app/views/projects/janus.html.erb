@@ -50,7 +50,7 @@
     <!--Project Intro-->
     <div class="intro">
       <br>
-      <img src="<%= image_path("images/project-janus/logo.png") %>" id="project-logo">
+      <img src="<%= image_path("images/project-janus/logo.png") %>" id="project-logo" alt="Janus project logo">
 
       <p>Over the past few months, I’ve been designing <strong>Janus</strong>, a front-end data entry and storage application interfaced with university systems to optimize the hiring process for the NYU Tandon Summer Research Program.</p>
       <p>This was the first project I worked on at NYU IT.</p>
@@ -75,15 +75,15 @@
   </div><br><br>
 
   <!--Project Content-->
-  <img src="<%= image_path("images/project-janus/process.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/process.png") %>" class="zoomImages" alt="My design process in timeline form">
   <h2><strong>My Design Process</strong></h2>
   <h5><strong>1. Understand and ask questions</strong></h5>
   The product owner and my project manager briefed me about the NYU Tandon Summer Research Program, the hiring        process that is currently in place, and primary audiences involved:<br>
-  <img src="<%= image_path("images/project-janus/primary-audience.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/primary-audience.png") %>" class="zoomImages" alt="Primary stakeholders for this project">
   Then they walked me through the legacy system…<br>
-  <img src="<%= image_path("images/project-janus/legacy.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/legacy.png") %>" class="zoomImages" alt="The legacy hiring process for the NYU Tandon Summer Research Program">
   <strong>Problem</strong><br>
-  In current process, administrators <p class="highlight-janus">transfer and duplicate data across a range of applications.</p> They <p class="highlight-janus">spend five months</p> organizing information and onboarding hired applicantsfor a 10-week research program.<br><br>
+  In current process, administrators <p class="highlight-janus">transfer and duplicate data across a range of applications.</p> They <p class="highlight-janus">spend five months</p> organizing information and onboarding hired applicants for a 10-week research program.<br><br>
 
   Time and effort that could have been directed towards student engagement and professional growth is spent instead <p class="highlight-janus">carrying out manual administrative processes.</p> Additionally, <p class="highlight-janus">opportunities are lost</p> when students miss deadlines or are rejected due to incomplete documents as a result of the <p class="janus-highlight">disjointed process.</p><br><br>
 
@@ -100,7 +100,7 @@
   There are many ways go about designing a product that addresses these problems. However, in order to deliver the solution–one that does not only hit all the goals identified but also maximizes opportunities (for the three user groups)– I needed to ‘digest’ the current workflow and all possible use cases.<br><br>
           Being an avid (and slightly obsessive) notetaker, I made color-coded diagrams!<br><br>
   The workflow’s complexities became more digestible to me as I grouped action points together according to the ‘user in action’ (SRP Admin, Faculty, or Student).<br>
-   <img src="<%= image_path("images/project-janus/user-flows.png") %>" class="zoomImages">
+   <img src="<%= image_path("images/project-janus/user-flows.png") %>" class="zoomImages" alt="Janus user flows highlighting each stakeholder">
     I spent time understanding all the interactions necessary for one complete cycle (a.k.a. successfully hiring one student)<br><br>
   The interaction illustrated by the back and forth and crossing over of actions in my diagram led to an insight that informed my design decisions:<br><br>
 
@@ -110,7 +110,7 @@
 
   <h5><strong>3. Set up process expectations for the system</strong></h5>
 
-  <img src="<%= image_path("images/project-janus/system-design.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/system-design.png") %>" class="zoomImages" alt="Setting system design expectations">
 
   Instead of taking on all three users’ ends simultaneously, I decided to delve deeper into the faculty side first. Faculty mentors provide the first input between the faculty and student interaction.<br><br>
 
@@ -125,20 +125,20 @@
 
   With the overwhelming amount of liberty I had at this stage, I decided to start with one core feature– <p class="highlight-janus">the application form.</p> I reviewed last summer’s project list to gain more insight on the pieces of information and the level of specificity required for a project posting.<br>
 
-  <img src="<%= image_path("images/project-janus/about.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/about.png") %>" class="zoomImages" alt="Janus application form for faculty members who want to endorse their research projects for posting">
 
   From here, I asked questions like:<br><br>
 
   <em>“How can a mentor access each application form?…be notified of a successful posting?”</em><br><br>
   This brought me to design the <p class="highlight-janus">dashboard.</p><br>
 
-  <img src="<%= image_path("images/project-janus/dashboard-within.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/dashboard-within.png") %>" class="zoomImages" alt="Faculty view of the Janus dashboard">
 
   To expand the scope of my design, I diagrammed use cases ranging from the simple to complex situations that faculty mentors would most likely experience in their hiring journeys.<br><br>
 
   In doing so, I was able to better identify the expected functionality and features of Janus.<br><br>
 
-  <img src="<%= image_path("images/project-janus/use-cases.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/use-cases.png") %>" class="zoomImages" alt="Six use cases (including edge cases) for selecting and hiring student researchers">
 
   <h3 class="image-caption">Six use cases for the faculty end</h3><br><br>
 
@@ -155,27 +155,27 @@
 
   The checklist format for completing steps in the process provides the user with <p class="highlight-janus"><strong>contextual guidance</strong></p> at any given time.<br>
 
-  <img src="<%= image_path("images/project-janus/progress.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/progress.png") %>" class="zoomImages" alt="The checklist format provides users with contextual guidance.">
   In addition to this, the task-focused user interface is infused with <p class="highlight-janus"><strong>progress indicators</strong></p>…<br>
 
-  <img src="<%= image_path("images/project-janus/form.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/form.png") %>" class="zoomImages" alt="The progress indicator guides the user as he/she accomplishes tasks">
   …and even for tracking higher-level interactions with other users in the system. These features allow users to have a sense of control over a complex, response-driven workflow.<br><br>
 
-  <img src="<%= image_path("images/project-janus/cards.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/cards.png") %>" class="zoomImages" alt="Users have access to high-level information visible throughout the system.">
 
   Project cards provide <p class="highlight-janus"><strong>high-level information and status visibility</strong></p> for each project.<br>
 
-  <img src="<%= image_path("images/project-janus/status-updates.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/status-updates.png") %>" class="zoomImages" alt="Status updates are displayed prominently and remain visible in various states.">
 
   Status updates are displayed prominently and remain visible in various states.
 
-  <img src="<%= image_path("images/project-janus/transparency.png") %>" class="zoomImages">
+  <img src="<%= image_path("images/project-janus/transparency.png") %>" class="zoomImages" alt="After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time.">
 
   After completing their share of tasks, faculty mentors <p class="highlight-janus">can monitor the status of each hired student in real-time.</p> Potential roadblocks in the hiring process immediately come to surface in this transparent ecosystem.<br><br>
 
   <h5><strong>5. Host focus groups and feedback sessions</strong></h5>
 
-      <img src="<%= image_path("images/project-janus/focus.jpeg") %>" class="zoomImages">
+      <img src="<%= image_path("images/project-janus/focus.jpeg") %>" class="zoomImages" alt="We held a user feedback session with participating faculty.">
 
   The more comprehensive the scope of interaction and design that we opened for feedback and testing, the more valuable and actionable the insights and responses we received. For each feedback session, we made sure the product’s surface area was large enough to elicit valuable discussion and critique/feedback.<br><br>
 
@@ -206,13 +206,13 @@
 
   <br>
   Thanks for reading,
-  <img src="<%= image_path("images/maxine-sig.png") %>" alt="maxine's signature" id="signature">
+  <img src="<%= image_path("images/maxine-sig.png") %>" alt="Maxine's signature" id="signature">
 </div><br><br><br><br>
 
 <!--Next Project-->
 <div class="two-col">
   <div class="container__project-image">
-    <img src="<%= image_path("images/tp@2x.png") %>" alt="treasury portal" class="img-project drop-shadow">
+    <img src="<%= image_path("images/tp@2x.png") %>" alt="Treasury Portal Project" class="img-project drop-shadow">
   </div>
   <div class="container__project-text">
       <h3 class="treasury-color"><strong>↓ NEXT PROJECT</strong></h3><br>

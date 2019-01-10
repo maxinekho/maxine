@@ -77,9 +77,8 @@
 
         <strong>Specifically, Treasury users view, update, and collect and manage data on Microsoft Access and Excel.</strong></p>
 
-    <img src="<%= image_path("images/project-treasury/formula-sheet.png") %>" class="zoomImages">
-
-    <h3 class="image-caption">A note on keeping/updating formulas manually embedded within one of their spreadsheets</h3><br><br>
+    <img src="<%= image_path("images/project-treasury/formula-sheet.png") %>" class="zoomImages" alt="A note on keeping/updating formulas manually embedded within one of their spreadsheets
+">
 
     <h2><strong>Goals</strong></h2>
     <p>1. <strong>To present complex data in a way that is (1) easy to understand and comprehend and (2) easier on the eyes so that users can focus on making decisions central to their workflow </strong>instead of spending so much effort trying to look a piece of information up<br><br>
@@ -103,17 +102,17 @@
     <h2><strong>Designing the dashboard and menu</strong></h2><br>
     Learning about each user’s most commonly taken actions helped me define the scope of the system and structure the hierarchy of information within Treasury Portal.
 
-    <img src="<%= image_path("images/project-treasury/ia.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/ia.png") %>" class="zoomImages" alt="‘Chunking’ data into levels so that information and functionality are provided only as needed for tasks">
 
     <h3 class="image-caption"><em>‘Chunking’ data into levels so that information and functionality are provided only as needed for tasks</em></h3><br><br>
 
     Mapping out data and functions provided framework for the dashboard and menu designs.
 
-    <img src="<%= image_path("images/project-treasury/dashboard.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/dashboard.png") %>" class="zoomImages" alt="Menu navigation: collapsed and expanded views">
 
     <h2><strong>Relationships Among Treasury Entities</strong></h2>
 
-    <img src="<%= image_path("images/project-treasury/treasury-entities.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/treasury-entities.png") %>" class="zoomImages" alt="Relationships among treasury entities">
 
     To give you a snapshot of how I designed Treasury Portal to combat inefficiencies presented by the legacy system, I will walk you through comparative cases for two business processes that this enterprise system will facilitate: viewing a bond, and generating a reimbursement request.<br><br><br>
 
@@ -130,7 +129,7 @@
     <h5>Treasury Portal Process</h5>
     The <strong>View Bond</strong> user interface holds bond-related data that can be analyzed and manipulated.
 
-    <img src="<%= image_path("images/project-treasury/view-bond.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/view-bond.png") %>" class="zoomImages" alt="A snapshot of the Bond View page for a tax-exempt bond">
 
     <div class="center">
         <a class="btn__prototype btnRippleEffect"  type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
@@ -145,12 +144,13 @@
 
     <h5>Legacy Process: <strong>FAME > CPACSWeb > Excel > Export as PDF</strong></h5>
 
-    <img src="<%= image_path("images/project-treasury/rr-legacy.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/rr-legacy.png") %>" class="zoomImages" alt="The legacy process for generating a reimbursement request">
 
     <div class="two-col">
         <div>
-            <img src="<%= image_path("images/project-treasury/rr-sheet.png") %>" class="zoomImages">
-            <h3 class="image-caption"><em>Treasury assesses bond information on this Microsoft Access table</em></h3><br>
+            <img src="<%= image_path("images/project-treasury/rr-sheet.png") %>" class="zoomImages" alt="Treasury users assess bond information on this Microsoft Access table
+">
+            <h3 class="image-caption"><em>Treasury users assess bond information on this Microsoft Access table</em></h3><br>
         </div>
         <div>
             <br><br>Treasury’s legacy process is an <strong>intensive manual process</strong>: invoices must be identified from FAME, their location checked in CPACSweb, and if still valid, the invoices are input into an Excel spreadsheet like this one on the left. Reimbursement budgets and requests are maintained in Excel spreadsheets compiled manually.
@@ -160,20 +160,20 @@
     <h5>Treasury Portal Process</h5>
     To minimize manual data entry for Treasury users, much of the development work is “behind the scenes.”<br>
 
-    <img src="<%= image_path("images/project-treasury/treasury-integration.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/treasury-integration.png") %>" class="zoomImages" alt="Treasury Portal's integration with the university's Space Management and Capital Projects Administration and Control Systems">
 
     Treasury Portal aims to eliminate manual data collection and entry by integrating with Space Management System (SMS) and Capital Projects Administration and Control System (CPACSweb) to generate data on demand.<br><br>
 
     In Treasury Portal, users can create a reimbursement request, track the amounts budgeted for each issuer initiative, and trace requests made from each initiative across all reimbursements. Users will be able to easily find invoices eligible for reimbursement and pull their attachments for submission to the bond’s issuer.<br><br>
 
-    <img src="<%= image_path("images/project-treasury/rr-ia.png") %>" class="zoomImages">
+    <img src="<%= image_path("images/project-treasury/rr-ia.png") %>" class="zoomImages" alt="Treasury entities involved in the creation of a reimbursement request">
 
     <div class="two-col">
         <div>
-            <img src="<%= image_path("images/project-treasury/rr-sketch.png") %>" class="zoomImages">
+            <img src="<%= image_path("images/project-treasury/rr-sketch.png") %>" class="zoomImages" alt="A sketch of a layout I explored for the 'Create Reimbursement Request' page">
         </div>
         <div>
-            <img src="<%= image_path("images/project-treasury/rr-sketch-2.png") %>" class="zoomImages">
+            <img src="<%= image_path("images/project-treasury/rr-sketch-2.png") %>" class="zoomImages" alt="A type of data layering I explored but didn't choose in the end">
         </div>
     </div>
 
@@ -194,11 +194,11 @@
 
     <div class="two-col">
         <div>
-            <img src="<%= image_path("images/project-treasury/sketch_bond.png") %>" class="zoomImages">
+            <img src="<%= image_path("images/project-treasury/sketch_bond.png") %>" class="zoomImages" alt="Organizing sets of data on a Bond View page">
             <h3 class="image-caption"><em>Organizing sets of data on a Bond View page</em></h3>
         </div>
         <div>
-            <img src="<%= image_path("images/project-treasury/invoices-sketch.png") %>" class="zoomImages">
+            <img src="<%= image_path("images/project-treasury/invoices-sketch.png") %>" class="zoomImages" alt="Exploring how much data to present at a time">
             <h3 class="image-caption"><em>Exploring how much data to present at a time</em></h3>
         </div>
     </div><br><br>
@@ -212,13 +212,13 @@
 
     <br>
     Thanks for reading,
-    <img src="<%= image_path("images/maxine-sig.png") %>" alt="maxine's signature" id="signature">
+    <img src="<%= image_path("images/maxine-sig.png") %>" alt="Maxine's signature" id="signature">
 </div><br><br><br><br>
 
 <!--Next Project-->
 <div class="two-col">
     <div class="container__project-image">
-        <img src="<%= image_path("images/opentable.png") %>" alt="opentable" class="img-project">
+        <img src="<%= image_path("images/opentable.png") %>" alt="OpenTable Tab Project" class="img-project">
     </div>
     <div class="container__project-text">
         <h3 class="open-table-tab-color"><strong>↓ NEXT PROJECT</strong></h3><br>

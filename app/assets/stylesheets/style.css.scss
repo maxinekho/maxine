@@ -151,6 +151,15 @@ a.view-project-button:hover {
     display: inline-block;
 }
 
+/*Selection Color*/
+
+::selection {
+    background: #FF9966; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    background: #FF9966; /* Gecko Browsers */
+}
+
 /* "View Project" Link Properties*/
 
 .view__link{
@@ -197,7 +206,7 @@ a.view__link{
 }
 
 img.drop-shadow {
-    box-shadow: 10px 10px 8px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 8px 8px 50px 1px rgba(0, 0, 0, 0.3);
 }
 
 img.img-project {
