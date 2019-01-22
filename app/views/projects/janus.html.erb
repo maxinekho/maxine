@@ -48,7 +48,7 @@
   <div class="two-col">
 
     <!--Project Intro-->
-    <div class="intro">
+    <div>
       <br>
       <img src="<%= image_path("images/project-janus/logo.png") %>" id="project-logo" alt="Janus project logo">
 
@@ -57,7 +57,7 @@
     </div>
 
     <!--Project Summary-->
-      <div id="project-summary">
+      <div>
           <h4><strong>ABOUT</strong><br>
               <strong>Duration:</strong> February 2018-Present<br>
               <strong>Role:</strong> Product Designer<br>
@@ -75,18 +75,31 @@
   </div><br><br>
 
   <!--Project Content-->
-  <img src="<%= image_path("images/project-janus/process.png") %>" class="zoomImages" alt="My design process in timeline form">
+
   <h2><strong>My Design Process</strong></h2>
+  <img src="<%= image_path("images/project-janus/process.png") %>" class="zoomImages" alt="My design process in timeline form">
+
+  <div class="condense">
   <h5><strong>1. Understand and ask questions</strong></h5>
-  The product owner and my project manager briefed me about the NYU Tandon Summer Research Program, the hiring        process that is currently in place, and primary audiences involved:<br>
+  The product owner and my project manager briefed me about the <a href="https://engineering.nyu.edu/research-innovation/student-research/undergraduate-summer-research-program" target="_blank">NYU Tandon Summer Research Program</a>, the hiring process that is currently in place, and primary audiences involved:
+  </div><br>
+
   <img src="<%= image_path("images/project-janus/primary-audience.png") %>" class="zoomImages" alt="Primary stakeholders for this project">
+
   Then they walked me through the legacy system…<br>
+
   <img src="<%= image_path("images/project-janus/legacy.png") %>" class="zoomImages" alt="The legacy hiring process for the NYU Tandon Summer Research Program">
+
+  <div class="condense">
   <strong>Problem</strong><br>
-  In current process, administrators <p class="highlight-janus">transfer and duplicate data across a range of applications.</p> They <p class="highlight-janus">spend five months</p> organizing information and onboarding hired applicants for a 10-week research program.<br><br>
+  In current process, administrators <p class="highlight-janus">transfer and duplicate data across a range of applications.</p> They <p class="highlight-janus">spend five months</p> organizing information and onboarding student hires for a 10-week research program.<br><br>
+  </div>
 
-  Time and effort that could have been directed towards student engagement and professional growth is spent instead <p class="highlight-janus">carrying out manual administrative processes.</p> Additionally, <p class="highlight-janus">opportunities are lost</p> when students miss deadlines or are rejected due to incomplete documents as a result of the <p class="highlight-janus">disjointed process.</p><br><br>
+  <div class="condense">
+    Time and effort that could have been directed towards student engagement and professional growth is spent instead <p class="highlight-janus">carrying out manual administrative processes.</p> Additionally, <p class="highlight-janus">opportunities are lost</p> when students miss deadlines or are rejected due to incomplete documents as a result of the <p class="highlight-janus">disjointed process.</p><br><br>
+  </div>
 
+  <div class="condense">
   <strong>User Goals</strong><br>
   <ul>
       <li>To eliminate as much manual labor (inputting, compiling, storing, and viewing data) possible</li>
@@ -100,19 +113,24 @@
   There are many ways go about designing a product that addresses these problems. However, in order to deliver the solution–one that does not only hit all the goals identified but also maximizes opportunities (for the three user groups)– I needed to ‘digest’ the current workflow and all possible use cases.<br><br>
           Being an avid (and slightly obsessive) notetaker, I made color-coded diagrams!<br><br>
   The workflow’s complexities became more digestible to me as I grouped action points together according to the ‘user in action’ (SRP Admin, Faculty, or Student).<br>
+  </div>
+
    <img src="<%= image_path("images/project-janus/user-flows.png") %>" class="zoomImages" alt="Janus user flows highlighting each stakeholder">
+
+  <div class="condense">
     I spent time understanding all the interactions necessary for one complete cycle (a.k.a. successfully hiring one student)<br><br>
   The interaction illustrated by the back and forth and crossing over of actions in my diagram led to an insight that informed my design decisions:<br><br>
+  </div>
 
-  <h2>The SRP workflow is highly procedural and response-driven.</h2><br>
+  <div class="condense"><h2>The SRP workflow is highly procedural and response-driven.</h2><br>
   Being a newbie in the team, I approached my project manager to confirm my impressions.<br><br>
-  Looking at the diagram I put together, we carefully identified which steps to adopt, automate, or omit from the current hiring process.<br><br>
+    Looking at the diagram I put together, we carefully identified which steps to adopt, automate, or omit from the current hiring process.</div><br><br>
 
   <h5><strong>3. Set up process expectations for the system</strong></h5>
 
   <img src="<%= image_path("images/project-janus/system-design.png") %>" class="zoomImages" alt="Setting system design expectations">
 
-  Instead of taking on all three users’ ends simultaneously, I decided to delve deeper into the faculty side first. Faculty mentors provide the first input between the faculty and student interaction.<br><br>
+  <div class="condense">Instead of taking on all three users’ ends simultaneously, I decided to delve deeper into the faculty side first. Faculty mentors provide the first input between the faculty and student interaction.<br><br>
 
   <strong>Key Findings (Faculty)</strong><br><br>
   1. Faculty mentors typically manage three or fewer research projects each summer.<br><br>
@@ -123,59 +141,59 @@
 
   <em>"Do I start with the dashboard? Page navigation?"</em><br><br>
 
-  With the overwhelming amount of liberty I had at this stage, I decided to start with one core feature– <p class="highlight-janus">the application form.</p> I reviewed last summer’s project list to gain more insight on the pieces of information and the level of specificity required for a project posting.<br>
+    With the overwhelming amount of liberty I had at this stage, I decided to start with one core feature– <p class="highlight-janus">the application form.</p> I reviewed last summer’s project list to gain more insight on the pieces of information and the level of specificity required for a project posting.<br></div>
 
   <img src="<%= image_path("images/project-janus/about.png") %>" class="zoomImages" alt="Janus application form for faculty members who want to endorse their research projects for posting">
 
-  From here, I asked questions like:<br><br>
+  <div class="condense">From here, I asked questions like:<br><br>
 
   <em>“How can a mentor access each application form?…be notified of a successful posting?”</em><br><br>
-  This brought me to design the <p class="highlight-janus">dashboard.</p><br>
+    This brought me to design the <p class="highlight-janus">dashboard.</p><br></div>
 
-  <img src="<%= image_path("images/project-janus/dashboard-within.png") %>" class="zoomImages" alt="Faculty view of the Janus dashboard">
+  <img src="<%= image_path("images/project-janus/dashboard-within@2x.png") %>" class="zoomImages" alt="Faculty view of the Janus dashboard">
 
-  To expand the scope of my design, I diagrammed use cases ranging from the simple to complex situations that faculty mentors would most likely experience in their hiring journeys.<br><br>
+  <div class="condense">To expand the scope of my design, I diagrammed use cases ranging from the simple to complex situations that faculty mentors would most likely experience in their hiring journeys.<br><br>
 
-  In doing so, I was able to better identify the expected functionality and features of Janus.<br><br>
+    In doing so, I was able to better identify the expected functionality and features of Janus.<br><br></div>
 
   <img src="<%= image_path("images/project-janus/use-cases.png") %>" class="zoomImages" alt="Six use cases (including edge cases) for selecting and hiring student researchers">
 
-  <h5><strong>5. Create designs that nudge decision-making and behavior</strong></h5>
+  <div class="condense"><h5><strong>4. Create designs that nudge decision-making and behavior</strong></h5>
   The SRP workflow is highly procedural and response-driven.<br><br>
 
   <h2><em>"How can each stakeholder best accomplish his/her tasks?"</em></h2><br><br>
 
-  <div class="center">
-       <a class="btn__prototype btnRippleEffect" id="prototype-janus" type="button" href="https://projects.invisionapp.com/share/4FOFYWX98ZJ#/screens/324142675" target="_blank">
-      View Prototype
-      </a><br><br><br><br>
-  </div>
-
-  The checklist format for completing steps in the process provides the user with <p class="highlight-janus"><strong>contextual guidance</strong></p> at any given time.<br>
+    The checklist format for completing steps in the process provides the user with <p class="highlight-janus"><strong>contextual guidance</strong></p> at any given time.<br></div>
 
   <img src="<%= image_path("images/project-janus/progress.png") %>" class="zoomImages" alt="The checklist format provides users with contextual guidance.">
-  In addition to this, the task-focused user interface is infused with <p class="highlight-janus"><strong>progress indicators</strong></p>…<br>
+  <div class="condense">In addition to this, the task-focused user interface is infused with <p class="highlight-janus"><strong>progress indicators</strong></p>…<br></div>
 
   <img src="<%= image_path("images/project-janus/form.png") %>" class="zoomImages" alt="The progress indicator guides the user as he/she accomplishes tasks">
-  …and even for tracking higher-level interactions with other users in the system. These features allow users to have a sense of control over a complex, response-driven workflow.<br><br>
+  <div class="condense">…and even for tracking higher-level interactions with other users in the system. These features allow users to have a sense of control over a complex, response-driven workflow.<br><br></div>
 
   <img src="<%= image_path("images/project-janus/cards.png") %>" class="zoomImages" alt="Users have access to high-level information visible throughout the system.">
 
-  Project cards provide <p class="highlight-janus"><strong>high-level information and status visibility</strong></p> for each project.<br>
+  <div class="condense">Project cards provide <p class="highlight-janus"><strong>high-level information and status visibility</strong></p> for each project.<br></div>
 
   <img src="<%= image_path("images/project-janus/status-updates.png") %>" class="zoomImages" alt="Status updates are displayed prominently and remain visible in various states.">
 
-  Status updates are displayed prominently and remain visible in various states.
+  <div class="condense">Status updates are displayed prominently and remain visible in various states.</div>
 
   <img src="<%= image_path("images/project-janus/transparency.png") %>" class="zoomImages" alt="After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time.">
 
-  After completing their share of tasks, faculty mentors <p class="highlight-janus">can monitor the status of each hired student in real-time.</p> Potential roadblocks in the hiring process immediately come to surface in this transparent ecosystem.<br><br>
+  <div class="condense">After completing their share of tasks, faculty mentors <p class="highlight-janus">can monitor the status of each hired student in real-time.</p> Potential roadblocks in the hiring process immediately come to surface in this transparent ecosystem.<br><br>
 
-  <h5><strong>5. Host focus groups and feedback sessions</strong></h5>
+    <div class="center">
+      <a class="btn__prototype btnRippleEffect" id="prototype-janus" type="button" href="https://projects.invisionapp.com/share/4FOFYWX98ZJ#/screens/324142675" target="_blank">
+        View Prototype
+      </a><br><br><br><br>
+    </div>
+
+    <h5><strong>5. Host focus groups and feedback sessions</strong></h5></div>
 
       <img src="<%= image_path("images/project-janus/focus.jpeg") %>" class="zoomImages" alt="We held a user feedback session with participating faculty.">
 
-  The more comprehensive the scope of interaction and design that we opened for feedback and testing, the more valuable and actionable the insights and responses we received. For each feedback session, we made sure the product’s surface area was large enough to elicit valuable discussion and critique/feedback.<br><br>
+  <div class="condense">The more comprehensive the scope of interaction and design that we opened for feedback and testing, the more valuable and actionable the insights and responses we received. For each feedback session, we made sure the product’s surface area was large enough to elicit valuable discussion and critique/feedback.<br><br>
 
   We transitioned from showing stakeholders high-level screens and interactions to more personable, workflow-specific flows. In doing so, we gathered responses to design a more inclusive experience. Opening the product for testing at various stages of design also gave our stakeholders an idea of the project development schedule.<br><br>
 
@@ -189,18 +207,16 @@
   <h2><strong>Some Things I Learned</strong></h2>
 
   <h5>1. It’s practical to build by component.</h5>
-      In deciding to fully flesh out the designs for faculty before tackling the student and admin sides, I spent less time making aesthetic decisions by reusing the deliverable-level assets on the faculty end and focused on crafting the ideal user experience.<br><br>
+      While designing the student and admin sides, I could spend less time designing buttons, cards, and whatnot moving forward just by reusing the assets I have already created for the faculty end.<br><br>
 
   <h5>2. Anticipate interactions among all three ends.</h5>
-  Keeping the color-coded workflow in mind, even while designing for just one end at a time, eased me into identifying features that empowered end-to-end data transmission and communication.<br><br>
+  Keeping the color-coded workflow in mind, even while designing for just one stakeholder at a time, enabled me to identify features that facilitated end-to-end data transmission and communication.<br><br>
 
-  <h5>3. Seek out feedback by forming and leading brainstorm and feedback sessions.</h5>
-  Feedback was the most powerful driver of direction–whether it be backtracking to an earlier solution/decision or solidifying a user-approved design decision.<br><br>
-
-  In feedback sessions with over 50 participants, my team and I reached out to a handful of Tandon faculty who have given us the most meaningful insights to have them test our designs frequently and consistently in focus groups.<br><br>
+  <h5>3. Seek out feedback by organizing brainstorm and feedback sessions.</h5>
+  Feedback was the most powerful driver of direction– whether it be backtracking to an earlier solution/decision or testing a new hypothesis.<br><br>
 
   <h5>4. There is always someone I can serve better.</h5>
-  It pays to go out of my way to meet and get to know users and their habits, behaviors, conditions, and feelings — in person. Building relationships with these people push me to continuously optimize features, UI components, and copy to accommodate as many people as possible– from tech geeks and busy bees to the non tech-savvy and color blind.<br><br><br>
+    It pays to go out of my way to get to know users, their habits and behaviors in person. This informs my design for features, UI components, and copy to accommodate as many kinds of people as possible– from tech geeks and busy bees to the non tech-savvy and color blind.<br><br><br></div>
 
   <br>
   Thanks for reading,

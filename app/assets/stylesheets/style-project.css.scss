@@ -8,8 +8,8 @@ html {
 }
 
 body {
-    margin-left: 8em;
-    margin-right: 8em;
+    margin-left: 6em;
+    margin-right: 6em;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 1em;
 }
@@ -41,10 +41,10 @@ body {
 
 .progress-indicator {
     position: fixed;
-    top: 4.2em;
+    top: 4.4em;
     left: 0;
     margin-left: 0;
-    z-index: 1;
+    z-index: 100;
     width: 100%;
     background-color: #f1f1f1;
 }
@@ -66,6 +66,10 @@ body {
     display: grid;
     grid-template-columns: 7fr 5fr;
     grid-column-gap: 3em;
+}
+
+.condense {
+    max-width: 65%;
 }
 
 /* Header/Title */
@@ -123,21 +127,24 @@ p {
 /*Project Highlights*/
 
 .highlight-janus {
-     color: #692398;
-     font-weight: 600;
+     background-color: #D0C5FF;
      display: inline;
+     font-style: italic;
+     font-weight: 600;
  }
 
 .highlight-treasury {
-    color: #109a53;
+    background-color: #C5FFDF;
     font-weight: 600;
     display: inline;
+    font-style: italic;
 }
 
 .highlight-open-table {
-    color: #d43644;
+    background-color: #FFC5C5;
     font-weight: 600;
     display: inline;
+    font-style: italic;
 }
 
 /*Project Colors*/
@@ -515,8 +522,8 @@ div.sm-links {
         margin: 0 10%;
     }
 
-    .two-col {
-        grid-template-columns: 1fr;
+    .condense {
+        margin-right: 0;
     }
 
     h1 {
