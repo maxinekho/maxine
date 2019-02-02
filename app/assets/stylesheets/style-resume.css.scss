@@ -1,9 +1,7 @@
 body {
-    margin-top: 5em;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.3em;
 }
 
 .resume-grid {
@@ -36,6 +34,8 @@ body {
 @media screen and (max-width:800px){
     body {
         font-size: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
     }
 
     div.resume-grid {

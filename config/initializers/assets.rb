@@ -10,6 +10,7 @@ Rails.application.config.assets.precompile += %w( style-resume.css.scss )
 Rails.application.config.assets.precompile += %w( script.js )
 Rails.application.config.assets.precompile += %w( modal.js )
 Rails.application.config.assets.precompile += %w( progress.js )
+Rails.application.config.assets.precompile += %w( style.css )
 
 
 # Precompile additional assets.

@@ -34,8 +34,8 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     @media #{$mq-medium} {
-        font-size: $base-font-size*1.2;
-        line-height: $base-line-height*1.2;
+        font-size: $base-font-size*1;
+        line-height: $base-line-height*1;
         margin-left: 2em;
         margin-right: 2em;
     }
@@ -46,13 +46,13 @@ body {
     }
     @media #{$mq-xlarge} {
         font-size: $base-font-size*1.6;
-        margin-left: 6em;
-        margin-right: 6em;
+        margin-left: 4em;
+        margin-right: 4em;
     }
     @media #{$mq-xxlarge} {
         font-size: $base-font-size*2.3;
-        margin-left: 6em;
-        margin-right: 6em;
+        margin-left: 4em;
+        margin-right: 4em;
     }
 }
 
@@ -62,11 +62,11 @@ body {
 
 .top-nav {
     background-color: white;
-    font-size: smaller;
-    float: left;
-    padding: 1em 1em;
+    display: inline;
+    padding: 1em;
     position: fixed;
     z-index: 100;
+    /*reset from body margin*/
     top: 0;
     left: 0;
     right: 0;
@@ -74,16 +74,14 @@ body {
 }
 
 .top-nav a {
-    padding: 10px;
-    display: inline-flex;
-    margin-right: 2em;
-    letter-spacing: 1.5pt;
-    font-size: $base-font-size;
+    padding-top: 0.7em;
+    margin-right: 3em;
+    justify-content: center;
 }
 
 .progress-indicator {
     position: fixed;
-    top: 3.5em;
+    top: 3.4em;
     left: 0;
     margin-left: 0;
     z-index: 100;
@@ -93,13 +91,13 @@ body {
 
 .progress-container {
     width: 100%;
-    height: 0.3em;
+    height: 0.2em;
     background-color: lightgrey;
 }
 
 /* Scroll Indicator */
 .progress-bar {
-    height: 0.3em;
+    height: 0.2em;
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     width: 0;
 }
@@ -107,7 +105,7 @@ body {
 .two-col {
     display: grid;
     grid-template-columns: 7fr 5fr;
-    grid-column-gap: 3em;
+    grid-column-gap: 1.8em;
 }
 
 .condense {
@@ -409,13 +407,14 @@ video {
 
 .container__project-image {
     width: 100%;
+    margin-left: 10%;
+    max-width: 90%;
 }
 
 .container__project-text {
     display: flex;
     flex-flow: column;
     align-self: center;
-    padding-left: 5em;
 }
 
 .project__text-details {
@@ -550,7 +549,7 @@ div.sm-links {
     }
 
     .top-nav {
-        font-size: .5em;
+        font-size: 0.5em;
         margin: 0;
     }
 
@@ -571,10 +570,6 @@ div.sm-links {
         display: grid;
         grid-template-columns: 1fr;
         grid-column-gap: 0;
-    }
-
-    .container {
-        margin: 1em;
     }
 
     .container__project-image{
