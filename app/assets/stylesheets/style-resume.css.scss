@@ -1,7 +1,7 @@
 body {
     margin-top: 5em;
-    margin-left: 9em;
-    margin-right: 9em;
+    margin-left: 2em;
+    margin-right: 2em;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.3em;
 }
@@ -47,12 +47,15 @@ body {
 
     .column-one {
         width: 100%;
-        margin-left: 1em;
-        margin-bottom: 2em;
+        margin: 0;
     }
 
     div.column-two {
-        margin-left: 1em;
         width: 100%;
+        margin: 0;
+    }
+
+    .column-three {
+        margin: 0;
     }
 }

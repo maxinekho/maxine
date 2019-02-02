@@ -1,0 +1,72 @@
+/* line 1, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+body {
+  margin-top: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.3em;
+}
+
+/* line 9, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+.resume-grid {
+  max-width: 2440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4em;
+}
+
+/* line 17, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+.column-two a {
+  color: dodgerblue;
+}
+
+/* line 21, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+.column-two a:hover {
+  opacity: 0.7;
+}
+
+/* line 25, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+.resume-grid img {
+  padding-top: 0.5em;
+  margin: 0;
+  max-height: 1.5em;
+  max-width: 1.5em;
+}
+
+/* line 32, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+.list {
+  display: inline-flex;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 37, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+  body {
+    font-size: 1em;
+  }
+
+  /* line 41, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+  div.resume-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+  }
+
+  /* line 48, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+  .column-one {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 53, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+  div.column-two {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line 58, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-resume.css.scss */
+  .column-three {
+    margin: 0;
+  }
+}
