@@ -49,9 +49,9 @@ body {
         margin-right: 4em;
     }
     @media #{$mq-xxlarge} {
-        font-size: $base-font-size*2.3;
-        margin-left: 4em;
-        margin-right: 4em;
+        font-size: $base-font-size*1.8;
+        margin-left: 5em;
+        margin-right: 5em;
     }
 }
 
@@ -128,8 +128,8 @@ a.active-nav {
         width: 300px;
     }
     @media #{$mq-xxlarge} {
-        height: 500px;
-        width: 500px;
+        height: 450px;
+        width: 450px;
     }
 }
 
