@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -49,9 +51,9 @@ body {
         margin-right: 4em;
     }
     @media #{$mq-xxlarge} {
-        font-size: $base-font-size*1.8;
-        margin-left: 5em;
-        margin-right: 5em;
+        font-size: $base-font-size*1.6;
+        margin-left: 4em;
+        margin-right: 4em;
     }
 }
 
