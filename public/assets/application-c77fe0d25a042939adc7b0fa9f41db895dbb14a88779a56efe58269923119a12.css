@@ -1,4 +1,5 @@
-/* line 1, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+/* line 3, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 html {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -8,14 +9,14 @@ html {
   scroll-behavior: smooth;
 }
 
-/* line 32, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 34, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
 }
 @media (min-width: 64em) {
-  /* line 32, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 34, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   body {
     font-size: 1em;
     line-height: 1.5em;
@@ -24,7 +25,7 @@ body {
   }
 }
 @media (min-width: 85.375em) {
-  /* line 32, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 34, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   body {
     font-size: 1.4em;
     margin-left: 3em;
@@ -32,28 +33,28 @@ body {
   }
 }
 @media (min-width: 120em) {
-  /* line 32, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 34, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   body {
-    font-size: 1.6em;
-    margin-left: 4em;
-    margin-right: 4em;
+    font-size: 1.4em;
+    margin-left: 3em;
+    margin-right: 3em;
   }
 }
 @media (min-width: 160em) {
-  /* line 32, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 34, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   body {
-    font-size: 2.3em;
-    margin-left: 4em;
-    margin-right: 4em;
+    font-size: 1.4em;
+    margin-left: 3em;
+    margin-right: 3em;
   }
 }
 
-/* line 59, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 61, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .container {
   margin: 0 20%;
 }
 
-/* line 63, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 65, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .top-nav {
   background-color: white;
   display: inline;
@@ -67,14 +68,14 @@ body {
   text-align: center;
 }
 
-/* line 76, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 78, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .top-nav a {
   padding-top: 0.7em;
   margin-right: 3em;
   justify-content: center;
 }
 
-/* line 82, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 84, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .progress-indicator {
   position: fixed;
   top: 3.4em;
@@ -85,7 +86,7 @@ body {
   background-color: #f1f1f1;
 }
 
-/* line 92, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 94, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .progress-container {
   width: 100%;
   height: 0.2em;
@@ -93,41 +94,41 @@ body {
 }
 
 /* Scroll Indicator */
-/* line 99, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 101, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .progress-bar {
   height: 0.2em;
   background: linear-gradient(90deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
   width: 0;
 }
 
-/* line 105, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 107, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .two-col {
   display: grid;
   grid-template-columns: 7fr 5fr;
   grid-column-gap: 1.8em;
 }
 
-/* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 113, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .condense {
   max-width: 65%;
 }
 
 /* Header/Title */
-/* line 116, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 118, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h1 {
   line-height: 1.5em;
   font-size: 3em;
 }
 
 /* Subtitle */
-/* line 122, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 124, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h2 {
   font-weight: normal;
   font-size: 2em;
   line-height: 1.2em;
 }
 
-/* line 128, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 130, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h2.key__section-title {
   font-size: 1.6em;
   font-weight: bold;
@@ -136,7 +137,7 @@ h2.key__section-title {
 }
 
 /* Code-y Description */
-/* line 136, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 138, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h3 {
   display: inline;
   font-size: 0.8em;
@@ -145,14 +146,14 @@ h3 {
   line-height: 0.7em;
 }
 
-/* line 144, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 146, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h3.image-caption {
   text-align: center;
   line-height: 1.5em;
 }
 
 /* Project Summary */
-/* line 150, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 152, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h4 {
   font-weight: normal;
   font-size: 0.8em;
@@ -160,20 +161,20 @@ h4 {
   line-height: 1.7em;
 }
 
-/* line 157, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 159, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 h5 {
   font-size: 1.4em;
   line-height: 1.5em;
   font-weight: normal;
 }
 
-/* line 163, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 165, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 p {
   font-size: 1em;
 }
 
 /*Project Highlights*/
-/* line 169, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 171, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .highlight-janus {
   background-color: #D0C5FF;
   display: inline;
@@ -181,7 +182,7 @@ p {
   font-weight: 600;
 }
 
-/* line 176, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 178, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .highlight-treasury {
   background-color: #C5FFDF;
   font-weight: 600;
@@ -189,7 +190,7 @@ p {
   font-style: italic;
 }
 
-/* line 183, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 185, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .highlight-open-table {
   background-color: #FFC5C5;
   font-weight: 600;
@@ -198,71 +199,71 @@ p {
 }
 
 /*Project Colors*/
-/* line 192, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 194, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .janus-color {
   color: #692398;
   display: inline-block;
 }
 
-/* line 197, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 199, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .treasury-color {
   color: #109a53;
   display: inline-block;
 }
 
-/* line 202, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 204, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .open-table-tab-color {
   color: #d43644;
   display: inline-block;
 }
 
-/* line 207, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 209, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 a.black {
   color: #333333;
   text-decoration: none;
 }
 
-/* line 212, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 214, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 a.black:hover {
   font-weight: 700;
 }
 
-/* line 216, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 218, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 a.blue {
   color: dodgerblue;
   text-decoration: none;
   font-weight: normal;
 }
 
-/* line 222, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 224, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 a.active-nav {
   font-weight: 700;
 }
 
-/* line 226, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 228, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 a.inactive-nav:hover {
   font-weight: 700;
 }
 
-/* line 230, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 232, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 img {
   display: flex;
   width: 100%;
   margin: 3em 0;
 }
 
-/* line 236, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 238, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 video {
   display: flex;
   max-width: 600px;
 }
 
-/* line 241, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 243, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .center {
   text-align: center;
 }
 
-/* line 245, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 247, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .btn__prototype {
   justify-content: center;
   border-radius: 2px;
@@ -281,14 +282,14 @@ video {
   display: inline-block;
 }
 
-/* line 263, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 265, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .btn__prototype:hover {
   background: #4aa6ff;
   cursor: pointer;
   color: white;
 }
 
-/* line 269, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 271, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .ripple {
   position: absolute;
   background: #fff;
@@ -310,20 +311,20 @@ video {
   }
 }
 /*Image*/
-/* line 287, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 289, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .zoomImages {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-/* line 293, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 295, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .zoomImages:hover {
   opacity: 0.7;
 }
 
 /* The Modal */
-/* line 298, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 300, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .modal {
   display: none;
   /* Hidden by default */
@@ -348,7 +349,7 @@ video {
 }
 
 /* Modal Content (Image) */
-/* line 313, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 315, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .modal-content {
   margin: 0 auto auto;
   display: block;
@@ -357,7 +358,7 @@ video {
 }
 
 /* Caption of Modal Image (Alt Text) */
-/* line 321, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 323, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 #caption {
   margin: auto;
   display: block;
@@ -370,7 +371,7 @@ video {
 }
 
 /* Add Animation - Zoom in the Modal */
-/* line 333, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 335, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .modal-content, #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -385,7 +386,7 @@ video {
   }
 }
 /* The Close Button */
-/* line 344, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 346, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .close {
   position: absolute;
   top: 2em;
@@ -395,7 +396,7 @@ video {
   transition: 0.3s;
 }
 
-/* line 353, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 355, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .close:hover,
 .close:focus {
   opacity: 0.7;
@@ -405,19 +406,19 @@ video {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  /* line 362, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 364, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .modal-content {
     width: 100%;
   }
 }
 /* Tooltip container */
-/* line 368, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 370, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .tooltip {
   top: 0;
 }
 
 /* Tooltip text */
-/* line 373, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 375, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .tooltip .tooltip-text {
   top: 9em;
   right: 2em;
@@ -433,59 +434,59 @@ video {
   z-index: 1;
 }
 
-/* line 388, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 390, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .tooltip:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
 }
 
-/* line 393, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 395, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .tooltip .tooltip-text {
   opacity: 0;
   transition: opacity 1s;
 }
 
-/* line 398, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 400, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 #project-logo {
   max-width: 10em;
   text-align: center;
 }
 
-/* line 403, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 405, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 #signature {
   margin: 0;
   width: 10em;
 }
 
-/* line 408, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 410, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .container__project-image {
   width: 100%;
   margin-left: 10%;
   max-width: 90%;
 }
 
-/* line 414, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 416, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .container__project-text {
   display: flex;
   flex-flow: column;
   align-self: center;
 }
 
-/* line 420, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 422, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .project__text-details {
   display: inline-flex;
   flex-flow: column;
   justify-content: center;
 }
 
-/* line 426, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 428, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .project__text-title {
   font-size: 2em;
   line-height: 1em;
 }
 
 /* "View Project" Link Properties*/
-/* line 433, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 435, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .view__link {
   --smLinkPadding: 10px 15px;
   --smLinkLineWeight: 2px;
@@ -497,24 +498,24 @@ video {
   overflow: hidden;
 }
 
-/* line 444, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 446, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 a.view__link {
   text-decoration: none;
 }
 
-/* line 448, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 450, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .view__link::after {
   transform: translate3d(-100%, 0, 0);
   transition: transform .2s ease-in;
 }
 
-/* line 453, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 455, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .view__link:hover::after {
   transform: translate3d(0, 0, 0);
 }
 
 /*"View Project" Link Padding*/
-/* line 459, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 461, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .view__link-padding {
   --uismLinkLineWeight: var(--smLinkLineWeight, 1px);
   --uismLinkLineColor: var(--smLinkLineColor, #000);
@@ -522,7 +523,7 @@ a.view__link {
   position: relative;
 }
 
-/* line 466, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 468, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .view__link-padding::after {
   content: "";
   width: 7em;
@@ -533,7 +534,7 @@ a.view__link {
   bottom: 0;
 }
 
-/* line 476, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 478, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 #backToTop {
   display: none;
   position: fixed;
@@ -551,7 +552,7 @@ a.view__link {
   padding: 0.85em 1em;
 }
 
-/* line 493, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 495, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 #backToTop:hover {
   /*opacity: 0.7;*/
   background-color: dodgerblue;
@@ -559,14 +560,14 @@ a.view__link {
   color: white;
 }
 
-/* line 500, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 502, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 footer > div {
   display: inline-block;
   justify-items: center;
   margin-bottom: 1em;
 }
 
-/* line 506, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 508, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 div.sm-links {
   text-align: center;
   display: inline-flex;
@@ -574,38 +575,38 @@ div.sm-links {
   justify-content: center;
 }
 
-/* line 513, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 515, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .sm-links > a {
   padding: 0 1em;
   color: #333333;
   vertical-align: center;
 }
 
-/* line 519, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 521, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .sm-links > a:hover {
   opacity: 0.7;
 }
 
-/* line 523, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 525, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .message {
   display: block;
   text-align: center;
   color: #333333;
 }
 
-/* line 529, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 531, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .message > a {
   color: #333333;
   font-weight: 600;
   text-decoration: none;
 }
 
-/* line 535, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 537, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .message > a:hover {
   opacity: 0.7;
 }
 
-/* line 539, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+/* line 541, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
 .copyright {
   display: block;
   text-align: center;
@@ -613,63 +614,63 @@ div.sm-links {
 }
 
 @media (max-width: 800px) {
-  /* line 547, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 549, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   body {
     margin: 0 1em 1em;
   }
 
-  /* line 551, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 553, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .top-nav {
     font-size: 0.5em;
     margin: 0;
   }
 
-  /* line 556, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 558, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .progress-indicator {
     top: 5.3em;
   }
 
-  /* line 560, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 562, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .condense {
     max-width: 100%;
   }
 
-  /* line 564, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 566, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   h1 {
     font-size: 3em;
     line-height: 1em;
   }
 
-  /* line 569, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 571, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .two-col {
     display: grid;
     grid-template-columns: 1fr;
     grid-column-gap: 0;
   }
 
-  /* line 575, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 577, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .container__project-image {
     margin: 0 2em;
     width: 80%;
   }
 
-  /* line 580, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 582, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   .container__project-text {
     padding: 0 2em;
   }
 
-  /* line 584, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 586, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   video {
     display: flex;
     max-width: 270px;
   }
 
-  /* line 589, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 591, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   footer {
     padding: 0 1em;
   }
 
-  /* line 593, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
+  /* line 595, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style-project.css.scss */
   footer.sm-links {
     padding: 0 1em;
   }
@@ -746,7 +747,8 @@ body {
     margin: 0;
   }
 }
-/* line 1, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+/* line 3, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -755,14 +757,14 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 31, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 33, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
 }
 @media (min-width: 64em) {
-  /* line 31, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 33, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   body {
     font-size: 1em;
     line-height: 1.5em;
@@ -771,7 +773,7 @@ body {
   }
 }
 @media (min-width: 85.375em) {
-  /* line 31, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 33, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   body {
     font-size: 1.4em;
     margin-left: 3em;
@@ -779,7 +781,7 @@ body {
   }
 }
 @media (min-width: 120em) {
-  /* line 31, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 33, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   body {
     font-size: 1.6em;
     margin-left: 4em;
@@ -787,29 +789,29 @@ body {
   }
 }
 @media (min-width: 160em) {
-  /* line 31, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 33, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   body {
-    font-size: 2.3em;
+    font-size: 1.6em;
     margin-left: 4em;
     margin-right: 4em;
   }
 }
 
-/* line 58, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 60, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .header {
   display: inline-flex;
   align-items: center;
   margin-top: 8em;
 }
 
-/* line 64, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 66, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .bio {
   font-weight: normal;
   font-size: 2.4em;
   line-height: 1.2em;
 }
 
-/* line 70, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 72, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .top-nav {
   background-color: white;
   display: inline;
@@ -823,7 +825,7 @@ body {
   text-align: center;
 }
 
-/* line 83, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 85, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .top-nav a {
   padding-top: 0.7em;
   justify-content: center;
@@ -832,29 +834,29 @@ body {
   letter-spacing: 0.8pt;
 }
 
-/* line 91, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 93, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .nav-title {
   float: left;
   margin-left: 8em;
 }
 
-/* line 96, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 98, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .nav-links {
   float: right;
   margin-right: 8em;
 }
 
-/* line 101, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 103, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .nav-links a.inactive-nav:hover {
   opacity: 0.7;
 }
 
-/* line 105, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 107, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a.active-nav {
   font-weight: 700;
 }
 
-/* line 109, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 #profile_photo {
   height: 200px;
   width: 200px;
@@ -862,59 +864,59 @@ a.active-nav {
   border-radius: 50%;
 }
 @media (min-width: 48em) {
-  /* line 109, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   #profile_photo {
     height: 100px;
     width: 100px;
   }
 }
 @media (min-width: 64em) {
-  /* line 109, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   #profile_photo {
     height: 200px;
     width: 200px;
   }
 }
 @media (min-width: 85.375em) {
-  /* line 109, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   #profile_photo {
     height: 300px;
     width: 300px;
   }
 }
 @media (min-width: 120em) {
-  /* line 109, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   #profile_photo {
     height: 300px;
     width: 300px;
   }
 }
 @media (min-width: 160em) {
-  /* line 109, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 111, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   #profile_photo {
-    height: 500px;
-    width: 500px;
+    height: 450px;
+    width: 450px;
   }
 }
 
-/* line 136, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 138, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .header-intro {
   padding: 0 5em;
   margin-left: 2.5em;
 }
 
-/* line 141, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 143, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .container-main {
   width: 100%;
 }
 
-/* line 145, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 147, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .two-col {
   display: grid;
   grid-template-columns: 7fr 5fr;
 }
 
-/* line 150, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 152, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .animated {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -942,18 +944,18 @@ a.active-nav {
     transform: translateY(-20px);
   }
 }
-/* line 171, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 173, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .bounce {
   -webkit-animation-name: bounce;
   animation-name: bounce;
 }
 
-/* line 176, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 178, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 #scroll-down-arrow {
   text-align: center;
 }
 
-/* line 180, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 182, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a {
   color: dodgerblue;
   text-decoration: none;
@@ -964,56 +966,56 @@ a {
   font-size: 1em;
 }
 
-/* line 188, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 190, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a:hover {
   color: dodgerblue;
 }
 
-/* line 192, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 194, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a.view-project-button:hover {
   text-decoration: underline;
   display: block;
 }
 
-/* line 197, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 199, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .container__project-image {
   width: 100%;
 }
 
 /*Project Colors*/
-/* line 203, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 205, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .janus-color {
   color: #692398;
   display: inline-block;
 }
 
-/* line 208, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 210, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .treasury-color {
   color: #0E8749;
   display: inline-block;
 }
 
-/* line 213, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 215, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .open-table-tab-color {
   color: #d43644;
   display: inline-block;
 }
 
 /*Selection Color*/
-/* line 220, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 222, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 ::selection {
   background: #FF9966;
   /* WebKit/Blink Browsers */
 }
 
-/* line 223, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 225, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 ::-moz-selection {
   background: #FF9966;
   /* Gecko Browsers */
 }
 
 /* "View Project" Link Properties*/
-/* line 229, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 231, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .view__link {
   --smLinkPadding: 10px 15px;
   --smLinkLineWeight: 2px;
@@ -1024,25 +1026,25 @@ a.view-project-button:hover {
   overflow: hidden;
 }
 
-/* line 239, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 241, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a.view__link {
   text-decoration: none;
   font-weight: 600;
 }
 
-/* line 244, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 246, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .view__link::after {
   transform: translate3d(-100%, 0, 0);
   transition: transform .2s ease-in;
 }
 
-/* line 249, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 251, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .view__link:hover::after {
   transform: translate3d(0, 0, 0);
 }
 
 /*Link Padding*/
-/* line 255, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 257, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .view__link-padding {
   --uismLinkLineWeight: var(--smLinkLineWeight, 1px);
   --uismLinkLineColor: var(--smLinkLineColor, #000);
@@ -1050,7 +1052,7 @@ a.view__link {
   position: relative;
 }
 
-/* line 262, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 264, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .view__link-padding::after {
   content: "";
   width: 7em;
@@ -1061,49 +1063,49 @@ a.view__link {
   bottom: 0;
 }
 
-/* line 272, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 274, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 img.drop-shadow {
   box-shadow: 8px 8px 50px 1px rgba(0, 0, 0, 0.3);
 }
 
-/* line 276, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 278, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 img.img-project {
   display: flex;
   max-width: 90%;
 }
 
-/* line 281, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 283, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .container__project-text {
   display: flex;
   flex-flow: column;
   align-self: center;
 }
 
-/* line 287, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 289, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .project__text-details {
   display: inline-flex;
   flex-flow: column;
   justify-content: center;
 }
 
-/* line 293, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 295, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .project__text-title {
   font-size: 2em;
   line-height: 1em;
 }
 
-/* line 298, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 300, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 h1 {
   line-height: 1.1em;
   font-size: 2.8em;
 }
 
-/* line 303, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 305, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 p {
   font-size: 1em;
 }
 
-/* line 307, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 309, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a.black {
   color: #333333;
   text-decoration: none;
@@ -1111,26 +1113,26 @@ a.black {
   font-weight: 700;
 }
 
-/* line 314, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 316, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a.black:hover {
   font-weight: 700;
 }
 
-/* line 318, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 320, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 a.blue {
   color: dodgerblue;
   font-weight: bolder;
   text-decoration: none;
 }
 
-/* line 324, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 326, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 footer > div {
   display: inline-block;
   justify-items: center;
   margin-bottom: 2em;
 }
 
-/* line 330, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 332, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 div.sm-links {
   text-align: center;
   display: inline-flex;
@@ -1138,37 +1140,37 @@ div.sm-links {
   justify-content: center;
 }
 
-/* line 337, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 339, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .sm-links > a {
   padding: 0 1em;
   color: #333333;
   vertical-align: center;
 }
 
-/* line 343, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 345, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .sm-links > a:hover {
   opacity: 0.7;
 }
 
-/* line 347, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 349, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .message {
   display: block;
   text-align: center;
   color: #333333;
 }
 
-/* line 353, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 355, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .message > a {
   color: #333333;
   font-weight: 600;
 }
 
-/* line 358, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 360, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .message > a:hover {
   opacity: 0.7;
 }
 
-/* line 362, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+/* line 364, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
 .copyright {
   display: block;
   text-align: center;
@@ -1176,26 +1178,26 @@ div.sm-links {
 }
 
 @media (max-width: 800px) {
-  /* line 369, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 371, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   body {
     margin: 1em;
     font-size: 1em;
   }
 
-  /* line 374, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 376, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .top-nav {
     font-size: 1em;
     font-weight: 700;
   }
 
-  /* line 379, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 381, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .header {
     margin: 0;
     padding: 0;
     display: grid;
   }
 
-  /* line 385, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 387, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   #profile_photo {
     display: block;
     margin-top: 8em;
@@ -1203,17 +1205,17 @@ div.sm-links {
     justify-content: center;
   }
 
-  /* line 392, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 394, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   h1 {
     font-size: 4em;
   }
 
-  /* line 396, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 398, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   h3 {
     line-height: normal;
   }
 
-  /* line 400, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 402, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .header-intro {
     margin-left: 1em;
     padding: 2em;
@@ -1221,34 +1223,34 @@ div.sm-links {
     text-align: center;
   }
 
-  /* line 407, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 409, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .two-col {
     grid-template-columns: 1fr;
   }
 
-  /* line 411, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 413, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .container-projects {
     display: block;
     justify-self: center;
   }
 
-  /* line 416, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 418, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .container__project-text {
     width: 90%;
     padding-left: 2em;
   }
 
-  /* line 421, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 423, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   .container__project-image {
     justify-content: center;
   }
 
-  /* line 425, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 427, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   footer {
     padding: 0 1em;
   }
 
-  /* line 429, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
+  /* line 431, /Users/maxinekho/WebDev/max-portfolio/app/assets/stylesheets/style.css.scss */
   footer.sm-links {
     display: inline-flex;
     padding: 0 1em;
