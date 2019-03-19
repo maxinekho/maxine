@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
 
 html {
     line-height: 1.15;
@@ -6,6 +7,7 @@ html {
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 14px;
 }
 
 // Breakpoints
@@ -24,14 +26,15 @@ $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Font-Size
-$base-font-size: 1em;
+$base-font-size: 14px;
 
 // Line-Height
 $base-line-height: 1.5em;
 $header-line-height: 1.25;
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    //font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: Karla, sans-serif;
     font-size: $base-font-size;
     line-height: $base-line-height;
     @media #{$mq-medium} {
@@ -60,7 +63,8 @@ body {
 .header {
     display: inline-flex;
     align-items: center;
-    margin-top: 8em;
+    margin-top: 12em;
+    margin-bottom: 8em;
 }
 
 .bio {
@@ -86,52 +90,61 @@ body {
     padding-top: 0.7em;
     justify-content: center;
     font-size: $base-font-size*0.7;
-    margin-right: 3em;
     letter-spacing: 0.8pt;
 }
 
 .nav-title {
     float: left;
-    margin-left: 8em;
+    margin-left: 6em;
 }
 
 .nav-links {
     float: right;
-    margin-right: 8em;
+    margin-right: 6em;
 }
 
 .nav-links a.inactive-nav:hover {
     opacity: 0.7;
 }
 
+.nav-links a.inactive-nav {
+    font-weight: 400;
+}
+
 a.active-nav {
     font-weight: 700;
 }
 
+a.active-nav:hover {
+  opacity: 1;
+}
+
 #profile_photo{
-    height: 200px;
-    width: 200px;
-    margin-left: 6em;
     border-radius: 50%;
     @media #{$mq-small} {
         height: 100px;
         width: 100px;
+        margin-left: 6em;
     }
     @media #{$mq-medium} {
         height: 200px;
         width: 200px;
+        margin-left: 6em;
     }
     @media #{$mq-large} {
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        margin-left: 6em;
+        width: 200px;
     }
     @media #{$mq-xlarge} {
-        height: 300px;
-        width: 300px;
+        height: 200px;
+        width: 200px;
+        margin-left: 6em;
     }
     @media #{$mq-xxlarge} {
-        height: 450px;
-        width: 450px;
+        height: 200px;
+        width: 200px;
+        margin-left: 6em;
     }
 }
 
@@ -177,18 +190,26 @@ a.active-nav {
 
 #scroll-down-arrow {
     text-align: center;
+  margin-bottom: 8em;
+}
+
+.project-index{
+  margin-bottom: 8em;
 }
 
 a {
-    color: dodgerblue;
+    color: #000000;
     text-decoration: none;
-    -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
-    transition: color 1s; /* For modern browsers */
-    font-size: $base-font-size;
+}
+
+a.dashed {
+    padding-bottom: 0.1em;
+    text-decoration: none;
+    border-bottom: dashed #000000 0.5px;
 }
 
 a:hover {
-    color: dodgerblue;
+    opacity: 0.7;
 }
 
 a.view-project-button:hover {
@@ -217,6 +238,16 @@ a.view-project-button:hover {
     display: inline-block;
 }
 
+.default-color {
+  display: inline-block;
+  color: #333333;
+}
+
+.default-spec-color {
+  display: inline-block;
+  color: lightslategrey;
+}
+
 /*Selection Color*/
 
 ::selection {
@@ -231,21 +262,23 @@ a.view-project-button:hover {
 .view__link{
     --smLinkPadding: 10px 15px;
     --smLinkLineWeight: 2px;
-    --smLinkLineColor: dodgerblue;
-    --smLinkTextColorHover: dodgerblue;
-    color: dodgerblue;
+    --smLinkLineColor: #333333;
+    --smLinkTextColorHover: #333333;
+    color: #000000;
     position: relative;
     overflow: hidden;
 }
 
 a.view__link{
-    text-decoration: none;
+    text-decoration-style: dashed;
     font-weight:600;
+    cursor:pointer;
 }
 
 .view__link::after{
     transform: translate3d(-100%, 0, 0);
     transition: transform .2s ease-in;
+    cursor:pointer;
 }
 
 .view__link:hover::after{
@@ -263,7 +296,7 @@ a.view__link{
 
 .view__link-padding::after{
     content: "";
-    width: 7em;
+    width: 9em;
     height: var(--uismLinkLineWeight);
     background-color: var(--uismLinkLineColor);
     position: absolute;
@@ -278,6 +311,12 @@ img.drop-shadow {
 img.img-project {
     display: flex;
     max-width: 90%;
+}
+
+.container-projects {
+  margin-bottom: 4em;
+  margin-top: 6em;
+  justify-self: center;
 }
 
 .container__project-text {
@@ -295,6 +334,35 @@ img.img-project {
 .project__text-title {
     font-size: 2em;
     line-height: 1em;
+}
+
+section.project-types {
+    font-size: 1.2em;
+    background-color: white;
+    display: block;
+    padding-left: 2em;
+    text-align: center;
+    margin-bottom: 8em;
+    letter-spacing: 0.8pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-type {
+    margin: 4em;
+    margin-left: 3em;
+    border-bottom: dashed #333333 0.1em;
+}
+
+.project-type:hover {
+    font-weight: 700;
+    border-bottom: solid 0.1em;
+    cursor: pointer;
+}
+
+a.active-tab {
+    border-bottom: solid 0.1em;
+    font-weight: 700;
 }
 
 h1 {
@@ -377,19 +445,13 @@ div.sm-links {
         font-size: 1em;
         font-weight: 700;
     }
-
-    .header {
-        margin: 0;
-        padding: 0;
-        display: grid;
-    }
-
-    #profile_photo{
-        display: block;
-        margin-top: 8em;
-        margin-left: 22%;
-        justify-content: center;
-    }
+    //
+    //#profile_photo{
+    //    display: block;
+    //    margin-top: 8em;
+    //    margin-left: 22%;
+    //    justify-content: center;
+    //}
 
     h1 {
         font-size: 4em;
@@ -413,6 +475,8 @@ div.sm-links {
     .container-projects {
         display: block;
         justify-self: center;
+        margin-bottom: 4em;
+        margin-top: 6em;
     }
 
     .container__project-text {
