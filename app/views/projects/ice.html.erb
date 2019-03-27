@@ -1,0 +1,164 @@
+<!--JS-->
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
+
+<!--Stylesheet-->
+<%= stylesheet_link_tag "style-project" %>
+
+<!--Navigation-->
+<nav class="top-nav">
+  <section class="nav-title">
+    <a class="black active-nav">MAXINE KHO</a>
+  </section>
+  <section class="nav-links">
+    <a class="black inactive-nav" href="/">Work</a>
+    <a class="black inactive-nav" href="/about">About</a>
+  </section>
+</nav>
+
+<!--Progress Bar-->
+<div class="progress-indicator">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="zoomModal" class="modal">
+
+    <!-- The Close Button -->
+    <div class="tooltip">Hover over me
+        <span class="close">&times;</span>
+        <span class="tooltip-text">Close</span>
+    </div>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<!--Title + Content-->
+<div class="container">
+  <br><br><br><br>
+  <h1><strong>On the Rocks</strong></h1>
+  <br>
+
+  <!--Project Intro + Summary-->
+  <div class="two-col">
+
+    <!--Project Intro-->
+    <div>
+      <p>Ice caps and sheets are miles away and we don’t exactly see sea level rise.<br><br>
+        <em>How might we bring this momentous phenomenon closer to those contributing to it? </em>
+        My goal is to communicate this relatively imperceivable phenomenon through a tangible, visual piece.</p>
+    </div>
+
+    <!--Project Summary-->
+      <div>
+        <h4><strong>ABOUT</strong></h4>
+        <strong>Timeframe:</strong> March 2019 (1 week)<br>
+          <strong>Class:</strong>
+          Data Driven Art<br><br>
+
+        <h4><strong>USING</strong></h4>
+          Data Visualization<br>
+      </div>
+  </div><br><br>
+
+  <!--Project Content-->
+  <h2><strong>The Antarctic</strong></h2>
+
+  <div class="condense">
+    <h5>Contains close to 99% of
+      the world’s fresh water<br>
+
+      Suffering a 200-ft sea level rise</h5>
+  </div>
+  <img src="<%= image_path("images/project-ice/polar.jpg") %>" class="zoomImages" alt="The Antarctic today">
+  <em>Image by Ralph Lee Hopkins, Nat Geo Image Collection</em><br><br>
+
+  <div class="condense">
+    <ul>
+      <h5><strong>What are the consequences?</strong></h5>
+      <li>Heat absorption which increases the melting rate of ice</li><br>
+      <li>Rise in sea levels and changes in water currents</li><br>
+      <li>Weather formation across the planet</li><br>
+      <li>Relocation of shipping ports</li><br>
+      <li>Threats to wildlife, Inuits, and indigenous peoples</li><br>
+    </ul>
+
+    <h5><strong>Data Source</strong></h5>
+    NASA’s GRACE satellites measured the rate at which the ice sheets in Antarctica (and Greenland) have been losing mass since 2002. <br><br>On top of that, its records show that the rate of loss in mass has been accelerating since 2009. <br><br></div>
+
+    <img src="<%= image_path("images/project-ice/nasa.png") %>" class="zoomImages" style="width:70%;" alt="Data recorded by NASA's GRACE satellite">
+
+  <div class="condense">
+    <h5><strong>Ideation Phase</strong></h5>
+  </div>
+
+    <img src="<%= image_path("images/project-ice/ideation.JPG") %>" class="zoomImages" style="width:70%;" alt="Noted some of my thoughts and ideas for this project">
+
+  <div class="condense">
+    To translate the data better to the scale that I wanted to work in, I increased the scale from 10^9 to 10^11. This reduced the value to something more countable and controllable.<br><br>
+    I also intentionally set May as the month from which I will gather every three years' melting rate. I decided that presenting 6 of the 17 years' data was sufficient to communicate the message I wanted to convey.<br><br>
+    To keep the piece current and thought-provoking, I decided to use NASA's prediction for 2018's melt rate.<br><br>
+    <img src="<%= image_path("images/project-ice/process.JPG") %>" class="zoomImages" style="width:70%;" alt="Noted some of my thoughts and ideas for this project">
+  </div>
+
+  <img src="<%= image_path("images/project-ice/candle.gif") %>" class="zoomImages" alt="">
+
+  <div class="condense">
+    <br><br>Of the different melting methods (straight from the candle, in a spoon, in a nonstick pan) I experimented with, I resorted to the pan. The large amount of wax I could melt in it allowed me to measure the melted wax by the tablespoon that would correspond to the melting rates recorded on a 10^11 scale. <br><br>
+  </div>
+
+  <img src="<%= image_path("images/project-ice/bath.JPG") %>" class="zoomImages" style="width:70%;" alt="Dropped the wax by the tablespoon into the cold water bath">
+  <em>Dropped the wax by the tablespoon into the cold water bath</em>
+
+
+  <img src="<%= image_path("images/project-ice/all.JPG") %>" class="zoomImages" alt=" ">
+  <em>And then into their respective glasses, pre-filled with 2/3 cups of water</em><br><br>
+  <div class="condense">
+    The wax structures displaced the water in the glasses, which aided in revealing the density and mass of the irregular wax structures. At the same time, the displacement suggests the rise of sea levels that results from the loss of ice mass.<br><br>
+To guide the viewer, I dropped glue dots onto the base of the glasses depending on the last two digits of the year that the glass represents: 3 dots for 2003, 6 for 2006, and so on.
+  </div>
+
+
+    <h5><strong>2003 vs. 2018</strong></h5>
+  <img src="<%= image_path("images/project-ice/vs.JPG") %>" class="zoomImages" alt=" ">
+  <div class="condense">
+  Experimenting my way to the finished product was fulfilling. I was glad I chose to skip through some years– I could imagine the effect not having as much impact if I had presented gradual changes in this small scale. <br><br>
+    Having had the inverted ice (or wax) caps float in their own glasses allowed myself and viewers to pick out certain glasses for comparison– just like the one between 2003 and 2018 pictured above.<br><br>
+    I hope that the piece makes people realize how quickly the ice sheets are melting due to climate change and allow them to predict how the coming years might look like if the melting continues to accelerate.
+
+  </div><br><br>
+
+
+  <br>
+  Thanks for reading,
+  <img src="<%= image_path("images/maxine-sig.png") %>" alt="Maxine's signature" id="signature">
+</div><br><br><br><br>
+
+<!--Next Project-->
+  <!--Project 1: A Pizz'a My Data-->
+  <div class="two-col">
+    <div class="container__project-image">
+      <img src="<%= image_path("images/project-pizza/pizza.png") %>" alt="pizza" class="img-project">
+    </div>
+    <div class="container__project-text">
+      <h3 class="default-spec-color"><strong>↓ NEXT PROJECT</strong></h3><br>
+      <div class="project__text-title"><div class="default-color"><strong>A Pizz'a My Data</strong></div>
+        <br><br></div>
+      <div class="project__text-details">
+        <h3 class="default-spec-color">PROJECT</h3>I baked my own health data from a pizza hop (and then ate it)
+        <h3 class="default-spec-color">TIMEFRAME</h3>February 2019<br><br><br>
+      </div>
+      <a href="/projects/pizza" class="view__link view__link-padding">View Project Doc &rarr;</a>
+    </div>
+  </div>
+<br><br><br><br><br><br><br><br>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593;</button>
+
+<%= render "home/footer" %>

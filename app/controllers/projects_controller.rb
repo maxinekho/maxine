@@ -5,4 +5,14 @@ class ProjectsController < ApplicationController
     end
     def opentable
     end
+    def pizza
+    end
+    def ice
+    end
+    def fortunecookie
+    end
+    def luckycat
+    end
+    def disclosure
+    end
 end

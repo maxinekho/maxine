@@ -1,0 +1,142 @@
+<!--JS-->
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
+
+<!--Stylesheet-->
+<%= stylesheet_link_tag "style-project" %>
+
+<!--Navigation-->
+<nav class="top-nav">
+  <section class="nav-title">
+    <a class="black active-nav">MAXINE KHO</a>
+  </section>
+  <section class="nav-links">
+    <a class="black inactive-nav" href="/">Work</a>
+    <a class="black inactive-nav" href="/about">About</a>
+  </section>
+</nav>
+
+<!--Progress Bar-->
+<div class="progress-indicator">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="zoomModal" class="modal">
+
+    <!-- The Close Button -->
+    <div class="tooltip">Hover over me
+        <span class="close">&times;</span>
+        <span class="tooltip-text">Close</span>
+    </div>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<!--Title + Content-->
+<div class="container">
+  <br><br><br><br>
+  <h1><strong>Lucky Cat Wave</strong></h1>
+  <br>
+
+  <!--Project Intro + Summary-->
+  <div class="two-col">
+
+    <!--Project Intro-->
+    <div>
+      <p>The challenge was to make a physically interactive system that responds to an input and produces an output. This needs to happen over a WiFi connection with the microcontroller acting as either a client or a server.</p>
+    </div>
+
+    <!--Project Summary-->
+      <div>
+        <h4><strong>ABOUT</strong><br></h4>
+            <strong>Timeframe:</strong> February 2019 (2 weeks)<br>
+            <strong>Class:</strong> Networked Devices<br>
+            <strong>Tools:</strong> ESP8266, Arduino (aREST), soldering iron, Processing (p5.js)<br><br>
+      </div>
+  </div><br><br>
+
+  <!--Project Content-->
+  <h2><strong>Proof of Concept</strong></h2>
+
+  <img src="<%= image_path("images/project-lucky-cat/original.JPG") %>" class="zoomImages" alt="My original plan had too many moving parts">
+
+<div class="condense">
+  My original plan had three parts– a temperature sensor that serves as an analog input dictates the fan speed, the fan that responds to the current temperature, and a lucky cat that would wave whenever the fan is on. The interaction to be made over a WiFi connection was limited to changing the fan speed.<br><br>
+
+  This defeats the purpose of having all these moving parts because logically, the an analog input would coincide with the input made through the supposed GUI on the browser.<br><br>
+</div>
+
+  <div class="condense">
+
+    <h5><strong>Scaling Back</strong></h5>
+    I simplified my concept for it to be more straightforward and intuitive. I created a paw-waving, wish-granting cat! For my setup, the microcontroller (server) returns a physical response (the cat waving) upon the browser’s (client) request.
+
+    <h5><em>Submit your wish through the form on the browser UI and the lucky cat will wave for each character in your wish to grant it.</em></h5>
+
+
+    <ul><strong>Materials</strong><br><br>
+      <li>ESP8266</li>
+      <li>USB cable</li>
+      <li>Servo motor</li>
+      <li>LED</li>
+      <li>Soldering iron</li>
+      <li>Mobile hotspot</li>
+      <li>Plastic cup</li>
+      <li>Modelling clay</li>
+      <li>Play-Doh</li>
+    </ul>
+
+    <img src="<%= image_path("images/project-lucky-cat/prototype.JPG") %>" class="zoomImages" alt="My initial prototype">
+    My initial protype, taking into consideration the physicality of the object.<br><br>
+
+    <h5><strong>I/O</strong></h5>
+    In terms of the interaction, the command “Make a wish!” would prompt the user to enter his/her wish. Upon clicking the “Wish it” button (which affords clicking/pressing), the prompt returns a feedback “Wishing for _______ 😻”.<br><br>
+
+    In addition to this, the “bell” attached to the cat’s collar would light up while its right paw waves. Once the waving is done, the light goes out.<br><br>
+  </div>
+
+    <iframe src="https://player.vimeo.com/video/323947878" width="640" height="360" frameborder="0" allowfullscreen></iframe><br><br>
+
+  <div class="condense">
+
+    <h5><strong>Interaction Design</strong></h5>
+
+      The light as a signifier was helpful when I was first testing the servo on the cat. Because I put the <em>ledOn</em> and <em>ledOff</em> commands before and after the servo command, I could tell whether the servo was responding without waiting on it forever. <br><br>
+    As for the physical cat, I used a combination of modeling clay (everything but the arm) and Play-Doh (just the arm). My guess was that the servo wouldn’t move because the clay arm was too heavy.<br><br>
+
+      <h5><strong>Cue the chicken wing</strong></h5>
+  </div>
+
+    <iframe src="https://player.vimeo.com/video/324863644" width="640" height="360" frameborder="0" allowfullscreen></iframe><br><br>
+
+  <img src="<%= image_path("images/project-lucky-cat/lucky-cat.gif") %>" class="zoomImages" alt="My initial prototype">
+
+<!--Next Project-->
+<div class="two-col project-index">
+  <div class="container__project-image">
+    <img src="<%= image_path("images/project-disclosure-ify/disclosure.gif") %>" alt="disclosure-ify yourself" class="img-project">
+  </div>
+  <div class="container__project-text">
+    <h3 class="default-spec-color"><strong>↓ NEXT PROJECT</strong></h3><br>
+    <div class="project__text-title"><div class="default-color"><strong>Disclosure-ify Yourself</strong></div>
+      <br><br></div>
+    <div class="project__text-details">
+      <h3 class="default-spec-color">PROJECT</h3>A Disclosure "scribble face generator" for my Creative Coding class project
+      <h3 class="default-spec-color">USING</h3>p5 via OpenProcessing
+      <h3 class="default-spec-color">TIMEFRAME</h3>December 2017<br><br><br>
+    </div>
+    <a href="/projects/disclosure" class="view__link view__link-padding">View Project Doc &rarr;</a>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593;</button>
+
+<%= render "home/footer" %>

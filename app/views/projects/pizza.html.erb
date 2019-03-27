@@ -41,7 +41,7 @@
 <!--Title + Content-->
 <div class="container">
   <br><br><br><br>
-  <h1><strong>Simplifying a labor-intensive hiring process 🌈</strong></h1>
+  <h1><strong>A Pizz'a My Data</strong></h1>
   <br>
 
   <!--Project Intro + Summary-->
@@ -49,194 +49,101 @@
 
     <!--Project Intro-->
     <div>
-      <br>
-      <img src="<%= image_path("images/project-janus/logo.png") %>" id="project-logo" alt="Janus project logo">
-
-      <p>Over the past few months, I’ve been designing <strong>Janus</strong>, a front-end data entry and storage application interfaced with university systems to optimize the hiring process for the NYU Tandon Summer Research Program.</p>
-      <p>This was the first project I worked on at NYU IT.</p>
+      <p>Food bloggers and influencers often go restaurant-hopping, hitting as many spots as they can within the same neighborhood.
+        While this saves them some travel time, the proximity of the stops make the trip less than ideal for those who are health
+        conscious. For this self-tracking project, I wanted to visualize the progression of my calorie gain and/or loss during a pizza hop around Lower Manhattan to see if the trip was "worth it".</p>
     </div>
 
     <!--Project Summary-->
       <div>
-          <h4><strong>ABOUT</strong><br>
-              <strong>Duration:</strong> February 2018-Present<br>
-              <strong>Role:</strong> Product Designer<br>
-              <strong>Team:</strong> Developers (3), Product Manager, Product Owner<br>
-              <strong>For:</strong> School administrators, faculty, NYU and non-NYU undergraduate students<br><br>
+        <h4><strong>ABOUT</strong></h4>
+              <strong>Timeframe:</strong> February 2019 (1 week)<br>
+              <strong>Role:</strong> Pizza Vacuum, Chef<br>
+              <strong>Class:</strong> Data Driven Art<br><br>
 
-          <strong>SKILLS USED</strong><br>
-          User Research<br>
-          Visual Design<br>
-          Wireframing (using Sketch)<br>
-          Flowcharting and diagramming<br>
-          <a href= "#prototype-janus" class="dashed">Prototyping (using InVision)<br></a>
-          User Testing<br></h4>
+          <h4><strong>USING</strong></h4>
+          Data Visualization<br>
+          Food Preparation<br>
       </div>
   </div><br><br>
 
   <!--Project Content-->
-
   <h2><strong>My Design Process</strong></h2>
-  <img src="<%= image_path("images/project-janus/process.png") %>" class="zoomImages" alt="My design process in timeline form">
 
   <div class="condense">
-  <h5><strong>1. Understand and ask questions</strong></h5>
-  The product owner and my project manager briefed me about the <a href="https://engineering.nyu.edu/research-innovation/student-research/undergraduate-summer-research-program" target="_blank">NYU Tandon Summer Research Program</a>, the hiring process that is currently in place, and primary audiences involved:
-  </div><br>
+    <h5><strong>Data Collection</strong></h5>
+    I had my sights set on Lower Manhattan due to the number of popular (and some of my favorite) pizza parlors in the area. To further narrow down my options, I intentionally chose to visit six spots that, when connected through a single route, is shaped like a pizza slice!<br><br>
+    <img src="<%= image_path("images/project-pizza/map.JPG") %>" class="zoomImages" style="width:50%;" alt="My pizza hopping route">
+    In preparation for my pizza hop, I defined the data values to track throughout the trip–<br><br>
+    <strong>Dimensions:</strong> Pizza shop, pizza flavor<br>
+    <strong>Measures:</strong> Calories gained, calories lost, time of arrival, time of departure, time spent, distance travelled<br><br>
+    I used both Google Maps and the Health app on my phone to record my data.
+  </div>
 
-  <img src="<%= image_path("images/project-janus/primary-audience.png") %>" class="zoomImages" alt="Primary stakeholders for this project">
-
-  Then they walked me through the legacy system…<br>
-
-  <img src="<%= image_path("images/project-janus/legacy.png") %>" class="zoomImages" alt="The legacy hiring process for the NYU Tandon Summer Research Program">
+  <img src="<%= image_path("images/project-pizza/stats.png") %>" class="zoomImages" alt="Data gathered from the trip"><br>
 
   <div class="condense">
-  <strong>Problem</strong><br>
-  In current process, administrators <p class="highlight-janus">transfer and duplicate data across a range of applications.</p> They <p class="highlight-janus">spend five months</p> organizing information and onboarding student hires for a 10-week research program.<br><br>
+
+    <h5><strong>What message might I want to convey?</strong></h5>
+    My intention behind this project was to find whether "walking it off" is as effective as people like to think it is.<br><br>
+
+    <h5><strong>Data Translation</strong></h5>
+    I began to experiment the different ways I could show all four datapoints: (1) calories gained, (2) calories lost, (3) time spent, and (4) Foursquare rating for each pizza shop I visited.<br><br>
+
+    <h5><strong>Visual Encoding</strong></h5>
+    <img src="<%= image_path("images/project-pizza/graph.JPG") %>" class="zoomImages" style="width:70%;" alt="Translated datapoints into a visualization ">
+    <strong>How "much" is one cell?</strong><br>
+    Having plotted time on the y-axis and the pizza brand on the x-axis, I began thinking about what a single cell on the grid . Looking at the data, I noticed how the calorie counts would fit into multiples of 50. This "unit" of 50 though could not effectively (and was not intuitive) for telling time. Chunking time into 50-minute blocks– 3-3:50pm, 3:50-4:20pm, etc could be confusing!<br><br>
+    I eventually came to using 10-minute blocks for both the calorie count and time for consistency.<br><br>
+    <strong>Making meaning of relationships</strong><br>
+    Another challenge I faced stacking these blocks up a limited amount of space was that calories gained (shaded pink) consistently consumed more space than calories lost (shaded blue). This meant possibly risking legibility for the sake of visual consistency. (See how the first blue column stands just right to the left of the calories gained at the next stop.) <br><br>
+    It was only when I had reconsidered the intrinsic relationship of gain and loss that I came up with the solution– to have the blue cells go on top of/ override the ones shaded in pink so that the remaining pink ones represented the net calories.<br><br>
+
   </div>
 
   <div class="condense">
-    Time and effort that could have been directed towards student engagement and professional growth is spent instead <p class="highlight-janus">carrying out manual administrative processes.</p> Additionally, <p class="highlight-janus">opportunities are lost</p> when students miss deadlines or are rejected due to incomplete documents as a result of the <p class="highlight-janus">disjointed process.</p><br><br>
+
+    <h5><strong>Preparing the Pizza</strong></h5>
+   Now for the fun part!<br><br>
+    I prepared the pizza crust and my choice of toppings: truffle oil, red pepper, mushrooms, baby spinach, and some kale-spinach pesto. I mapped the graph I had drafted out onto the pizza crust. I drew the same time progression line using strips of bell pepper and I thought I'd further highlight the relationship of loss and gain here by using fresh spinach to represent calories gained and then pesto (ground up spinach, among other ingredients) for calories lost.
+
   </div>
+  <img src="<%= image_path("images/project-pizza/ingredients.JPG") %>" class="zoomImages" alt=" ">
 
   <div class="condense">
-  <strong>User Goals</strong><br>
-  <ul>
-      <li>To eliminate as much manual labor (inputting, compiling, storing, and viewing data) possible</li>
-      <li>To provide opportunities for data mining</li>
-      <li>To minimize manual labor, paper and energy waste</li>
-      <li>To introduce a simple yet efficient hiring process that encourages maximum engagement and participation from both SRP faculty and students</li>
-  </ul>
-  <h2><em>"How might we close experience gaps in the current SRP hiring process?"</em></h2><br>
-  <h5><strong>2. Reeaeally understand</strong></h5>
-
-  There are many ways go about designing a product that addresses these problems. However, in order to deliver the solution–one that does not only hit all the goals identified but also maximizes opportunities (for the three user groups)– I needed to ‘digest’ the current workflow and all possible use cases.<br><br>
-          Being an avid (and slightly obsessive) notetaker, I made color-coded diagrams!<br><br>
-  The workflow’s complexities became more digestible to me as I grouped action points together according to the ‘user in action’ (SRP Admin, Faculty, or Student).<br>
+    <br><br>The contrast between the green and red really distinguished the time dimension in relation to the calories gained and lost dimension. I noticed one more thing here– the steepness of the bell pepper shows the 'stretch' of time spent in every stop on the trip. I added in the mushrooms with sizes that correspond to each spot's Foursquare rating.<br><br>
+    And then in to the oven they went!
   </div>
 
-   <img src="<%= image_path("images/project-janus/user-flows.png") %>" class="zoomImages" alt="Janus user flows highlighting each stakeholder">
+  <img src="<%= image_path("images/project-pizza/oven.JPG") %>" class="zoomImages" alt=" ">
+
 
   <div class="condense">
-    I spent time understanding all the interactions necessary for one complete cycle (a.k.a. successfully hiring one student)<br><br>
-  The interaction illustrated by the back and forth and crossing over of actions in my diagram led to an insight that informed my design decisions:<br><br>
+    <h5><strong>My Takeaway</strong></h5>
+    I struggled between data accuracy and expression. Looking back, I should have represented the data I gathered in a more abstract manner (ie. not simply 'copy-paste' the graph on paper). I was afraid that the abstract visualization might not express all the facts in the dataset. I landed somewhere in the middle, using food as the medium through which I presented an accurate chart. Moving forward, I hope to loosen up and experiment with data expression to convey a thought-provoking message through my artwork .
   </div>
 
-  <div class="condense"><h2>The SRP workflow is highly procedural and response-driven.</h2><br>
-  Being a newbie in the team, I approached my project manager to confirm my impressions.<br><br>
-    Looking at the diagram I put together, we carefully identified which steps to adopt, automate, or omit from the current hiring process.</div><br><br>
+  <img src="<%= image_path("images/project-pizza/pizza.png") %>" class="zoomImages" style="width:70%;" alt="Translated datapoints into a visualization ">
 
-  <h5><strong>3. Set up process expectations for the system</strong></h5>
+  <em>And no, you can't just 'walk it off'.</em><br><br>
 
-  <img src="<%= image_path("images/project-janus/system-design.png") %>" class="zoomImages" alt="Setting system design expectations">
-
-  <div class="condense">Instead of taking on all three users’ ends simultaneously, I decided to delve deeper into the faculty side first. Faculty mentors provide the first input between the faculty and student interaction.<br><br>
-
-  <strong>Key Findings (Faculty)</strong><br><br>
-  1. Faculty mentors typically manage three or fewer research projects each summer.<br><br>
-  2. Faculty mentors find some value in the disjointedness of the current hiring process in that they are not overwhelmed by a wave of tasks and deadlines– tasks tend to come in timely email reminders from the admin.<br><br>
-  3. Faculty mentors value accessibility and ease of use. They do not expect the application to have a steep learning curve.<br><br>
-
-  After defining the workflows, constraints, and expected functions for each stakeholder, it was time to dip my toes in the water.<br><br>
-
-  <em>"Do I start with the dashboard? Page navigation?"</em><br><br>
-
-    With the overwhelming amount of liberty I had at this stage, I decided to start with one core feature– <p class="highlight-janus">the application form.</p> I reviewed last summer’s project list to gain more insight on the pieces of information and the level of specificity required for a project posting.<br></div>
-
-  <img src="<%= image_path("images/project-janus/about.png") %>" class="zoomImages" alt="Janus application form for faculty members who want to endorse their research projects for posting">
-
-  <div class="condense">From here, I asked questions like:<br><br>
-
-  <em>“How can a mentor access each application form?…be notified of a successful posting?”</em><br><br>
-    This brought me to design the <p class="highlight-janus">dashboard.</p><br></div>
-
-  <img src="<%= image_path("images/project-janus/dashboard-within@2x.png") %>" class="zoomImages" alt="Faculty view of the Janus dashboard">
-
-  <div class="condense">To expand the scope of my design, I diagrammed use cases ranging from the simple to complex situations that faculty mentors would most likely experience in their hiring journeys.<br><br>
-
-    In doing so, I was able to better identify the expected functionality and features of Janus.<br><br></div>
-
-  <img src="<%= image_path("images/project-janus/use-cases.png") %>" class="zoomImages" alt="Six use cases (including edge cases) for selecting and hiring student researchers">
-
-  <div class="condense"><h5><strong>4. Create designs that nudge decision-making and behavior</strong></h5>
-  The SRP workflow is highly procedural and response-driven.<br><br>
-
-  <h2><em>"How can each stakeholder best accomplish his/her tasks?"</em></h2><br><br>
-
-    The checklist format for completing steps in the process provides the user with <p class="highlight-janus"><strong>contextual guidance</strong></p> at any given time.<br></div>
-
-  <img src="<%= image_path("images/project-janus/progress.png") %>" class="zoomImages" alt="The checklist format provides users with contextual guidance.">
-  <div class="condense">In addition to this, the task-focused user interface is infused with <p class="highlight-janus"><strong>progress indicators</strong></p>…<br></div>
-
-  <img src="<%= image_path("images/project-janus/form.png") %>" class="zoomImages" alt="The progress indicator guides the user as he/she accomplishes tasks">
-  <div class="condense">…and even for tracking higher-level interactions with other users in the system. These features allow users to have a sense of control over a complex, response-driven workflow.<br><br></div>
-
-  <img src="<%= image_path("images/project-janus/cards.png") %>" class="zoomImages" alt="Users have access to high-level information visible throughout the system.">
-
-  <div class="condense">Project cards provide <p class="highlight-janus"><strong>high-level information and status visibility</strong></p> for each project.<br></div>
-
-  <img src="<%= image_path("images/project-janus/status-updates.png") %>" class="zoomImages" alt="Status updates are displayed prominently and remain visible in various states.">
-
-  <div class="condense">Status updates are displayed prominently and remain visible in various states.</div>
-
-  <img src="<%= image_path("images/project-janus/transparency.png") %>" class="zoomImages" alt="After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time.">
-
-  <div class="condense">After completing their share of tasks, faculty mentors <p class="highlight-janus">can monitor the status of each hired student in real-time.</p> Potential roadblocks in the hiring process immediately come to surface in this transparent ecosystem.<br><br>
-
-    <div class="center">
-      <a class="btn__prototype btnRippleEffect" id="prototype-janus" type="button" href="https://projects.invisionapp.com/share/4FOFYWX98ZJ#/screens/324142675" target="_blank">
-        View Prototype
-      </a><br><br><br><br>
-    </div>
-
-    <h5><strong>5. Host focus groups and feedback sessions</strong></h5></div>
-
-      <img src="<%= image_path("images/project-janus/focus.jpeg") %>" class="zoomImages" alt="We held a user feedback session with participating faculty.">
-
-  <div class="condense">The more comprehensive the scope of interaction and design that we opened for feedback and testing, the more valuable and actionable the insights and responses we received. For each feedback session, we made sure the product’s surface area was large enough to elicit valuable discussion and critique/feedback.<br><br>
-
-  We transitioned from showing stakeholders high-level screens and interactions to more personable, workflow-specific flows. In doing so, we gathered responses to design a more inclusive experience. Opening the product for testing at various stages of design also gave our stakeholders an idea of the project development schedule.<br><br>
-
-  <h2><strong>Next Steps</strong></h2><br>
-
-  1. Meet with faculty that showed more interest in sharing their feedback to present them with the changes made based on the feedback received from previous sessions.<br><br>
-
-  2. Set one-on-one client discovery meetings with interested faculty members to discuss opportunities to integrate screening and  interviewing functions within Janus.<br><br>
-
-  3. Synthesize insights from the focus groups and interviews to reinforce or break away from designs at hand.<br><br>
-  <h2><strong>Some Things I Learned</strong></h2>
-
-  <h5>1. It’s practical to build by component.</h5>
-      While designing the student and admin sides, I could spend less time designing buttons, cards, and whatnot moving forward just by reusing the assets I have already created for the faculty end.<br><br>
-
-  <h5>2. Anticipate interactions among all three ends.</h5>
-  Keeping the color-coded workflow in mind, even while designing for just one stakeholder at a time, enabled me to identify features that facilitated end-to-end data transmission and communication.<br><br>
-
-  <h5>3. Seek out feedback by organizing brainstorm and feedback sessions.</h5>
-  Feedback was the most powerful driver of direction– whether it be backtracking to an earlier solution/decision or testing a new hypothesis.<br><br>
-
-  <h5>4. There is always someone I can serve better.</h5>
-    It pays to go out of my way to get to know users, their habits and behaviors in person. This informs my design for features, UI components, and copy to accommodate as many kinds of people as possible– from tech geeks and busy bees to the non tech-savvy and color blind.<br><br><br></div>
-
-  <br>
-  Thanks for reading,
-  <img src="<%= image_path("images/maxine-sig.png") %>" alt="Maxine's signature" id="signature">
 </div><br><br><br><br>
 
 <!--Next Project-->
+<!--Project 2: On the Rocks-->
 <div class="two-col">
   <div class="container__project-image">
-    <img src="<%= image_path("images/tp@2x.png") %>" alt="Treasury Portal Project" class="img-project drop-shadow">
+    <img src="<%= image_path("images/project-ice/ice-all.JPG") %>" alt="on the rocks" class="img-project">
   </div>
   <div class="container__project-text">
-      <h3 class="treasury-color"><strong>↓ NEXT PROJECT</strong></h3><br>
-      <div class="project__text-title"><div class="treasury-color"><strong>Treasury Portal</strong></div> –– Designing an enterprise system with high data density<br><br></div>
-      <div class="project__text-details">
-          <h3 class="treasury-color">CLIENT</h3>NYU Treasury
-          <h3 class="treasury-color">ROLE</h3>Product Designer
-          <h3 class="treasury-color">DURATION</h3>June 2018-Present<br><br><br>
-      </div>
-      <a href="/projects/treasury" class="view__link view__link-padding">View Project &rarr;</a>
+    <h3 class="default-spec-color"><strong>↓ NEXT PROJECT</strong></h3><br>
+    <div class="project__text-title"><div class="default-color"><strong>On the Rocks</strong></div>
+      <br><br></div>
+    <div class="project__text-details">
+      <h3 class="default-spec-color">PROJECT</h3>Visualizing the melting rate of ice sheets in the Antarctic
+      <h3 class="default-spec-color">TIMEFRAME</h3>February 2019<br><br><br>
+    </div>
+    <a href="/projects/ice" class="view__link view__link-padding">View Project Doc &rarr;</a>
   </div>
 </div>
 <br><br><br><br><br><br><br><br>

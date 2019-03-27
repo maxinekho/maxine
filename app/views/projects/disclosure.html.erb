@@ -1,0 +1,94 @@
+<!--JS-->
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
+
+<!--Stylesheet-->
+<%= stylesheet_link_tag "style-project" %>
+
+<!--Navigation-->
+<nav class="top-nav">
+  <section class="nav-title">
+    <a class="black active-nav">MAXINE KHO</a>
+  </section>
+  <section class="nav-links">
+    <a class="black inactive-nav" href="/">Work</a>
+    <a class="black inactive-nav" href="/about">About</a>
+  </section>
+</nav>
+
+<!--Progress Bar-->
+<div class="progress-indicator">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="zoomModal" class="modal">
+
+    <!-- The Close Button -->
+    <div class="tooltip">Hover over me
+        <span class="close">&times;</span>
+        <span class="tooltip-text">Close</span>
+    </div>
+
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<!--Title + Content-->
+<div class="container">
+  <br><br><br><br>
+  <h1><strong>Disclosure-ify Yourself</strong></h1>
+  <br>
+
+  <!--Project Intro + Summary-->
+  <div class="two-col">
+
+    <!--Project Intro-->
+    <div>
+      <p>I created a Disclosure-inspired scribble face generator using p5.js for my Creative Coding class in the Fall of my sophomore year. I took Kyle McDonald's CLM based face tracking model and created a Disclosure-esque svg path outline to trace the detected features.<br><br>
+
+        Check it out ↓</p>
+    </div>
+
+    <!--Project Summary-->
+      <div>
+        <h4><strong>ABOUT</strong><br></h4>
+              <strong>Timeframe:</strong> December 2017<br>
+              <strong>Tools:</strong> p5 via OpenProcessing<br>
+              <strong>Class:</strong> Creative Coding<br><br>
+      </div>
+  </div><br><br>
+
+  <iframe src="https://www.openprocessing.org/sketch/487935/embed/?plusEmbedHash=ZDQ5ZjhmMmY0ZGY2YjJlYzkyYzM0ZjZmOWQ1OGYzZDY1ZjlhMzM3Yzc0YzUzNTAyN2Q0YTkwYWJkMGRlMTg3NDdmMzgxZDRlOTIyMTZhZDNiZmI0MzEwMmVmMDk3N2YzZWFhYzA2M2NmOWIzODcwZTc3MmU1MDI4MzM1Nzc3ZDJydnBjbWdjOU1vV3ZyTFpodmYzS0tGOHJyM0o5TjAwYjVSckNpM3JGbjZXdmpFTW5lOG9tazlnVVhHcFhLZU5WajFQNnFoeDdjZVBxaWNuWTRmZ2RyZz09&plusEmbedTitle=true" width="640" height="480"></iframe><br><br><br><br>
+
+  Enjoy,
+  <img src="<%= image_path("images/maxine-sig.png") %>" alt="Maxine's signature" id="signature">
+</div><br><br><br><br>
+
+<!--Next Project-->
+<div class="two-col">
+  <div class="container__project-image">
+    <img src="<%= image_path("images/project-lucky-cat/lucky-cat.gif") %>" alt="lucky cat wave" class="img-project">
+  </div>
+  <div class="container__project-text">
+    <h3 class="default-spec-color"><strong>↓ NEXT PROJECT</strong></h3><br>
+    <div class="project__text-title"><div class="default-color"><strong>Lucky Cat Wave</strong></div>
+      <br><br></div>
+    <div class="project__text-details">
+      <h3 class="default-spec-color">PROJECT</h3>Wish upon a lucky cat
+      <h3 class="default-spec-color">USING</h3>ESP8266, Arduino (aREST), Processing (p5.js)
+      <h3 class="default-spec-color">TIMEFRAME</h3>March 2019<br><br><br>
+    </div>
+    <a href="/projects/luckycat" class="view__link view__link-padding">View Project Doc &rarr;</a>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593;</button>
+
+<%= render "home/footer" %>
