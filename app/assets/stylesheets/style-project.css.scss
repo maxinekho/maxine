@@ -532,8 +532,9 @@ div.sm-links {
 
 
 @media (max-width: 800px) {
-    body {
-        margin: 0 1em 1em;
+    body{
+        margin: 1em;
+        font-size: 1em;
     }
 
     .top-nav {
@@ -542,7 +543,7 @@ div.sm-links {
     }
 
     .progress-indicator {
-        top: 5.3em;
+        top: 2.8em;
     }
 
     .condense {
@@ -560,13 +561,31 @@ div.sm-links {
         grid-column-gap: 0;
     }
 
-    .container__project-image{
-        margin: 0 2em;
-        width: 80%;
+    .container-projects {
+        display: block;
+        justify-self: center;
+        margin-bottom: 4em;
+        margin-top: 4em;
     }
 
     .container__project-text {
-        padding: 0 2em;
+        width: 80%;
+        padding-left: 3em;
+    }
+
+    .container__project-image {
+        margin: 0 auto;
+        padding-left: 3em;
+    }
+
+    .container__project-text > a {
+        display: block;
+        width: 60%;
+    }
+
+    .close {
+        font-size: 30px;
+        right: 20px;
     }
 
     video {

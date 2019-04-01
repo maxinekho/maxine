@@ -26,15 +26,27 @@ body {
     max-width: 1.5em;
 }
 
+.column-two, .column-three {
+    margin-top: 4em;
+}
+
 .list {
     display: inline-flex;
 }
 
 @media screen and (max-width:800px){
-    body {
+    body{
+        margin: 3em;
         font-size: 1em;
-        margin-left: 2em;
-        margin-right: 2em;
+    }
+
+    .top-nav {
+        font-size: 0.6em;
+        margin: 0;
+    }
+
+    .column-two, .column-three {
+        margin-top: 0;
     }
 
     div.resume-grid {
@@ -42,19 +54,5 @@ body {
         grid-template-columns: 1fr;
         grid-column-gap: 0;
         grid-row-gap: 0;
-    }
-
-    .column-one {
-        width: 100%;
-        margin: 0;
-    }
-
-    div.column-two {
-        width: 100%;
-        margin: 0;
-    }
-
-    .column-three {
-        margin: 0;
     }
 }

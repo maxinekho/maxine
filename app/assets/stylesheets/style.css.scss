@@ -460,13 +460,28 @@ div.sm-links {
         font-size: 1em;
     }
 
+    #profile_photo {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    div.header {
+        display: block;
+    }
+
+    section.nav-links{
+        margin-right: 1em;
+    }
+
+
     .top-nav {
-        font-size: 1em;
-        font-weight: 700;
+        font-size: 0.6em;
+        margin: 0;
     }
 
     h1 {
         font-size: 4em;
+        line-height: 1em;
     }
 
     h3 {
@@ -476,37 +491,52 @@ div.sm-links {
     .header-intro {
         margin-left: 1em;
         padding: 2em;
-        font-size: 50%;
-        text-align: center;
     }
 
     .two-col {
         grid-template-columns: 1fr;
     }
 
+    section.project-types {
+        padding-left: 0;
+    }
+
+    a.project-type {
+        display: inline;
+        padding: 0;
+        margin: 1em;
+        font-size: 0.8em;
+    }
+
     .container-projects {
         display: block;
         justify-self: center;
         margin-bottom: 4em;
-        margin-top: 6em;
+        margin-top: 4em;
     }
 
     .container__project-text {
-        width: 90%;
-        padding-left: 2em;
+        width: 80%;
+        padding-left: 3em;
     }
 
     .container__project-image {
-        justify-content: center;
+        margin: 0 auto;
+        padding-left: 3em;
+    }
+
+    .container__project-text > a {
+        display: block;
+        width: 60%;
     }
 
     footer {
-        padding: 0 1em;
+        width: 100%;
+        justify-content: center;
     }
 
     footer.sm-links {
         display: inline-flex;
         padding: 0 1em;
-        justify-content: center;
     }
 }
