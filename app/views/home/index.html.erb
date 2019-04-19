@@ -7,207 +7,27 @@
 <!--Page Title-->
 <% title "MAXINE KHO" %>
 
-<!--Navigation-->
-<nav class="top-nav">
-    <section class="nav-title">
-        <a class="black active-nav">MAXINE KHO</a>
-    </section>
-    <section class="nav-links">
-        <a class="black active-nav" href="/">Work</a>
-        <a class="black inactive-nav" href="/about">About</a>
-    </section>
-</nav>
-
 <!--Header-->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <div class="header">
-    <div class="header-photo">
-        <img src="<%= image_path("images/max-pic.jpg") %>" alt="maxine's photo" id="profile_photo"><br>
-    </div>
+    <h3 style="">Coming soon</h3>
+</div>
+<div class="header">
     <div class="header-intro">
-        <h1>I'm <strong>Maxine–</strong></h1>
-        <h1 class="bio">Manila-born foodie and product designer based in New York City. I'm passionate about designing products that look good and do good.
-        </h1>
-        <a class="dashed" href="https://engineering.nyu.edu/" target="_blank">NYU Tandon</a> 2020 Integrated Digital Media<br>
-        Product Designer at <a class="dashed" href="https://www.nyu.edu/life/information-technology/about-nyu-it.html">NYU IT</a>
-    </div>
+      <p style="letter-spacing: 0.2em"><strong>MAXINE KHO</p></strong>
+        <a class="dashed" href="https://engineering.nyu.edu/" target="_blank">NYU Tandon</a> 2020<br>
+        Incoming Product Design Intern at <a class="dashed" href="https://facebook.design/">Facebook</a><br><br><br>
+      <a class="dashed" href="mailto:maxinekho@nyu.edu">Email</a> &nbsp;•&nbsp;
+      <a class="dashed" href="https://www.behance.net/maxinekho" target="_blank">Behance</a> &nbsp;•&nbsp;
+      <a class="dashed" href="https://www.linkedin.com/in/maxinekho/" target="_blank">LinkedIn</a> &nbsp;•&nbsp;
+      <a class="dashed" href="https://www.are.na/maxine-kho" target="_blank">Are.na</a>
+      </div>
 </div>
-
-<!--Scroll Down-->
-<div class="animated bounce" id="scroll-down-arrow"><h1>&#42780;</h1></div>
-
-<section class="project-types">
-        <a class="project-type active-tab" id="product-design" onclick=showProjects('product-design')>Design</a>
-        <a class="project-type" id="data-art" onclick=showProjects('data-art'); >Data Art</a>
-        <a class="project-type" id="play" onclick=showProjects('play');>Play</a>
-</section>
-
-<!--Projects: Product Design-->
-<div class="container-projects" id="product-design">
-    <!--Project 1: Janus-->
-    <div class="two-col project-index">
-        <div class="container__project-image">
-            <img src="<%= image_path("images/janus@2x.png") %>" alt="janus" class="img-project drop-shadow">
-        </div>
-        <div class="container__project-text">
-            <h3 class="janus-color"><strong>↓ PROJECT NO. 01</strong></h3><br>
-            <div class="project__text-title"><div class="janus-color"><strong>Janus</strong></div>– Simplifying a labor-intensive hiring process<br><br></div>
-            <div class="project__text-details">
-              <h3 class="janus-color">PARTNER</h3>NYU Office of Undergraduate Academics
-              <h3 class="janus-color">ROLE</h3>Product Designer
-              <h3 class="janus-color">TIMEFRAME</h3>February - December 2018<br><br><br>
-            </div>
-            <a href="/projects/janus" class="view__link view__link-padding">View Case Study &rarr;</a>
-        </div>
-    </div>
-
-    <!--Project 2: Treasury Portal-->
-    <div class="two-col project-index">
-        <div class="container__project-image">
-            <img src="<%= image_path("images/tp@2x.png") %>" alt="treasury portal" class="img-project drop-shadow">
-        </div>
-        <div class="container__project-text">
-            <h3 class="treasury-color"><strong>↓ PROJECT NO. 02</strong></h3><br>
-            <div class="project__text-title"><div class="treasury-color"><strong>Treasury Portal</strong></div>– Designing an enterprise system with high data density<br><br></div>
-            <div class="project__text-details">
-                <h3 class="treasury-color">PARTNER</h3>NYU Treasury
-                <h3 class="treasury-color">ROLE</h3>Product Designer
-                <h3 class="treasury-color">TIMEFRAME</h3>June 2018 - January 2019<br><br><br>
-            </div>
-            <a href="/projects/treasury" class="view__link view__link-padding">View Case Study &rarr;</a>
-        </div>
-    </div>
-
-    <!--Project 3: OpenTable Tab-->
-    <div class="two-col project-index">
-        <div class="container__project-image">
-            <img src="<%= image_path("images/opentable2x.png") %>" alt="opentable tab" class="img-project">
-        </div>
-        <div class="container__project-text">
-            <h3 class="open-table-tab-color"><strong>↓ PROJECT NO. 03</strong></h3><br>
-            <div class="project__text-title"><div class="open-table-tab-color"><strong>OpenTable Tab</strong></div>– Streamlining the social smart-dining experience<br><br></div>
-            <div class="project__text-details">
-                <h3 class="open-table-tab-color">PROJECT</h3>A 13-week design challenge
-                <h3 class="open-table-tab-color">USING</h3>Product Thinking, User Research, Visual Design
-                <h3 class="open-table-tab-color">TIMEFRAME</h3>February - May 2018<br><br><br>
-            </div>
-            <a href="/projects/opentable" class="view__link view__link-padding">View Case Study &rarr;</a>
-        </div>
-    </div>
-</div>
-
-
-<!--Projects: Data Driven Art-->
-<div class="container-projects" id="data-art" style="display:none">
-    <!--Project 1: A Pizz'a My Data-->
-    <div class="two-col project-index">
-        <div class="container__project-image">
-            <img src="<%= image_path("images/project-pizza/pizza.png") %>" alt="pizza" class="img-project">
-        </div>
-        <div class="container__project-text">
-            <h3 class="default-spec-color"><strong>↓ PROJECT NO. 01</strong></h3><br>
-            <div class="project__text-title"><div class="default-color"><strong>A Pizz'a My Data</strong></div>
-              <br><br></div>
-            <div class="project__text-details">
-              <h3 class="default-spec-color">PROJECT</h3>I baked my own health data from a pizza hop (and then ate it)
-              <h3 class="default-spec-color">TIMEFRAME</h3>February 2019<br><br><br>
-            </div>
-          <a href="/projects/pizza" class="view__link view__link-padding">View Project Doc &rarr;</a>
-        </div>
-    </div>
-
-    <!--Project 2: On the Rocks-->
-    <div class="two-col project-index">
-        <div class="container__project-image">
-          <img src="<%= image_path("images/project-ice/ice-all.JPG") %>" alt="on the rocks" class="img-project">
-        </div>
-        <div class="container__project-text">
-            <h3 class="default-spec-color"><strong>↓ PROJECT NO. 02</strong></h3><br>
-            <div class="project__text-title"><div class="default-color"><strong>On the Rocks</strong></div>
-              <br><br></div>
-            <div class="project__text-details">
-              <h3 class="default-spec-color">PROJECT</h3>Visualizing the melting rate of ice sheets in the Antarctic
-              <h3 class="default-spec-color">TIMEFRAME</h3>February 2019<br><br><br>
-            </div>
-        <a href="/projects/ice" class="view__link view__link-padding">View Project Doc &rarr;</a>
-      </div>
-  </div>
-</div>
-
-<!--Projects: Play-->
-<div class="container-projects" id="play" style="display:none">
-  <!--Project 1: Fortune Cookie Love Machine-->
-  <div class="two-col project-index">
-    <div class="container__project-image">
-      <img src="<%= image_path("images/project-fortune-cookie/fortune-cookie.gif") %>" alt="fortune cookie" class="img-project">
-    </div>
-    <div class="container__project-text">
-      <h3 class="default-spec-color"><strong>↓ PROJECT NO. 01</strong></h3><br>
-      <div class="project__text-title"><div class="default-color"><strong>Fortune Cookie Love Machine</strong></div>
-        <br><br></div>
-      <div class="project__text-details">
-        <h3 class="default-spec-color">PROJECT</h3>A by-the-minute countdown to when you will meet your soulmate
-        <h3 class="default-spec-color">USING</h3>Arduino, magnetic reed switch
-        <h3 class="default-spec-color">TIMEFRAME</h3>February 2019<br><br><br>
-      </div>
-      <p style="font-weight: 700;">Coming soon</p>
-      <!--            <a href="/projects/" class="view__link view__link-padding">View Project &rarr;</a>-->
-    </div>
-  </div>
-
-  <!--Project 2: Lucky Cat Wave-->
-  <div class="two-col project-index">
-    <div class="container__project-image">
-      <img src="<%= image_path("images/project-lucky-cat/lucky-cat.gif") %>" alt="lucky cat wave" class="img-project">
-    </div>
-    <div class="container__project-text">
-      <h3 class="default-spec-color"><strong>↓ PROJECT NO. 02</strong></h3><br>
-      <div class="project__text-title"><div class="default-color"><strong>Lucky Cat Wave</strong></div>
-        <br><br></div>
-      <div class="project__text-details">
-        <h3 class="default-spec-color">PROJECT</h3>Wish upon a lucky cat
-        <h3 class="default-spec-color">USING</h3>ESP8266, Arduino (aREST), Processing (p5.js)
-        <h3 class="default-spec-color">TIMEFRAME</h3>March 2019<br><br><br>
-      </div>
-      <a href="/projects/luckycat" class="view__link view__link-padding">View Project Doc &rarr;</a>
-    </div>
-  </div>
-
-  <!--Project 3: Interactive Webpage-->
-  <div class="two-col project-index">
-    <div class="container__project-image">
-      <img src="<%= image_path("images/project-interactive-css/interactive-css.gif") %>" style="max-width: 60%; margin-left: auto; margin-right: auto;" alt="interactive webpage" class="img-project">
-    </div>
-    <div class="container__project-text">
-      <h3 class="default-spec-color"><strong>↓ PROJECT NO. 03</strong></h3><br>
-      <div class="project__text-title"><div class="default-color"><strong>Interactive Webpage</strong></div>
-        <br><br></div>
-      <div class="project__text-details">
-        <h3 class="default-spec-color">PROJECT</h3>Control webpage CSS hosted on the microcontroller
-        <h3 class="default-spec-color">USING</h3>Arduino, webserver, potentiometer
-        <h3 class="default-spec-color">TIMEFRAME</h3>March 2019<br><br><br>
-      </div>
-      <p style="font-weight: 700;">Coming soon</p>
-      <!--      <a href="/projects/" class="view__link view__link-padding">View Project &rarr;</a>-->
-    </div>
-  </div>
-
-  <!--Project 4: Disclosure-ify Yourself-->
-  <div class="two-col project-index">
-    <div class="container__project-image">
-      <img src="<%= image_path("images/project-disclosure-ify/disclosure.gif") %>" alt="disclosure-ify yourself" class="img-project">
-    </div>
-    <div class="container__project-text">
-      <h3 class="default-spec-color"><strong>↓ PROJECT NO. 04</strong></h3><br>
-      <div class="project__text-title"><div class="default-color"><strong>Disclosure-ify Yourself</strong></div>
-        <br><br></div>
-      <div class="project__text-details">
-        <h3 class="default-spec-color">PROJECT</h3>A scribble face generator
-        <h3 class="default-spec-color">USING</h3>p5 via OpenProcessing
-        <h3 class="default-spec-color">TIMEFRAME</h3>December 2017<br><br><br>
-      </div>
-      <a href="/projects/disclosure" class="view__link view__link-padding">View Project Doc &rarr;</a>
-    </div>
-  </div>
-</div>
-
-<%= render "footer" %>
+</body>
