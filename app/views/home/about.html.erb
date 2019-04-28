@@ -1,80 +1,68 @@
-<!--Navigation-->
-<nav class="top-nav">
-  <section class="nav-title">
-    <a class="black active-nav">MAXINE KHO</a>
-  </section>
-  <section class="nav-links">
-    <a class="black inactive-nav" href="/">Work</a>
-    <a class="black active-nav" href="/about">About</a>
-  </section>
-</nav><br><br><br><br>
-
 <!--Stylesheet-->
- <%= stylesheet_link_tag "style-resume" %>
+ <%= stylesheet_link_tag "style" %>
 
 <!--Page Title-->
 <% title "About –– MAXINE KHO" %>
 
-<div class="resume-grid">
-  <div class="column-one">
-      <!--Name-->
-    <h1><strong><p style="font-family: bagnard, sans-serif; font-size: 1.6em;">Nice to meet you<em>!</em></p></strong></h1><br>
-    <h1><strong>I'm Maxine.</strong></h1><br>
+<!--Navigation-->
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="active-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
+</nav>
+
+<!--Bulk Content-->
+<div class="bulk-content">
+
+  <div class="row">
+    <div class="col-md-5ths project-this">
+      <h3 class="channel-orange">NICE TO MEET YOU</h3><br>
+      <div class="channel-orange"><strong>I'm Maxine</strong></div><br><br>
+      Born 1997, Manila<br>
+      Currently in New York<br>
+      ↳ Junior at <a href="https://engineering.nyu.edu/" class="dashed" target="_blank">NYU Tandon</a>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+      <br><br><br><br>
+      The value of design became very clear to me for the first time as a fresh-out-of-high-school intern leading the newsletter redesign at <a href="https://www.mykuya.com/" class="dashed" target="_blank">HeyKuya</a>.<br><br> Since then, I find myself <p style="text-decoration: underline orangered; display: inline;">experimenting with</p><p class="channel-orange"></p><sup><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">[breaking]</h3></sup>and making meaning of all things design.<br><br>
+    </div>
+    <div class="col-md-5ths">
+      <br><br><br><br>
+      Previously <a href="https://www.thesparkproject.com/" class="dashed" target="_blank">The Spark Project</a>, <a href="http://vigi.ph/" class="dashed" target="_blank">Vigi</a>, and Blushup.<br><br>
+      Currently at <a href="https://www.nyu.edu/life/information-technology/about-nyu-it.html" class="dashed" target="_blank">NYU IT</a> designing software solutions that help make the workplace a more rewarding place to be.<br><br>
+      Incoming Product Design intern at <a href="https://facebook.design/" class="dashed" target="_blank">Facebook</a>.
+    </div>
+    <div class="col-md-5ths">
+      <br><br><br><br>
+    </div>
   </div>
 
-  <div class="column-two">
-      <!--Bio-->
-      <strong>Born 1997, Manila.</strong>
-      <br><br><br>
-
-    <strong>Since the age of nine, I knew that I love making things with my hands.</strong><br><br><br>
-      With a background in fine art, I first fell in love with graphic design, taking on <a href="https://www.behance.net/maxinekho" class="dashed" target="_blank">freelance projects</a> since my junior year in high school.<br><br>
-      In 2015, I took a gap year and discovered UX/ Product Design at <a href="https://www.behance.net/gallery/38408961/HeyKuya" class="dashed" target="_blank">HeyKuya</a>.<br><br>
-      A year later, I moved to NYC! <br>
-  </div>
-
-  <div class="column-three">
-    <!--Work Experience-->
-    Previously at <a href="https://www.thesparkproject.com/" class="dashed" target="_blank">The Spark Project</a>, <a href="https://www.linkedin.com/company/blushup/" class="dashed" target="_blank">Blushup Beauty</a>, <a href="http://vigi.ph/" class="dashed" target="_blank">Vgrafiks Design Studio.</a><br><br>
-    Currently at <a href="https://www.nyu.edu/life/information-technology/about-nyu-it.html" class="dashed" target="_blank">NYU IT</a> where I design software solutions that help make the workplace a more rewarding place to be.<br><br><br>
-<!--    Tools<br>-->
-<!--    <section class="list">-->
-<!--      <img src="<%#= image_path("images/sketch_logo.png") %>">-->
-<!--      <img src="<%#= image_path("images/invision_logo.png") %>">-->
-<!--      <img src="<%#= image_path("images/abstract_logo.png") %>">-->
-<!--      <img src="<%#= image_path("images/figma_logo.jpg") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-adobe_creative_cloud.png") %>">-->
-<!--      <img src="<%#= image_path("images/invision_logo.svg") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-git.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-github.png") %>">-->
-<!--      <img src="<%#= image_path("images/google_analytics_logo.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-wordpress.png") %>">-->
-<!--    </section><br><br>-->
-<!--    Languages<br>-->
-<!--    <section class="list">-->
-<!--      <img src="<%#= image_path("images/icons8-html_5.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-css3.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-js.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-python.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-ruby_programming_language.png") %>">-->
-<!--      <img src="<%#= image_path("images/icons8-asterisk.png") %>">-->
-<!--    </section><br><br>-->
-    What gets me fired up<br>
-    <section class="list">
-      <img src="<%= image_path("images/icons8-boxing.png") %>">
-      <img src="<%= image_path("images/icons8-cookies.png") %>">
-      <img src="<%= image_path("images/icons8-arduino.png") %>">
-      <img src="<%= image_path("images/icons8-paint_palette.png") %>">
-      <img src="<%= image_path("images/icons8-brain.png") %>">
-      <img src="<%= image_path("images/icons8-airport.png") %>">
-      <img src="<%= image_path("images/icons8-music_record.png") %>">
-    </section><br><br>
-    Literally?<br>
-    <section class="list">
-      <img src="<%= image_path("images/shrimp.png") %>"> &nbsp;
-      <img src="<%= image_path("images/crab.png") %>">
-    </section>
-  </div>
-</div><br><br><br><br><br><br><br>
+</div>
 
 <%= render "footer" %>

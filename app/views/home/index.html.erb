@@ -7,27 +7,272 @@
 <!--Page Title-->
 <% title "MAXINE KHO" %>
 
-<!--Header-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="header">
-    <h3 style="">Coming soon</h3>
-</div>
-<div class="header">
-    <div class="header-intro">
-      <p style="letter-spacing: 0.2em"><strong>MAXINE KHO</p></strong>
-        <a class="dashed" href="https://engineering.nyu.edu/" target="_blank">NYU Tandon</a> 2020<br>
-        Incoming Product Design Intern at <a class="dashed" href="https://facebook.design/">Facebook</a><br><br><br>
-      <a class="dashed" href="mailto:maxinekho@nyu.edu">Email</a> &nbsp;•&nbsp;
-      <a class="dashed" href="https://www.behance.net/maxinekho" target="_blank">Behance</a> &nbsp;•&nbsp;
-      <a class="dashed" href="https://www.linkedin.com/in/maxinekho/" target="_blank">LinkedIn</a> &nbsp;•&nbsp;
-      <a class="dashed" href="https://www.are.na/maxine-kho" target="_blank">Are.na</a>
+<!--Navigation-->
+<body>
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="active-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
+</nav>
+
+<!--Page Content-->
+<div class="bulk-content">
+
+  <div class="row project-nav">
+    <div class="col-md-5ths">
+      Selected works<br><br>
+    </div>
+    <div class="col-md-5ths">
+      <a class="project-type active-type" id="product-design" onclick=showProjects('product-design')>Design</a> <br>
+      <a class="project-type" id="data-art" onclick=showProjects('data-art')>Data Art</a> <br>
+      <a class="project-type" id="play" onclick=showProjects('play')>Play</a><br>
+      <a class="project-type" id="motion" onclick=showProjects('motion')>Motion</a>
+    </div>
+    </div>
+
+  <!--Projects: Product Design-->
+  <div class="container-projects" id="product-design">
+
+    <div class="row">
+      <div class="col-md-5ths">
       </div>
-</div>
+      <div class="col-md-5ths">
+      </div>
+        <!--Project 1: Janus-->
+        <div class="col-md-2-5ths project-index">
+          <div class="project-image">
+            <img src="<%= image_path("images/janus@2x.png") %>" alt="janus">
+          </div>
+        </div>
+        <div class="col-md-5ths text-center">
+          <h3 class="channel-orange">↓ 01</h3><br>
+          <strong>Janus</strong><br>
+          Simplifying a labor-intensive hiring process
+          <br><br>
+          <a href="/projects/janus" class="dashed">View the case study &rarr;</a>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 2: Treasury Portal-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/tp@2x.png") %>" alt="treasury portal">
+        </div>
+      </div>
+      <div class="col-md-5ths text-center">
+        <h3 class="channel-orange">↓ 02</h3><br>
+        <strong>Treasury Portal</strong><br>
+        Designing an enterprise system with high data density<br><br>
+        <a href="/projects/treasury" class="dashed">View the case study &rarr;</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 3: OpenTable Tab-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/opentable2x.png") %>" alt="opentable tab">
+        </div>
+      </div>
+      <div class="col-md-5ths text-center">
+        <h3 class="channel-orange">↓ 03</h3><br>
+        <strong>OpenTable Tab</strong><br>
+        Split the check without losing friends<br><br>
+        <h3 class="channel-orange">Available upon <a href="mailto:maxinekho@nyu.edu" class=" channel-orange">request</a></h3>
+      </div>
+    </div>
+  </div>
+
+    <!--Projects: Data Art-->
+  <div class="container-projects" id="data-art" style="display:none">
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 1: Portrait of a Dish-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/dish.svg") %>" alt="pizza" class="img-project">
+        </div>
+      </div>
+      <div class="col-md-5ths text-center">
+        <h3 class="channel-orange"><strong>↓ 01</strong></h3><br>
+        <strong>Portrait of a Dish</strong><br>
+        A culinary breakdown<br><br>
+        <h3 class="channel-orange">Coming soon</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 2: A Pizz'a My Data-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/project-pizza/pizza.png") %>" alt="pizza" class="img-project">
+        </div>
+      </div>
+        <div class="col-md-5ths text-center">
+          <h3 class="channel-orange"><strong>↓ 02</strong></h3><br>
+          <strong>A Pizz'a My Data</strong><br>
+          I baked (and ate) my own health data from a pizza hop<br><br>
+          <a href="/projects/pizza" class="dashed">View the project doc &rarr;</a>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 3: On the Rocks-->
+      <div class="col-md-2-5ths project-index">
+          <div class="project-image">
+            <img src="<%= image_path("images/project-ice/ice-all.JPG") %>" alt="on the rocks" class="img-project">
+          </div>
+        </div>
+          <div class="col-md-5ths text-center">
+            <h3 class="channel-orange">↓ 03</h3><br>
+            <strong>On the Rocks</strong><br>
+            Visualizing the melting rate of ice sheets in the Antarctic<br><br>
+            <a href="/projects/ice" class="dashed">View the project doc &rarr;</a>
+          </div>
+        </div>
+    </div>
+
+  <!--Projects: Play-->
+  <div class="container-projects" id="play" style="display:none">
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 1: Fortune Cookie Love Machine-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/project-fortune-cookie/fortune-cookie.gif") %>" alt="fortune cookie">
+        </div>
+        </div>
+        <div class="col-md-5ths text-center">
+          <h3 class="channel-orange"><strong>↓ 01</strong></h3><br>
+          <strong>Fortune Cookie Love Machine</strong>
+          A by-the-minute countdown to when you will meet your soulmate<br><br>
+          <h3 class="channel-orange">Coming soon</h3>
+        </div>
+      </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 2: Lucky Cat Wave-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/project-lucky-cat/lucky-cat.gif") %>" alt="lucky cat wave">
+        </div>
+      </div>
+      <div class="col-md-5ths text-center">
+        <h3 class="channel-orange">↓ 02</h3><br>
+        <strong>Lucky Cat Wave</strong><br>
+        Wish upon a lucky cat<br><br>
+        <a href="/projects/luckycat" class="dashed">View the project doc &rarr;</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 3: Disclosure-ify Yourself-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/project-disclosure-ify/disclosure.gif") %>" alt="disclosure-ify yourself">
+        </div>
+      </div>
+        <div class="col-md-5ths text-center">
+          <h3 class="channel-orange">↓ 03</h3><br>
+          <strong>Disclosure-ify Yourself</strong><br>
+          A scribble face generator<br><br>
+          <a href="/projects/disclosure" class="dashed">View the project doc &rarr;</a>
+        </div>
+    </div>
+  </div>
+
+  <!--Projects: Motion-->
+  <div class="container-projects" id="motion" style="display:none">
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 1: Laundry Room-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/brillo.png") %>" alt="laundry room">
+        </div>
+      </div>
+      <div class="col-md-5ths text-center">
+        <h3 class="channel-orange"><strong>↓ 01</strong></h3><br>
+        <strong>Laundry Time</strong><br>
+        Peek inside the neighborhood laundry room<br><br>
+        <h3 class="channel-orange">Coming soon</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-5ths">
+      </div>
+      <div class="col-md-5ths">
+      </div>
+      <!--Project 2: How to Deseed an Avocado-->
+      <div class="col-md-2-5ths project-index">
+        <div class="project-image">
+          <img src="<%= image_path("images/avocado") %>" alt="how to deseed an avocado">
+        </div>
+      </div>
+      <div class="col-md-5ths text-center">
+        <h3 class="channel-orange">↓ 02</h3><br>
+        <strong>How to Deseed an Avocado</strong><br>
+        Farm to (O.R.) table goodness<br><br>
+        <a href="https://vimeo.com/332132239" class="dashed">Watch it in full ↗</a>
+      </div>
+    </div>
+  </div>
+
+</div><br>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
+
+<!--Footer-->
+<%= render "home/footer" %>
+
 </body>

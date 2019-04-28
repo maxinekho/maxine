@@ -1,24 +1,19 @@
+// Fontfaces
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
 @font-face {
-    font-family: 'bagnardsans';
-    src: url('bagnardsans.otf'); /* IE9 Compat Modes */
-    src: url('bagnardsans.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    font-family: "commmaxon";
+    src: url("CommonSans-Regular.otf") format("opentype");
 }
 
-@font-face {
-    font-family: 'youngserif-regular';
-    src: url('youngserif-regular.otf'); /* IE9 Compat Modes */
-    src: url('youngserif-regular.otf?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-}
-
+// HTML
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -ms-overflow-style: scrollbar;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 // Breakpoints
@@ -37,14 +32,16 @@ $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Font-Size
-$base-font-size: 13px;
+$base-font-size: 14px;
 
 // Line-Height
 $base-line-height: 1.5em;
 $header-line-height: 1.25;
 
+// Body
 body {
-    font-family: Karla, sans-serif;
+    font-family: "commmaxon", sans-serif;
+    letter-spacing: 0.05em;
     font-size: $base-font-size;
     line-height: $base-line-height;
     @media #{$mq-medium} {
@@ -70,21 +67,334 @@ body {
     }
 }
 
-.header {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 15em;
-    margin-bottom: 8em;
+// Grid system
+
+.row {
+    display: flex;
 }
 
-.header-intro {
-    padding: 0 5em;
-    margin-left: 3.5em;
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+.col-xs-2-5ths,
+.col-sm-2-5ths,
+.col-md-2-5ths,
+.col-lg-2-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.col-xs-2-5ths {
+    width: 40%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-2-5ths {
+        width: 40%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-2-5ths {
+        width: 40%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-2-5ths {
+        width: 40%;
+        float: left;
+    }
+}
+
+// Back to Top
+#backToTop {
+    display: none;
+    position: fixed;
+    bottom: 5em;
+    right: 8em;
+    color: orangered;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    background-repeat:no-repeat;
+    font-size: 1em;
+    z-index: 150;
+    }
+
+#backToTop:hover {
+    opacity: 0.7;
+
+    #backToTop:focus {
+        outline: none;
+        border: none;
+    }
+
+    #backToTop:active {
+        border: none;
+        outline: none;
+    }
+}
+
+// Page sections
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2em 2em;
+    z-index: 100;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255, 0));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1), rgba(255,255,255, 0));
+}
+
+.footer {
+    padding: 2em 2em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+    background: -moz-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255, 1));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255, 1));
+}
+
+.inactive-nav {
+    color: black;
+}
+
+.active-nav {
+    font-style: italic;
+}
+
+.progress-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+
+.progress-container {
+    width: 100%;
+    height: 0.2em;
+    color: white;
+}
+
+/* Scroll Indicator */
+.progress-bar {
+    height: 0.2em;
+    background: orangered;
+    width: 0;
+}
+
+/*Image*/
+.zoomImages {
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 20% 20%;
+}
+
+.zoomImages:hover {
+    opacity: 0.7;
+}
+
+/* The Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    padding-top: 7em; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: 0 auto auto;
+    display: block;
+    width: 100%;
+    max-width: 50em;
+}
+
+/* Caption of Modal Image (Alt Text) */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+    padding: 3em 0;
+    height: 150px;
+    font-weight: 100;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    color: orangered;
+    font-size: 4.5em;
+    font-weight: 100;
+    font-family: "Sporting Grotesque", sans-serif;
+    transition: 0.3s;
+    border: orangered 3px solid;
+    padding: 0.25em 0.1em;
+}
+
+.close:hover,
+.close:focus {
+    opacity: 0.7;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.bulk-content {
+    margin-top: 13em;
+    margin-bottom: 10em;
+}
+
+.project-nav {
+    position: fixed;
+    top: 0;
+    margin-top: 16em;
+    width: 50%;
+    z-index: 10;
+}
+
+.project-this {
+    position: fixed;
+    top: 0;
+    margin-top: 16em;
+    width: 100%;
+}
+
+.container-projects {
+    display: block;
+    margin-bottom: 4em;
+    margin-top: 4em;
+    justify-self: center;
+}
+
+.project-index {
+    margin: 3em 0;
+}
+
+.project-image > img {
+    border: orangered solid 1px;
+    width: 100%;
+    max-height: 20%;
+    max-width: 90%;
+    padding: 1em;
+}
+
+.text-center {
+align-self: center;
+}
+
+.active-type {
+    color: orangered;
+    -webkit-text-stroke: 0 white;
+}
+
+// Everything else
+
+/*Selection Color*/
+::selection {
+    color: orangered; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+    color: orangered; /* Gecko Browsers */
+}
+
+/*🍊*/
+.channel-orange {
+    color: orangered;
+    display: inline;
+}
+
+/* Code-y Description */
+h3 {
+    display: inline;
+    font-size: 0.8em;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 200;
+    line-height: 0.7em;
 }
 
 a {
     color: #000000;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a.dashed {
@@ -94,11 +404,32 @@ a.dashed {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.5;
 }
 
-p {
-    font-size: 1em;
+.case-image > img {
+    display: block;
+    width: 100%;
+    max-width: 90%;
+    margin: 0;
+}
+
+.btn__prototype {
+        justify-content: center;
+        padding: 0.5em 1em;
+        border: dashed 0.1em;
+        overflow: hidden;
+        display: inline-block;
+    }
+
+.btn__prototype:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+video {
+    display: flex;
+    max-width: 400px;
 }
 
 @media (max-width: 800px) {
@@ -106,20 +437,10 @@ p {
         margin-left: 3em;
     }
 
-    div.header {
-        display: block;
-    }
-
-    h3 {
-        line-height: normal;
-        font-size: 2em;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    .header-intro {
-        display: inline;
+    .col-lg-5ths,
+    .col-md-5ths,
+    .col-sm-5ths,
+    .col-xs-5ths {
+        width: 100%;
     }
 }

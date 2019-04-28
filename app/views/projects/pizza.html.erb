@@ -2,20 +2,27 @@
 <%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
 
 <!--Stylesheet-->
-<%= stylesheet_link_tag "style-project" %>
+<%= stylesheet_link_tag "style" %>
 
 <!--Page Title-->
 <% title "A Pizz'a My Data –– MAXINE KHO" %>
 
 <!--Navigation-->
-<nav class="top-nav">
-  <section class="nav-title">
-    <a class="black active-nav">MAXINE KHO</a>
-  </section>
-  <section class="nav-links">
-    <a class="black inactive-nav" href="/">Work</a>
-    <a class="black inactive-nav" href="/about">About</a>
-  </section>
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
 </nav>
 
 <!--Progress Bar-->
@@ -28,132 +35,187 @@
 <!-- The Modal -->
 <div id="zoomModal" class="modal">
 
-    <!-- The Close Button -->
-    <div class="tooltip">Hover over me
-        <span class="close">&times;</span>
-        <span class="tooltip-text">Close</span>
-    </div>
+  <!-- The Close Button -->
+  <span class="close">&times</span>
 
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
 
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
 </div>
 
-<!--Title + Content-->
-<div class="container">
-  <br><br><br><br>
-  <h1><strong>A Pizz'a My Data</strong></h1>
-  <br>
+<!--Bulk Content-->
+<div class="bulk-content">
 
-  <img src="<%= image_path("images/project-pizza/pizza.png") %>" class="zoomImages" alt="Translated datapoints into a visualization ">
-  <h5><em>Self-tracked my calories gained (spinach leaves), lost (pesto), and time spent (peppers), along with Foursquare rating (mushrooms) from a pizza hop on a truffle-mozarella pizza<br><br></em></h5>
-
-  <!--Project Intro + Summary-->
-  <div class="two-col">
-
-    <!--Project Intro-->
-    <div>
-      <p>Food bloggers and influencers often go restaurant-hopping, hitting as many spots as they can within the same neighborhood.
-        While this saves them some travel time, the proximity of the stops make the trip less than ideal for those who are health
-        conscious. For this self-tracking project, I wanted to visualize the progression of my calorie gain and/or loss during a pizza hop around Lower Manhattan to see if the trip was "worth it".</p>
-    </div>
-
-    <!--Project Summary-->
+  <div class="row">
+    <div class="col-md-5ths project-this">
+      <h3 class="channel-orange">↓ THIS</h3><br>
+      <div class="channel-orange"><strong>A Pizz'a My Data</strong></div><br><br>
+      <!--Project Summary-->
       <div>
-        <h4><strong>ABOUT</strong></h4>
-              <strong>Timeframe:</strong> February 2019 (1 week)<br>
-              <strong>Role:</strong> Pizza Vacuum, Chef<br><br>
-
-          <h4><strong>USING</strong></h4>
-          Data Visualization<br>
-          Food Preparation<br>
-          Google Maps<br>
+        <h3>ABOUT</h3><br>
+        <strong>Timeframe:</strong> February 2019 (1 week)<br>
+        <strong>Role:</strong> Pizza Vacuum, Chef<br><br>
+        <h3>USING</h3><br>
+        Data Visualization<br>
+        Food Preparation<br>
+        Google Maps<br>
       </div>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div><br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <img src="<%= image_path("images/project-pizza/pizza.png") %>" class="zoomImages" alt="Translated datapoints into a visualization">
+    </div>
+    <div class="col-md-5ths text-center">
+    Self-tracked my calories gained (spinach leaves), lost (pesto), and time spent (peppers), along with Foursquare rating (mushrooms) from a pizza hop on a truffle-mozzarella pizza
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths text-center">
+    <!--Project Intro-->
+      <p>Food bloggers and influencers often go restaurant-hopping, hitting as many spots in the same area. While this saves travel time, the proximity of the stops make the trip less than ideal. For this self-tracking project, I wanted to visualize the progression of my calorie gain and/or loss during a pizza hop around Lower Manhattan to see if the trip was worth it.</p>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths">
+      <!--Project Content-->
+      <strong>Data Collection</strong><br><br>
+      I had my sights set on Lower Manhattan due to the number of popular (and some of my favorite) pizza parlors in the area. To further narrow down my options, I drew a route shaped like a pizza slice that hit six spots!<br>
+        <img src="<%= image_path("images/project-pizza/map.PNG") %>" class="zoomImages" style="width:50%;" alt="My pizza hopping route">
+    </div>
+    <div class="col-md-5ths">
+      <!--Project Intro-->
+      <br><br>In preparation for my pizza hop, I defined the data values to track throughout the trip–<br><br>
+      <strong>Dimensions:</strong> Pizzeria, pizza flavor<br>
+      <strong>Measures:</strong> Calories gained, calories lost, time of arrival, time of departure, time spent, distance travelled<br><br>
+        I used both Google Maps and the Health app on my phone to record my data.
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <img src="<%= image_path("images/project-pizza/stats.png") %>" class="zoomImages" alt="Data gathered from the trip">
+    </div>
+    <div class="col-md-5ths">
+      <strong>What message might I want to convey?</strong>
+      I wanted to find whether "walking it off" is as effective as people like to think it is.<br>
+    </div>
   </div><br><br>
 
-  <!--Project Content-->
-  <h2><strong>My Design Process</strong></h2>
-
-  <div class="condense">
-    <h5><strong>Data Collection</strong></h5>
-    I had my sights set on Lower Manhattan due to the number of popular (and some of my favorite) pizza parlors in the area. To further narrow down my options, I intentionally chose to visit six spots that, when connected through a single route, is shaped like a pizza slice!<br><br>
-    <img src="<%= image_path("images/project-pizza/map.JPG") %>" class="zoomImages" style="width:50%;" alt="My pizza hopping route">
-    In preparation for my pizza hop, I defined the data values to track throughout the trip–<br><br>
-    <strong>Dimensions:</strong> Pizza shop, pizza flavor<br>
-    <strong>Measures:</strong> Calories gained, calories lost, time of arrival, time of departure, time spent, distance travelled<br><br>
-    I used both Google Maps and the Health app on my phone to record my data.
-  </div>
-
-  <img src="<%= image_path("images/project-pizza/stats.png") %>" class="zoomImages" alt="Data gathered from the trip"><br>
-
-  <div class="condense">
-
-    <h5><strong>What message might I want to convey?</strong></h5>
-    My intention behind this project was to find whether "walking it off" is as effective as people like to think it is.<br><br>
-
-    <h5><strong>Data Translation</strong></h5>
-    I began to experiment the different ways I could show all four datapoints: (1) calories gained, (2) calories lost, (3) time spent, and (4) Foursquare rating for each pizza shop I visited.<br><br>
-
-    <h5><strong>Visual Encoding</strong></h5>
-    <img src="<%= image_path("images/project-pizza/graph.JPG") %>" class="zoomImages" style="width:70%;" alt="Translated datapoints into a visualization ">
-    <strong>How "much" is one cell?</strong><br>
-    Having plotted time on the y-axis and the pizza brand on the x-axis, I began thinking about what a single cell on the grid . Looking at the data, I noticed how the calorie counts would fit into multiples of 50. This "unit" of 50 though could not effectively (and was not intuitive) for telling time. Chunking time into 50-minute blocks– 3-3:50pm, 3:50-4:20pm, etc could be confusing!<br><br>
-    I eventually came to using 10-minute blocks for both the calorie count and time for consistency.<br><br>
-    <strong>Making meaning of relationships</strong><br>
-    Another challenge I faced stacking these blocks up a limited amount of space was that calories gained (shaded pink) consistently consumed more space than calories lost (shaded blue). This meant possibly risking legibility for the sake of visual consistency. (See how the first blue column stands just right to the left of the calories gained at the next stop.) <br><br>
-    It was only when I had reconsidered the intrinsic relationship of gain and loss that I came up with the solution– to have the blue cells go on top of/ override the ones shaded in pink so that the remaining pink ones represented the net calories.<br><br>
-
-  </div>
-
-  <div class="condense">
-
-    <h5><strong>Preparing the Pizza</strong></h5>
-   Now for the fun part!<br><br>
-    I prepared the pizza crust and my choice of toppings: truffle oil, red pepper, mushrooms, baby spinach, and some kale-spinach pesto. I mapped the graph I had drafted out onto the pizza crust. I drew the same time progression line using strips of bell pepper and I thought I'd further highlight the relationship of loss and gain here by using fresh spinach to represent calories gained and then pesto (ground up spinach, among other ingredients) for calories lost.
-
-  </div>
-  <img src="<%= image_path("images/project-pizza/ingredients.JPG") %>" class="zoomImages" alt=" ">
-
-  <div class="condense">
-    <br><br>The contrast between the green and red really distinguished the time dimension in relation to the calories gained and lost dimension. I noticed one more thing here– the steepness of the bell pepper shows the 'stretch' of time spent in every stop on the trip. I added in the mushrooms with sizes that correspond to each spot's Foursquare rating.<br><br>
-    And then in to the oven they went!
-  </div>
-
-  <img src="<%= image_path("images/project-pizza/oven.JPG") %>" class="zoomImages" alt=" ">
-
-
-  <div class="condense">
-    <h5><strong>My Takeaway</strong></h5>
-    I struggled between data accuracy and expression. Looking back, I should have represented the data I gathered in a more abstract manner (ie. not simply 'copy-paste' the graph on paper). I was afraid that the abstract visualization might not express all the facts in the dataset. I landed somewhere in the middle, using food as the medium through which I presented an accurate chart. Moving forward, I hope to loosen up a bit to expressively convey my message through my artwork.
-  </div>
-
-  <img src="<%= image_path("images/project-pizza/pizza.png") %>" class="zoomImages" style="width:70%;" alt="Translated datapoints into a visualization ">
-
-  <em>And no, you can't just 'walk it off'.</em><br><br>
-
-</div><br><br><br><br>
-
-<!--Next Project-->
-<div class="two-col">
-  <div class="container__project-image">
-    <img src="<%= image_path("images/project-ice/ice-all.JPG") %>" alt="on the rocks" class="img-project">
-  </div>
-  <div class="container__project-text">
-    <h3 class="default-spec-color"><strong>↓ NEXT PROJECT</strong></h3><br>
-    <div class="project__text-title"><div class="default-color"><strong>On the Rocks</strong></div>
-      <br><br></div>
-    <div class="project__text-details">
-      <h3 class="default-spec-color">PROJECT</h3>Visualizing the melting rate of ice sheets in the Antarctic
-      <h3 class="default-spec-color">TIMEFRAME</h3>February 2019<br><br><br>
+  <div class="row">
+    <div class="col-md-5ths">
     </div>
-    <a href="/projects/ice" class="view__link view__link-padding">View Project Doc &rarr;</a>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong>Data Translation</strong><br>
+      I began to experiment the different ways I could show all four datapoints: (1) calories gained, (2) calories lost, (3) time spent, and (4) Foursquare rating for each one I visited.<br><br>
+      <strong>Visual Encoding</strong><br>
+      <img src="<%= image_path("images/project-pizza/graph.JPG") %>" class="zoomImages" alt="Translated datapoints into a visualization"></div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      Having plotted time on the y-axis and the pizzeria on the x-axis, I began thinking about what a single cell represented. Looking at the data, I noticed how the calorie counts would fit into multiples of 50. This "unit" of 50 though was not an intuitive increment for time. Chunking time into 50-minute blocks– 3-3:50pm, 3:50-4:20pm, etc could be confusing!<br><br>
+      I eventually used 10-minute blocks for both the calorie count and time for consistency.<br><br>
+      <strong>Making meaning of relationships</strong><br><br>
+      Another challenge I faced stacking these blocks up a limited amount of space was that calories gained (shaded pink) consistently consumed more space than calories lost (shaded blue). This meant possibly risking legibility for the sake of visual consistency. (See how the first blue column stands just right to the left of the calories gained at the next stop.) <br><br>
+      It was only when I had reconsidered the intrinsic relationship of gain and loss that I came up with the solution– to have the blue cells go on top of/ override the ones shaded in pink so that the remaining pink ones represented the net calories.<br><br>
+    </div>
+    <div class="col-md-5ths case-image">
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong>Preparing the Pizza</strong><br><br>
+      Now for the fun part! I prepared the pizza crust and my choice of toppings: truffle oil, red pepper, mushrooms, baby spinach, and some kale-spinach pesto. I used fresh spinach to represent calories gained and then pesto (ground up spinach, among other ingredients) for calories lost, emphasizing the gain vs. loss relationship.<br><br>
+      <img src="<%= image_path("images/project-pizza/ingredients.JPG") %>" class="zoomImages" alt=""><br><br>
+    </div>
+    <div class="col-md-5ths">
+      <br><br>The slope of the bell pepper strips shows the 'stretch' of time spent in every stop on the trip.
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong>My Takeaway</strong><br><br>
+      I struggled going back and forth between data accuracy or expression. Looking back, I should have represented the data I gathered in a more abstract manner (ie. not simply 'copy-paste' the graph). I was afraid that the abstract visualization might not express all the facts in the dataset. I landed somewhere in the middle, using food as the medium through which I presented an accurate chart. Moving forward, I hope to loosen up a bit to expressively convey my message through my artwork.<br><br>
+      <img src="<%= image_path("images/project-pizza/pizza.png") %>" class="zoomImages" alt="Translated datapoints into a visualization"><br><br>
+      And no, you can't just 'walk it off'.
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div>
+
+    <!--Next Project-->
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths project-index">
+      <div class="project-image">
+        <img src="<%= image_path("images/project-ice/ice-all.JPG") %>" alt="on the rocks" class="img-project">
+      </div>
+    </div>
+    <div class="col-md-5ths text-center">
+      <h3 class="channel-orange">↓ NEXT</h3><br>
+      <strong>On the Rocks</strong><br>
+      Visualizing the melting rate of ice sheets in the Antarctic<br><br>
+      <a href="/projects/ice" class="dashed">View the project doc &rarr;</a>
+    </div>
+  </div>
+
 </div>
-<br><br><br><br><br><br><br><br>
 
 <!--Back to Top Link-->
-<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593;</button>
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
 
 <%= render "home/footer" %>

@@ -2,20 +2,28 @@
 <%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
 
 <!--Stylesheet-->
-<%= stylesheet_link_tag "style-project" %>
+<%= stylesheet_link_tag "style" %>
 
 <!--Page Title-->
 <% title "Disclosure-ify Yourself –– MAXINE KHO" %>
 
 <!--Navigation-->
-<nav class="top-nav">
-  <section class="nav-title">
-    <a class="black active-nav">MAXINE KHO</a>
-  </section>
-  <section class="nav-links">
-    <a class="black inactive-nav" href="/">Work</a>
-    <a class="black inactive-nav" href="/about">About</a>
-  </section>
+<body>
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
 </nav>
 
 <!--Progress Bar-->
@@ -28,69 +36,92 @@
 <!-- The Modal -->
 <div id="zoomModal" class="modal">
 
-    <!-- The Close Button -->
-    <div class="tooltip">Hover over me
-        <span class="close">&times;</span>
-        <span class="tooltip-text">Close</span>
-    </div>
+  <!-- The Close Button -->
+  <span class="close">&times</span>
 
-    <!-- Modal Content (The Image) -->
-    <img class="modal-content" id="img01">
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
 
-    <!-- Modal Caption (Image Text) -->
-    <div id="caption"></div>
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
 </div>
 
-<!--Title + Content-->
-<div class="container">
-  <br><br><br><br>
-  <h1><strong>Disclosure-ify Yourself</strong></h1>
-  <br>
+<!--Bulk Content-->
+<div class="bulk-content">
 
-  <!--Project Intro + Summary-->
-  <div class="two-col">
-
-    <!--Project Intro-->
-    <div>
-      <p>I created a Disclosure-inspired scribble face generator using p5.js. I took Kyle McDonald's CLM based face tracking model and created a Disclosure-esque svg path to trace the detected features.<br><br>
-
-        Check it out ↓</p>
-    </div>
-
-    <!--Project Summary-->
+  <div class="row">
+    <div class="col-md-5ths project-this">
+      <h3 class="channel-orange">↓ THIS</h3><br>
+      <div class="channel-orange"><strong>Disclosure-ify Yourself</strong></div><br><br>
+      <!--Project Summary-->
       <div>
-        <h4><strong>ABOUT</strong><br></h4>
-              <strong>Timeframe:</strong> December 2017<br>
-              <strong>Tools:</strong> p5 via OpenProcessing<br>
+        <h3>ABOUT</h3><br>
+        <strong>Timeframe: </strong>December 2017<br><br>
+        <h3>USING</h3><br>
+        CLM face tracker<br>
+        p5.js<br>
       </div>
-  </div><br><br>
-
-  <iframe src="https://www.openprocessing.org/sketch/487935/embed/?plusEmbedHash=ZDQ5ZjhmMmY0ZGY2YjJlYzkyYzM0ZjZmOWQ1OGYzZDY1ZjlhMzM3Yzc0YzUzNTAyN2Q0YTkwYWJkMGRlMTg3NDdmMzgxZDRlOTIyMTZhZDNiZmI0MzEwMmVmMDk3N2YzZWFhYzA2M2NmOWIzODcwZTc3MmU1MDI4MzM1Nzc3ZDJydnBjbWdjOU1vV3ZyTFpodmYzS0tGOHJyM0o5TjAwYjVSckNpM3JGbjZXdmpFTW5lOG9tazlnVVhHcFhLZU5WajFQNnFoeDdjZVBxaWNuWTRmZ2RyZz09&plusEmbedTitle=true" width="640" height="480"></iframe><br><br><br><br>
-
-  Enjoy,
-  <img src="<%= image_path("images/maxine-sig.png") %>" alt="Maxine's signature" id="signature">
-</div><br><br><br><br>
-
-<!--Next Project-->
-<div class="two-col">
-  <div class="container__project-image">
-    <img src="<%= image_path("images/project-lucky-cat/lucky-cat.gif") %>" alt="lucky cat wave" class="img-project">
-  </div>
-  <div class="container__project-text">
-    <h3 class="default-spec-color"><strong>↓ NEXT PROJECT</strong></h3><br>
-    <div class="project__text-title"><div class="default-color"><strong>Lucky Cat Wave</strong></div>
-      <br><br></div>
-    <div class="project__text-details">
-      <h3 class="default-spec-color">PROJECT</h3>Wish upon a lucky cat
-      <h3 class="default-spec-color">USING</h3>ESP8266, Arduino (aREST), Processing (p5.js)
-      <h3 class="default-spec-color">TIMEFRAME</h3>March 2019<br><br><br>
     </div>
-    <a href="/projects/luckycat" class="view__link view__link-padding">View Project Doc &rarr;</a>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div><br>
   </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths">
+      <img src="<%= image_path("images/project-disclosure-ify/disclosure.gif") %>" alt="disclosure-ify yourself"><br><br>
+      I took Kyle McDonald's CLM based face tracking model and created an svg path to trace the detected features.
+    </div>
+    <div class="col-md-5ths">
+      <br>A Disclosure-inspired scribble face generator using p5.js.
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <iframe src="https://www.openprocessing.org/sketch/487935/embed/?plusEmbedHash=ZDQ5ZjhmMmY0ZGY2YjJlYzkyYzM0ZjZmOWQ1OGYzZDY1ZjlhMzM3Yzc0YzUzNTAyN2Q0YTkwYWJkMGRlMTg3NDdmMzgxZDRlOTIyMTZhZDNiZmI0MzEwMmVmMDk3N2YzZWFhYzA2M2NmOWIzODcwZTc3MmU1MDI4MzM1Nzc3ZDJydnBjbWdjOU1vV3ZyTFpodmYzS0tGOHJyM0o5TjAwYjVSckNpM3JGbjZXdmpFTW5lOG9tazlnVVhHcFhLZU5WajFQNnFoeDdjZVBxaWNuWTRmZ2RyZz09&plusEmbedTitle=true" width="640" height="480"></iframe>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <!--Next Project-->
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <!--Project 2: Lucky Cat Wave-->
+    <div class="col-md-2-5ths project-index">
+      <div class="project-image">
+        <img src="<%= image_path("images/project-lucky-cat/lucky-cat.gif") %>" alt="lucky cat wave">
+      </div>
+    </div>
+    <div class="col-md-5ths text-center">
+      <h3 class="channel-orange">↓ NEXT</h3><br>
+      <strong>Lucky Cat Wave</strong><br>
+      Wish upon a lucky cat<br><br>
+      <a href="/projects/luckycat" class="dashed">View the project doc &rarr;</a>
+    </div>
+  </div>
+
 </div>
-<br><br><br><br><br><br><br><br>
 
 <!--Back to Top Link-->
-<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593;</button>
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
 
 <%= render "home/footer" %>
