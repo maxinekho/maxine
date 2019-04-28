@@ -1,11 +1,9 @@
 // Fontfaces
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i');
-@font-face {
-    font-family: "commonsans";
-    src: url("CommonSans-Regular.otf") format("opentype");
-    src: url("CommonSans-Regular.ttf") format("truetype");
-    src: url("CommonSans-Regular.woff") format("woff");
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
 }
 
 // HTML
@@ -34,7 +32,7 @@ $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Font-Size
-$base-font-size: 14px;
+$base-font-size: 13.5px;
 
 // Line-Height
 $base-line-height: 1.5em;
@@ -42,7 +40,7 @@ $header-line-height: 1.25;
 
 // Body
 body {
-    font-family: "commonsans", sans-serif;
+    font-family: "inter", sans-serif;
     letter-spacing: 0.05em;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -369,6 +367,10 @@ align-self: center;
 }
 
 // Everything else
+
+strong {
+    font-weight: 500;
+}
 
 /*Selection Color*/
 ::selection {
