@@ -32,7 +32,7 @@ $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Font-Size
-$base-font-size: 13.5px;
+$base-font-size: 13px;
 
 // Line-Height
 $base-line-height: 1.5em;
@@ -363,7 +363,7 @@ align-self: center;
 
 .active-type {
     color: orangered;
-    -webkit-text-stroke: 0 white;
+    font-style: italic;
 }
 
 // Everything else

@@ -1,10 +1,12 @@
 class ProjectsController < ApplicationController
     def janus
     end
-    # def treasury
-    # end
+    def treasury
+    end
     # def opentable
     # end
+    def dish
+    end
     def pizza
     end
     def ice

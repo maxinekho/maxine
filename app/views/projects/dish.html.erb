@@ -1,0 +1,239 @@
+<!--JS-->
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
+
+<!--Stylesheet-->
+<%= stylesheet_link_tag "style" %>
+
+<!--Page Title-->
+<% title "Portrait of a Dish –– MAXINE KHO" %>
+
+<!--Navigation-->
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
+</nav>
+
+<!--Progress Bar-->
+<div class="progress-indicator">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="zoomModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
+</div>
+
+<!--Bulk Content-->
+<div class="bulk-content">
+
+  <div class="row">
+    <div class="col-md-5ths project-this">
+      <h3 class="channel-orange">↓ THIS</h3><br>
+      <div class="channel-orange"><strong>Portrait of a Dish</strong></div><br><br>
+      <!--Project Summary-->
+      <div>
+        <h3>ABOUT</h3><br>
+        <strong>Timeframe:</strong> March 2019-Present<br><br>
+        <h3>USING</h3><br>
+        Data Visualization<br>
+        Tableau<br>
+        Adobe Illustrator<br>
+      </div>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div><br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <img src="<%= image_path("images/dish.png") %>" alt="portrait of a dish"><br><br>
+      <strong>Portrait of a Dish</strong> is a series of data visualizations that speak to the ingredients of a dish–– their colors, quantities in proportion, and state before use.
+    </div>
+    <div class="col-md-5ths">
+      Challenging the way ingredients are conventionally listed out in recipes
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <img src="<%= image_path("images/project-dish/ego.jpg") %>" class="zoomImages" alt="Ego gets a flashback">
+    </div>
+    <div class="col-md-5ths">
+      Remember that scene from <a href="https://www.youtube.com/watch?v=uVeNEbh3A4U" class="dashed" target="_blank"> Disney’s Ratatouille ↗</a> where Ego was transported back to a warm afternoon in his childhood home after taking a bite of the ratatouille?
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths text-center">
+    <!--Project Intro-->
+      <p>Like Ego, we subconsciously associate dishes with seasons, loved ones, birthdays, sick days, traditions, and many more moments in our lives.<br><br>
+        Food lends itself as a retrieval cue for memories gone. <br><br>
+        When I prepare food, I have this habit of laying out every ingredient, in said quantities and prepared as specified, all out on the kitchen counter. <br><br>
+        Performing this ‘ritual’–– is, in my opinion, a very sensual yet underrated part of food preparation.<br><br>
+        I created a visual language to mimic this sensation in static 2D. <br><br>
+        These visualizations speak to the ingredients–– their colors, quantities in proportion, and state before use. <br><br>The <strong>Portrait of a Dish</strong> challenges the way ingredients are currently simply (and undeservingly) listed as bullet points in the same indistinct typeface in recipes.</p>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      I experimented with <em> my</em> eight dishes to figure out a workflow that would enable me to produce these visualizations for a wider range of recipes:<br><br><br>
+    </div>
+    <div class="col-md-5ths case-image">
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/portrait.png")%>" class="zoomImages" alt="Legend for the ingredients' state before use">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/fusilli.png")%>" class="zoomImages" alt="Fusilli, Red Wine-braised Octopus, and Bone Marrow by Chef Michael White">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/sukiyaki.png")%>" class="zoomImages" alt="My Mom's Beef Sukiyaki">
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/milk bar.png")%>" class="zoomImages" alt="Milk Bar's B'day Cake">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/max.png")%>" class="zoomImages" alt="My Chocolate Chop Cookie Recipe">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/pomelo.png")%>" class="zoomImages" alt="Pomelo Salad by Bon Appetit">
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/steak.png")%>" class="zoomImages" alt="Ooma's Hanger Steak">
+    </div>
+    <div class="col-md-5ths case-image">
+      <img src="<%= image_path("images/project-dish/tacos.png")%>" class="zoomImages" alt="Carne Asada Tacos from Los Tacos No.1 in Chelsea Market">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image"><br>
+      For feedback, suggestions, collaborations, inquiries, and questions, please get in touch at maxinekho@nyu.edu <br><br><br>
+      <img src="<%= image_path("images/project-dish/DSCF1257.jpg")%>" class="zoomImages" alt=""><br><br>
+    </div>
+    <div class="col-md-5ths case-image">
+      <br><br><br><br><br>
+      <img src="<%= image_path("images/project-dish/DSCF1248.jpg")%>" class="zoomImages" alt="">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths case-image">
+      <br><br><br>
+      <img src="<%= image_path("images/project-dish/DSCF1230.jpg")%>" class="zoomImages" alt=""><br><br>
+      Photos by <a href="https://ericdargan.com/" class="dashed" target="_blank">Eric Dargan ↗</a>
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <br><br><br>
+      <img src="<%= image_path("images/project-dish/IMG_4784.jpg")%>" class="zoomImages" alt="">
+    </div>
+  </div>
+  <br><br><br><br><br>
+
+
+  <!--Next Project-->
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <!--Project 1: A Pizz'a My Data-->
+    <div class="col-md-2-5ths project-index">
+      <div class="project-image">
+        <img src="<%= image_path("images/project-pizza/pizza.png") %>" alt="pizza" class="img-project">
+      </div>
+    </div>
+    <div class="col-md-5ths text-center">
+      <h3 class="channel-orange"><strong>↓ NEXT</strong></h3><br>
+      <strong>A Pizz'a My Data</strong><br>
+      I baked (and ate) my own health data from a pizza hop<br><br>
+      <a href="/projects/pizza" class="dashed">See project doc &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
+
+<%= render "home/footer" %>
