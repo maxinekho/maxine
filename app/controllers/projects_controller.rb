@@ -1,4 +1,6 @@
 class ProjectsController < ApplicationController
+    def emptystate
+    end
     def janus
     end
     def treasury

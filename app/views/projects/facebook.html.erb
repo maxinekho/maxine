@@ -1,0 +1,130 @@
+<!--JS-->
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
+
+<!--Stylesheet-->
+<%= stylesheet_link_tag "style" %>
+
+<!--Page Title-->
+<% title "Facebook Internship –– MAXINE KHO" %>
+
+<!--Navigation-->
+<body>
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
+</nav>
+
+<!--Progress Bar-->
+<div class="progress-indicator">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="zoomModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
+</div>
+
+<!--Bulk Content-->
+<div class="bulk-content">
+
+  <div class="row">
+    <div class="col-md-5ths project-this">
+      <h3 class="channel-orange">↓ THIS</h3><br>
+      <div class="channel-orange"><strong>Facebook</strong></div><br><br>
+      <!--Project Summary-->
+      <div>
+        <h3>ABOUT</h3><br>
+        <strong>Timeframe:</strong> Summer 2019<br>
+        <strong>Role:</strong> Product Design Intern<br><br>
+      </div>
+      <!--Note-->
+      <div>
+        <h3>NDA-PROTECTED</h3><br>
+        Please reach out to learn more <br>
+        about my work
+      </div>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div><br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <img src="<%= image_path("images/project-facebook/ads and business.png") %>"><br>
+      I joined Facebook as a Product Design Intern on the Business Design Systems Team in the summer of 2019.<br><br>
+      In collaboration with co-designers, content strategists, engineers, PMs, and artists, I produced–<br><br>
+      <strong><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">01</h3> Tooltip and Popover Components<br>
+      <h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">02</h3> Loading State Patterns<br>
+      <h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">03</h3> Empty State for Media Items<br></strong>
+      ↳ To extend this work, I explored<br>
+      <strong><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">04</h3> User Avatars</strong>
+      to represent our ads customers' online identities<br><br>
+      To celebrate what I thought made working in a design system team a unique and creatively rewarding experience, I drew diagrams of some models and processes I adopted throughout the summer–<br><br>
+      <img src="<%= image_path("images/project-facebook/structure.png") %>" class="zoomImages" alt="A design system is a living document that is constantly built & maintained to ensure product team adoption"><br><br>
+      <img src="<%= image_path("images/project-facebook/process.png") %>" class="zoomImages" alt="A simplification of the process of standardizing existing UI elements"><br>
+
+    </div>
+    <div class="col-md-5ths">
+      Creating and maintaining components for Ads and Business interfaces
+    </div>
+  </div><br>
+
+  <!--Next Project-->
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <!--Project 2: Treasury Portal-->
+    <div class="col-md-2-5ths project-index">
+      <div class="project-image">
+        <img src="<%= image_path("images/janus@2x.png") %>" alt="janus">
+      </div>
+    </div>
+    <div class="col-md-5ths text-center">
+      <h3 class="channel-orange">↓ NEXT</h3><br>
+      <strong>Janus</strong><br>
+      Simplifying a labor-intensive hiring process<br><br>
+      <a href="/projects/janus" class="dashed">See case study &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
+
+<%= render "home/footer" %>

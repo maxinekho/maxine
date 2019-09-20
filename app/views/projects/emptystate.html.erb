@@ -1,0 +1,242 @@
+<!--JS-->
+<%= javascript_include_tag 'script.js', 'modal.js', 'progress.js' %>
+
+<!--Stylesheet-->
+<%= stylesheet_link_tag "style" %>
+
+<!--Page Title-->
+<% title "Empty State for Media Items –– MAXINE KHO" %>
+
+<!--Navigation-->
+<body>
+<nav class= "fixed-nav row">
+  <div class="col-md-5ths">
+    Maxine Kho<br>
+    Visual+Product Designer
+  </div>
+  <div class="col-md-5ths">
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/">Work</a>
+  </div>
+  <div class="col-md-5ths">
+    <a class="inactive-nav dashed" href="/about">About</a>
+  </div>
+  <div class="col-md-5ths">
+  </div>
+</nav>
+
+<!--Progress Bar-->
+<div class="progress-indicator">
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="zoomModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+
+</div>
+
+<!--Bulk Content-->
+<div class="bulk-content">
+
+  <div class="row">
+    <div class="col-md-5ths project-this">
+      <h3 class="channel-orange">↓ THIS</h3><br>
+      <div class="channel-orange"><strong>Facebook</strong><br>
+        Empty State for Media Items</div><br><br>
+      <!--Project Summary-->
+      <div>
+        <h3>ABOUT</h3><br>
+        <strong>Timeframe:</strong> 1 week (Aug 2019)<br>
+        <strong>Role:</strong> Designer<br><br>
+
+        <h3>USING</h3><br>
+        Research<br>
+        Illustration<br>
+        Wireframing<br>
+        Systems Thinking<br>
+      </div>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div><br>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      I joined Facebook as a Product Design Intern on the Business Design Systems Team in the summer of 2019.
+      <p>In my final week, I worked on a bonus project– designing placeholders for 'empty' media items.
+    </div>
+    <div class="col-md-5ths">
+      <strong>Creating an empty state for media items</strong><br><br>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong>The Problem</strong><br><br>
+      There is no empty state for media items! <br><br>
+      Let's look at a list of Facebook posts with thumbnails of images uploaded for each ad. If the post creator did not upload an image for the most recent post, they see a blank media item container.<br><br>
+      <img src="<%= image_path("images/project-facebook/current.png") %>" class="zoomImages" alt="The current empty state for media items"><br>
+      The blank thumbnail can easily be misinterpreted as: <br>
+      1. An image that's still loading, <br>
+      2. An image that's simply lost, or <br>
+      3. A broken image (server side failure) <br>
+      when, in fact, <p class="channel-orange"> it's none of the above!</p>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong>The Goal</strong><br><br>
+      How might we use iconography to signify an empty media item (no image uploaded)?<br><br>
+      <img src="<%= image_path("images/project-facebook/exploration.png") %>" class="zoomImages" alt="An exploration by Mariano, Product Design Intern on PACE Team"><br>
+    </div>
+    <div class="col-md-5ths text-center">
+    <br><br><br><strong>An exploration by Mariano, Product Design Intern on PACE Team</strong><br><br>
+    Mariano came to our team with his empty state explorations for his use case.<br>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      The empty state icon Mariano suggested made sense; however, its generic look suggested clickability, as if clicking on the thumbnail would allow the user to upload an image for the entity.<br><br>
+      Ad creators should click on the post title, where they can view a post's details in full, to upload an image for the Facebook post. Prompting the user to upload an image isn't always the case either as posts can be text-only.<br><br>
+      With this constraint, I had to design an empty state for entities (like an ad posting or a business) that <p class="channel-orange"> serves as a placeholder and nothing more.</p><br><br>
+    </div>
+    <div class="col-md-5ths text-center">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong>My Process</strong><br><br>
+      I did a quick search to find iconography that's conventionally used as placeholders for images–<br><br>
+      <img src="<%= image_path("images/project-facebook/null.png") %>" class="zoomImages" alt="Mountain + sun iconography conventionally used as placeholders for media items"> <br><br><br>
+       To start, I looked through some of their illustration assets to get a better sense of their color palette and illustration style.<br><br>
+      I stumbled upon an illustration with the familiar mountain + sun combo sitting on the interface.<br><br>
+      <img src="<%= image_path("images/project-facebook/interface.png") %>" class="zoomImages" alt="An illustration by the IPB4B Team"> <br><br>
+      I explored how it can be simplified to live in a 48 x 48px thumbnail.<br><br>
+      <img src="<%= image_path("images/project-facebook/simplify.png") %>" class="zoomImages" alt="Mountain + sun iconography conventionally used as placeholders for media items">
+    </div>
+    <div class="col-md-5ths case-image">
+      <br><br>Images of the mountain + sun combo surfaced. I decided to adopt this since I wanted the iconography to be familiar enough to speak for itself. But I had to style it.<br><br>
+      I worked closely with the In-Product Branding for Business (IPB4B) Team from the get-go to keep my visual style consistent with the illustrations and animations across our products.</p>
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      I picked out my top 2 designs and mocked them up onto the table to see how they fare in context.<br><br>
+      <img src="<%= image_path("images/project-facebook/feedback.png") %>" class="zoomImages" alt="Mountain + sun iconography conventionally used as placeholders for media items"><br><br>
+    </div>
+    <div class="col-md-5ths text-center">
+      I presented these options at my team crit where a designer suggested that I apply neutral colors to the icon so that it falls back into the surface instead of calling attention to itself. The last thing we wanted was to confuse the creator into thinking that they unintentionally uploaded an image.<br><br>
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+        <strong>5. Host focus groups and feedback sessions</strong><br><br>
+        <img src="<%= image_path("images/project-janus/focus.jpg") %>" class="zoomImages" alt="We held a user feedback session with participating faculty."><br>
+        The more comprehensive the flows that we opened for feedback and testing, the more valuable and actionable the responses we received. For each session, we made sure that the product’s surface area, design-wise, was expansive enough to elicit valuable discussion and critique/feedback.<br><br>We transitioned from showing stakeholders high-level screens and interactions to more personable, workflow-specific flows. Regularly opening the product to testing also gave our stakeholders an idea of the project development schedule.<br><br>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths">
+      <strong>Next Steps</strong><br><br>
+      1. Schedule 1:1s with interested faculty members to discuss opportunities for integrating screening and  interviewing into the Janus workflow.<br><br>
+      2. Synthesize insights from the focus groups and interviews for the next iteration.<br><br><br>
+      <strong>Some Things I Learned</strong><br><br>
+      1. It’s practical to build by component.<br>
+      For the student and admin sides, I could reuse (and possibly expand) the design system I had already created to unify all three ends under the same umbrella platform.<br><br>
+      2. Anticipate interactions among all three ends.<br>
+      Keeping the color-coded workflow in mind, even while designing for just one stakeholder at a time, enabled me to identify features that facilitated end-to-end data transmission and communication.<br><br>
+      3. Seek out feedback by organizing feedback sessions.<br>
+      Feedback is the most powerful driver of my design decisions– whether it involves backtracking to a previous solution/decision or testing a range of hypotheses.<br><br>
+      4. There is always someone I can serve better.<br>
+      It pays to go out of my way to get to know users, their habits and behaviors in person if I want to accommodate as many kinds of people as possible– tech geeks, busy bees, disabled users, etc.
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <!--Next Project-->
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <!--Project 2: Treasury Portal-->
+    <div class="col-md-2-5ths project-index">
+      <div class="project-image">
+        <img src="<%= image_path("images/tp@2x.png") %>" alt="treasury portal">
+      </div>
+    </div>
+    <div class="col-md-5ths text-center">
+      <h3 class="channel-orange">↓ NEXT</h3><br>
+      <strong>Treasury Portal</strong><br>
+      Designing an enterprise system with high data density<br><br>
+      <a href="/projects/treasury" class="dashed">See case study &rarr;</a>
+    </div>
+  </div>
+
+</div>
+
+<!--Back to Top Link-->
+<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
+
+<%= render "home/footer" %>
