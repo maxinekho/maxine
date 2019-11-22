@@ -168,8 +168,8 @@ body {
     opacity: 0.7;
 
     #backToTop:focus {
-        outline: none;
         border: none;
+        outline: none;
     }
 
     #backToTop:active {
@@ -405,6 +405,16 @@ a.dashed {
     padding-bottom: 0.1em;
     text-decoration: none;
     border-bottom: dashed #000000 0.5px;
+}
+
+a.dashed:focus {
+    outline: orangered dashed 1px;
+    outline-offset: 2px;
+}
+
+a.styled-focus:focus {
+    outline: orangered dashed 1px;
+    outline-offset: 2px;
 }
 
 a:hover {
