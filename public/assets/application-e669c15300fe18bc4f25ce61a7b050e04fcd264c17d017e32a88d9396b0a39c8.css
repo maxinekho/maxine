@@ -1,0 +1,579 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://rsms.me/inter/inter.css");
+/* line 4, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+html {
+  font-family: 'Inter', sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  /* line 6, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  html {
+    font-family: 'Inter var', sans-serif;
+  }
+}
+/* line 10, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
+}
+
+/* line 42, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+body {
+  font-family: "inter", sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+  line-height: 1.5em;
+}
+@media (min-width: 64em) {
+  /* line 42, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  body {
+    font-size: 13px;
+    line-height: 1.5em;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+@media (min-width: 85.375em) {
+  /* line 42, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  body {
+    font-size: 18.2px;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+@media (min-width: 120em) {
+  /* line 42, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  body {
+    font-size: 18.2px;
+    margin-left: 4em;
+    margin-right: 4em;
+  }
+}
+@media (min-width: 160em) {
+  /* line 42, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  body {
+    font-size: 15.6px;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+/* line 72, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.row {
+  display: flex;
+}
+
+/* line 79, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.col-md-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* line 92, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-5ths {
+    width: 200%;
+    display: block;
+    padding: 2em 0;
+  }
+
+  /* line 97, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .row {
+    padding: 2.5em 0em;
+  }
+}
+@media (min-width: 768px) {
+  /* line 104, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-5ths {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 111, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-5ths {
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 118, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-5ths {
+    width: 100%;
+  }
+}
+/* line 125, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.col-md-2-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: left;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  /* line 138, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-2-5ths {
+    width: 50%;
+    display: block;
+    position: absolute;
+    padding: 1em 0 2em;
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  /* line 149, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-2-5ths {
+    width: 200%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 156, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-2-5ths {
+    width: 200%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 163, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .col-md-2-5ths {
+    width: 200%;
+    float: left;
+  }
+}
+/* line 170, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 5em;
+  right: 8em;
+  color: orangered;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  font-size: 1em;
+  z-index: 150;
+}
+
+/* line 186, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+#backToTop:hover {
+  opacity: 0.7;
+}
+/* line 189, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+#backToTop:hover #backToTop:focus {
+  border: none;
+  outline: none;
+}
+/* line 194, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+#backToTop:hover #backToTop:active {
+  border: none;
+  outline: none;
+}
+
+/* line 201, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2em 2em;
+  z-index: 100;
+  width: 100%;
+  background: -moz-linear-gradient(top, white, rgba(255, 255, 255, 0));
+  background: -webkit-linear-gradient(top, white, rgba(255, 255, 255, 0));
+}
+
+/* line 212, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.footer {
+  padding: 2em 2em;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), white);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), white);
+}
+
+/* line 223, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.inactive-nav {
+  color: black;
+}
+
+/* line 227, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.active-nav {
+  font-style: italic;
+}
+
+/* line 231, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.progress-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+}
+
+/* line 241, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.progress-container {
+  width: 100%;
+  height: 0.15em;
+  color: white;
+}
+
+/* Scroll Indicator */
+/* line 248, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.progress-bar {
+  height: 0.15em;
+  background: orangered;
+  width: 0;
+}
+
+/*Image*/
+/* line 255, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.zoomImages {
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20% 20%;
+}
+
+/* line 261, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.zoomImages:hover {
+  opacity: 0.7;
+}
+
+/* The Modal */
+/* line 266, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1000;
+  /* Sit on top */
+  padding-top: 7em;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+/* line 281, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.modal-content {
+  margin: 0 auto auto;
+  display: block;
+  width: 100%;
+  max-width: 50em;
+}
+
+/* Caption of Modal Image (Alt Text) */
+/* line 289, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: white;
+  padding: 3em 0;
+  height: 150px;
+  font-weight: 100;
+}
+
+/* Add Animation - Zoom in the Modal */
+/* line 302, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+/* The Close Button */
+/* line 313, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.close {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  color: orangered;
+  font-size: 2em;
+  font-weight: 100;
+  font-family: "Sporting Grotesque", sans-serif;
+  transition: 0.3s;
+  border: orangered 2px solid;
+  padding: 0.25em 0.25em;
+}
+
+/* line 326, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.close:hover,
+.close:focus {
+  opacity: 0.7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  /* line 335, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  .modal-content {
+    width: 100%;
+  }
+}
+/* line 340, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.bulk-content {
+  margin-top: 13em;
+  margin-bottom: 10em;
+}
+
+/* line 345, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.project-nav {
+  position: fixed;
+  top: 0;
+  margin-top: 16em;
+  width: 50%;
+  z-index: 10;
+}
+
+/* line 353, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.project-this {
+  position: fixed;
+  top: 0;
+  margin-top: 16em;
+  width: 100%;
+}
+
+/* line 360, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.container-projects {
+  display: block;
+  margin-bottom: 4em;
+  margin-top: 4em;
+  justify-self: center;
+}
+
+/* line 367, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.project-index {
+  margin: 3em 0;
+}
+
+/* line 371, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.project-image > img {
+  border: orangered solid 1px;
+  width: 100%;
+  max-height: 20%;
+  max-width: 90%;
+  padding: 1em;
+}
+
+/* line 379, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.text-center {
+  align-self: center;
+}
+
+/* line 383, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.active-type {
+  color: orangered;
+  font-style: italic;
+}
+
+/* line 388, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.scroll {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 393, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.scroll > p {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  /* Starting position */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  /* Apply animation to this element */
+  -moz-animation: scroll 25s linear infinite;
+  -webkit-animation: scroll 25s linear infinite;
+  animation: scroll 25s linear infinite;
+}
+
+@-moz-keyframes scroll {
+  0% {
+    -moz-transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@keyframes scroll {
+  0% {
+    -moz-transform: translateY(100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateY(100%);
+    /* Firefox bug fix */
+    transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(-100%);
+    /* Firefox bug fix */
+    -webkit-transform: translateY(-100%);
+    /* Firefox bug fix */
+    transform: translateY(-100%);
+  }
+}
+/* line 433, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+strong {
+  font-weight: 500;
+}
+
+/*Selection Color*/
+/* line 438, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+::selection {
+  color: orangered;
+  /* WebKit/Blink Browsers */
+}
+
+/* line 441, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+::-moz-selection {
+  color: orangered;
+  /* Gecko Browsers */
+}
+
+/*🍊*/
+/* line 446, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.channel-orange {
+  color: orangered;
+  display: inline;
+}
+
+/* Code-y Description */
+/* line 452, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+h3 {
+  display: inline;
+  font-size: 0.8em;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
+  line-height: 1.2em;
+}
+
+/* line 460, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+sup {
+  font-size: 0.6em;
+  line-height: 0;
+}
+
+/* line 465, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* line 471, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+a.dashed {
+  padding-bottom: 0.1em;
+  text-decoration: none;
+  border-bottom: dashed #000000 0.5px;
+}
+
+/* line 477, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+a.dashed:focus {
+  outline: orangered dashed 1px;
+  outline-offset: 2px;
+}
+
+/* line 482, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+a.styled-focus:focus {
+  outline: orangered dashed 1px;
+  outline-offset: 2px;
+}
+
+/* line 487, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+a:hover {
+  opacity: 0.5;
+}
+
+/* line 491, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.case-image > img {
+  display: block;
+  width: 100%;
+  max-width: 90%;
+  margin: 0;
+}
+
+/* line 498, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.btn__prototype {
+  justify-content: center;
+  padding: 0.5em 1em;
+  border: dashed 0.1em;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* line 506, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+.btn__prototype:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+/* line 511, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+video {
+  display: flex;
+  max-width: 400px;
+}
+
+@media (max-width: 800px) {
+  /* line 517, /Users/maxinekho/max/max-portfolio/app/assets/stylesheets/style.css.scss */
+  body {
+    margin-left: 3em;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */

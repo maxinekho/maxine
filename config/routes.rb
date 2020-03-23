@@ -2,14 +2,13 @@ Rails.application.routes.draw do
     root "home#index"
     get "/about" => "home#about"
     get "projects/facebook" => "projects#facebook"
-    get "projects/emptystate" => "projects#emptystate"
     get "projects/janus" => "projects#janus"
     get "projects/treasury" => "projects#treasury"
-    # get "projects/opentable" => "projects#opentable"
     get "projects/dish" => "projects#dish"
     get "projects/pizza" => "projects#pizza"
     get "projects/ice" => "projects#ice"
-    # get "projects/fortunecookie" => "projects#fortunecookie"
     get "projects/luckycat" => "projects#luckycat"
     get "projects/disclosure" => "projects#disclosure"
+    get "projects/freelance" => "projects#freelance"
+
 end

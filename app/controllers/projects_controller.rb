@@ -1,22 +1,20 @@
 class ProjectsController < ApplicationController
-    def emptystate
+    def facebook
     end
     def janus
     end
     def treasury
     end
-    # def opentable
-    # end
     def dish
     end
     def pizza
     end
     def ice
     end
-    # def fortunecookie
-    # end
     def luckycat
     end
     def disclosure
+    end
+    def freelance
     end
 end
