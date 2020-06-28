@@ -1,6 +1,8 @@
 // Fontfaces
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 @import url('https://rsms.me/inter/inter.css');
+@import url('//db.onlinewebfonts.com/c/2596224269750e00c3ad5356299a3b9f?family=Ogg');
+
 html { font-family: 'Inter', sans-serif; }
 @supports (font-variation-settings: normal) {
     html { font-family: 'Inter var', sans-serif; }
@@ -32,7 +34,7 @@ $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
 
 // Font-Size
-$base-font-size: 13px;
+$base-font-size: 14px;
 
 // Line-Height
 $base-line-height: 1.5em;
@@ -273,8 +275,8 @@ and (-webkit-min-device-pixel-ratio: 3) {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255,255,0.9); /* White w/ opacity */
 }
 
 /* Modal Content (Image) */
@@ -289,13 +291,13 @@ and (-webkit-min-device-pixel-ratio: 3) {
 #caption {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 60%;
+    max-width: 500px;
     text-align: center;
-    color: white;
+    color: black;
     padding: 3em 0;
     height: 150px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -446,6 +448,23 @@ strong {
 .channel-orange {
     color: orangered;
     display: inline;
+}
+
+/* Header 1 */
+h1 {
+    display: inline;
+    font-size: 2.6em;
+    font-family: "Ogg", serif;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+/* Header 2 */
+h2 {
+    display: inline;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1em;
 }
 
 /* Code-y Description */

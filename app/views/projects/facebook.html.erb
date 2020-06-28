@@ -53,7 +53,7 @@
   <div class="row">
     <div class="col-md-5ths project-this">
       <h3 class="channel-orange">↓ THIS</h3><br>
-      <div class="channel-orange"><strong>Facebook</strong></div><br><br>
+      <h1><strong>Facebook</strong></h1><br><br>
       <!--Project Summary-->
       <div>
         <h3>ABOUT</h3><br>
@@ -83,18 +83,34 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-      <img src="<%= image_path("images/project-facebook/ads and business.png") %>"><br>
+      <img src="<%= image_path("images/project-facebook/ads and business.png") %>" style="max-width: 100%"><br>
       I joined Facebook as a Product Design Intern on the Business Design Systems Team in the summer of 2019.<br><br>
       In collaboration with co-designers, content strategists, engineers, PMs, and artists, I produced–<br><br>
-      <strong><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">01</h3> Tooltip and Popover Components<br>
-      <h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">02</h3> Loading State Patterns<br>
-      <h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">03</h3> Empty State for Media Items<br></strong>
+      <strong><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">01</h3> Tooltip and Popover Components
+        <img src="<%= image_path("images/project-facebook/both.png") %>" style="max-width: 100%"><br><br><br>
+        <h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">02</h3> Loading State Patterns</strong>
+        <img src="<%= image_path("images/project-facebook/loading.png") %>" style="max-width: 100%"><br><br>
+      ↳ ft. some fun loading animations<br><br>
+      <div class="row" style="">
+        <div class="col-md-5ths case-image">
+          <img src="<%= image_path("images/project-facebook/coffee.gif")%>" style="max-width: 50%;">
+        </div>
+        <div class="col-md-5ths case-image">
+          <img src="<%= image_path("images/project-facebook/cradle.gif")%>">
+        </div>
+        <div class="col-md-5ths case-image">
+          <img src="<%= image_path("images/project-facebook/campaign.gif")%>">
+        </div>
+      </div><br><br>
+        <strong><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">03</h3> Empty State for Media Items<br></strong>
+      <img src="<%= image_path("images/project-facebook/empty.png") %>" style="max-width: 100%"><br>
       ↳ To extend this work, I explored<br>
       <strong><h3 class="channel-orange" style="font-size: 0.4em; line-height: 0;">04</h3> User Avatars</strong>
       to represent our ads customers' online identities<br><br>
+      <img src="<%= image_path("images/project-facebook/avatars.png") %>"><br><br>
       To celebrate what I thought made working in a design system team a unique and creatively rewarding experience, I drew diagrams of some models and processes I adopted throughout the summer–<br><br>
-      <img src="<%= image_path("images/project-facebook/structure.png") %>" class="zoomImages" alt="A design system is a living document that is constantly built & maintained to ensure product team adoption"><br><br>
-      <img src="<%= image_path("images/project-facebook/process.png") %>" class="zoomImages" alt="A simplification of the process of standardizing existing UI elements"><br>
+      <img src="<%= image_path("images/project-facebook/structure.png") %>" class="zoomImages" alt="A design system is a living document that is constantly built & maintained to ensure product team adoption" style="max-width: 100%"><br><br>
+      <img src="<%= image_path("images/project-facebook/process.png") %>" class="zoomImages" alt="A simplification of the process of standardizing existing components" style="max-width: 100%"><br>
 
     </div>
     <div class="col-md-5ths">
@@ -116,7 +132,7 @@
     </div>
     <div class="col-md-5ths text-center">
       <h3 class="channel-orange">↓ NEXT</h3><br>
-      <strong>Janus</strong><br>
+      <h1><strong>Janus</strong></h1><br><br>
       Simplifying a labor-intensive hiring process<br><br>
       <a href="/projects/janus" class="dashed">See case study &rarr;</a>
     </div>
@@ -125,6 +141,6 @@
 </div>
 
 <!--Back to Top Link-->
-<button onclick="scrollUp()" id="backToTop" title="Go back to top">&#8593; Back to top</button>
+<button onclick="scrollUp()" id="backToTop" title="Go back to top" style="font-family:inter, sans-serif">&#8593; Back to top</button>
 
 <%= render "home/footer" %>
