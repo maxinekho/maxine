@@ -5,10 +5,6 @@ Rails.application.routes.draw do
     get "projects/janus" => "projects#janus"
     get "projects/treasury" => "projects#treasury"
     get "projects/dish" => "projects#dish"
-    get "projects/pizza" => "projects#pizza"
-    get "projects/ice" => "projects#ice"
     get "projects/luckycat" => "projects#luckycat"
     get "projects/disclosure" => "projects#disclosure"
-    get "projects/freelance" => "projects#freelance"
-
 end

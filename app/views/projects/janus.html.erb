@@ -86,10 +86,8 @@
     <div class="col-md-2-5ths case-image">
       <img src="<%= image_path("images/project-janus/logo.png") %>" id="project-logo" alt="Janus project logo"><br>
       <strong>Janus</strong> is a front-end data entry and storage application interfaced with university systems to optimize the hiring process for the NYU Tandon Summer Research Program.
-      <p>Janus was my first project at NYU IT.
     </div>
     <div class="col-md-5ths">
-      Simplifying a labor-intensive hiring process<br><br>
     </div>
   </div><br>
 
@@ -99,7 +97,7 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-      <h2>My Design Process</h2><br>
+      <strong><h3>MY DESIGN PROCESS</h3></strong><br>
       <img src="<%= image_path("images/project-janus/process.png") %>" class="zoomImages" alt="My design process in timeline form">
     </div>
     <div class="col-md-5ths">
@@ -113,10 +111,10 @@
   </div>
   <div class="col-md-2-5ths case-image">
     <img src="<%= image_path("images/project-janus/primary-audience.png") %>" class="zoomImages" alt="Primary stakeholders for this project">
+    <br><br><h3>1. UNDERSTAND THE SPACE AND ASK QUESTIONS</h3><br><br>
+    The product owner and my project manager briefed me about the <a href="https://engineering.nyu.edu/research-innovation/student-research/undergraduate-summer-research-program" class="dashed" target="_blank">NYU Tandon Summer Research Program ↗</a>, the existing hiring process, and primary audiences involved.<br><br>
   </div>
-  <div class="col-md-5ths text-center">
-    <br><br><h2>1. Understand and ask questions</h2><br><br>
-    The product owner and my project manager briefed me about the <a href="https://engineering.nyu.edu/research-innovation/student-research/undergraduate-summer-research-program" class="dashed" target="_blank">NYU Tandon Summer Research Program ↗</a>, the existing hiring process, and primary audiences involved.<br>
+  <div class="col-md-5ths">
   </div>
 </div><br>
 
@@ -139,12 +137,12 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths">
-      <strong>The Problem</strong><br><br>
-      In the existing process, administrators <p class="channel-orange">duplicate data across a range of applications.</p> They spend<p class="channel-orange"> five months</p> organizing information and onboarding student hires for a 10-week research program.<br><br>
-      Time and effort that could have been directed towards student engagement and professional growth is instead spent carrying out<p class="channel-orange"> manual administrative processes.</p>
+      <strong><h3>PROBLEM STATEMENT</h3></strong><br><br>
+      In the existing process, administrators duplicate data across a range of applications. They spend five months organizing information and onboarding student hires for a 10-week research program.<br><br>
+      Time and effort that could have been directed towards student engagement and professional growth is instead spent carrying out manual administrative processes.<br><br>
+      Additionally, opportunities are lost when students miss deadlines or are rejected due to incomplete documents as a result of the disjointed process.
     </div>
     <div class="col-md-5ths">
-      <br><br>Additionally, <p class="channel-orange">opportunities are lost</p> when students miss deadlines or are rejected due to incomplete documents as a result of the <p class="channel-orange">disjointed process.</p>
     </div>
   </div><br><br>
 
@@ -154,16 +152,16 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths">
-      <strong>User Goals</strong><br>
+      <strong><h3>USER GOALS</h3></strong><br>
       <ul>
           <li>To eliminate as much manual labor (inputting, compiling, storing, and viewing data) possible</li>
           <li>To provide opportunities for data mining</li>
           <li>To minimize manual labor, paper and energy waste</li>
           <li>To introduce a process that encourages maximum engagement from both SRP faculty and students</li>
-      </ul>
+      </ul><br>
+      <em>"How might we close experience gaps in the current hiring process?"<br><br></em>
     </div>
     <div class="col-md-5ths">
-      <br><br><em>"How might we close experience gaps in the current hiring process?"<br></em>
     </div>
   </div><br>
 
@@ -173,13 +171,13 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-      <h2>2. Reeaaally understand</h2><br><br>
+      <h3><strong>2. REEEAALLY UNDERSTAND</strong></h3><br><br>
       To deliver the solution–one that does not only hit all the goals identified but also maximizes opportunities (for everyone)– I needed to digest the existing workflow and all possible use cases.<br><br>
+      Being an avid (and slightly obsessive) notetaker, I made color-coded diagrams which helped make the complex workflow  more digestible.<br><br>
     <img src="<%= image_path("images/project-janus/user-flows.png") %>" class="zoomImages" alt="Janus user flows highlighting each stakeholder">
     </div>
     <div class="col-md-5ths">
-      <br><br>Being an avid (and slightly obsessive) notetaker, I made color-coded diagrams!<br><br>
-      The workflow’s complexities became more digestible to me as I grouped action points together according to the user in action.<br>
+
     </div>
   </div><br><br>
 
@@ -189,10 +187,11 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-          I also spent time understanding all the interactions necessary for one complete cycle (ie. successfully hiring one student). The interaction illustrated by the back and forth and crossing over of actions in my diagram led to an insight that informed my design decisions: <p class="channel-orange">The SRP workflow is highly procedural and response-driven.</p>
+         The interaction illustrated by the back and forth and crossing over of actions in my diagram led to an insight that informed my design decisions: The SRP workflow is highly procedural and response-driven.<br><br>
+      Looking at the diagram I put together, my PM and I carefully identified which steps to adopt, automate, or omit from the current hiring process.
+
     </div>
     <div class="col-md-5ths">
-      Looking at the diagram I put together, my PM and I carefully identified which steps to adopt, automate, or omit from the current hiring process.
       </div>
   </div><br><br>
 
@@ -202,7 +201,7 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-        <h2>3. Identify process expectations for the system</h2><br><br>
+      <h3><strong>3. IDENTIFY USER INTERACTIONS AND EXPECTATIONS</strong></h3><br><br>
         <img src="<%= image_path("images/project-janus/system-design.png") %>" class="zoomImages" alt="Setting system design expectations"><br>
         Instead of taking on all three users’ ends simultaneously, I decided to delve deeper into the faculty side first as their initial input launches the three-way interaction.<br><br>
     </div>
@@ -216,12 +215,11 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-        After defining the workflows, constraints, and expected functions for each stakeholder, it was time to dip my toes in the water.<br><br>
+        After defining the workflows, constraints, and expected functions for each stakeholder, it was time to dip my toes in the water.<br><br><em>"Do I start with the dashboard? Page navigation?"</em><br><br>
+      With the overwhelming amount of liberty I had at this stage, I decided to start with one core feature– the application form.<br><br>
         <img src="<%= image_path("images/project-janus/about.png") %>" class="zoomImages" alt="Janus application form for faculty members who want to endorse their research projects for posting">
     </div>
     <div class="col-md-5ths">
-      <em>"Do I start with the dashboard? Page navigation?"</em><br><br>
-      With the overwhelming amount of liberty I had at this stage, I decided to start with one core feature– <p class="channel-orange">the application form.</p><br><br> I reviewed last summer’s project list to gain more insight on the pieces of information and the level of specificity required for a project posting.<br>
     </div>
   </div><br><br>
 
@@ -233,10 +231,10 @@
     <div class="col-md-2-5ths case-image">
       From here, I asked questions like:<br><br>
       “How can a mentor access each application form? be notified of a successful posting?”<br><br>
-      This brought me to design the <p class="channel-orange">dashboard.</p><br><br>
+      This brought me to design the dashboard.<br><br>
       <img src="<%= image_path("images/project-janus/dashboard-within@2x.png") %>" class="zoomImages" alt="Faculty view of the Janus dashboard"><br><br>
       To expand the scope of my design, I diagrammed use cases ranging from the simple to complex situations that faculty mentors would most likely experience in their hiring journeys.<br><br>
-        In doing so, I was able to better identify the expected functionality and features of Janus.<br><br>
+        As a result, I was able to scope out the features and functionality of the MVP.<br><br>
       <img src="<%= image_path("images/project-janus/use-cases.png") %>" class="zoomImages" alt="Six use cases (including edge cases) for selecting and hiring student researchers">
     </div>
     <div class="col-md-5ths">
@@ -249,12 +247,12 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-      <h2>4. Create designs that nudge decision-making and behavior</h2><br><br>
+      <h3><strong>4. DESIGNING TO NUDGE DECISION-MAKING AND BEHAVIOR</strong></h3><br><br>
+      <em>"How can each stakeholder best accomplish his/her tasks?"</em><br><br>
+      The checklist format for completing steps in the process provides the user with contextual guidance at any given time.<br><br>
       <img src="<%= image_path("images/project-janus/progress.png") %>" class="zoomImages" alt="The checklist format provides users with contextual guidance."><br><br>
     </div>
     <div class="col-md-5ths">
-      <br><br><em>"How can each stakeholder best accomplish his/her tasks?"</em><br><br>
-      The checklist format for completing steps in the process provides the user with <p class="channel-orange">contextual guidance</p> at any given time.<br><br>
     </div>
   </div>
 
@@ -264,22 +262,9 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-      In addition to this, the task-focused interface is infused with <p class="channel-orange">progress indicators</p>.<br><br>
-        <img src="<%= image_path("images/project-janus/form.png") %>" class="zoomImages" alt="The progress indicator guides the user as he/she accomplishes tasks">
-    </div>
-    <div class="col-md-5ths">
+      In addition to this, the task-focused interface is infused with progress indicators.<br><br>
+        <img src="<%= image_path("images/project-janus/form.png") %>" class="zoomImages" alt="The progress indicator guides the user as he/she accomplishes tasks"><br>
       These could be used to track higher-level interactions with other users in the system.<br><br> These features allow users to have a sense of control over a complex, response-driven workflow.
-    </div>
-  </div><br><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths case-image">
-        <img src="<%= image_path("images/project-janus/cards.png") %>" class="zoomImages" alt="Users have access to high-level information visible throughout the system."><br>
-      Project cards provide <p class="channel-orange">high-level information and status visibility</p> for each project.<br>
 
     </div>
     <div class="col-md-5ths">
@@ -292,11 +277,10 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-        <img src="<%= image_path("images/project-janus/transparency.png") %>" class="zoomImages" alt="After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time.">
+      Project cards provide high-level information and status visibility for each project.<br><br>
+      <img src="<%= image_path("images/project-janus/cards.png") %>" class="zoomImages" alt="Users have access to high-level information visible throughout the system."><br>
     </div>
     <div class="col-md-5ths">
-      After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time. <br><br>Potential roadblocks in the hiring process immediately come to surface in this transparent ecosystem.<br><br>
-        <a class="btn__prototype styled-focus" type="button" href="https://projects.invisionapp.com/share/4FOFYWX98ZJ#/screens/324142675" target="_blank" tabindex="0">View Prototype</a>
     </div>
   </div><br>
 
@@ -306,9 +290,23 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-        <h2>5. Get feedback from users</h2><br><br>
+      After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time. <br><br>Potential roadblocks in the hiring process immediately come to surface in this transparent ecosystem.<br><br>
+      <img src="<%= image_path("images/project-janus/transparency.png") %>" class="zoomImages" alt="After completing their share of tasks, faculty mentors can monitor the status of each hired student in real-time."><br>
+      <a class="btn__prototype styled-focus" type="button" href="https://projects.invisionapp.com/share/4FOFYWX98ZJ#/screens/324142675" target="_blank" tabindex="0">View Prototype</a>
+    </div>
+    <div class="col-md-5ths">
+    </div>
+  </div><br><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <h3><strong>5. GET FEEDBACK, ITERATE, REPEAT</strong></h3><br><br>
         <img src="<%= image_path("images/project-janus/focus.jpg") %>"><br>
-        The more comprehensive the flows that we opened for feedback and testing, the more valuable and actionable the responses we received. For each session, we made sure that the product’s surface area, design-wise, was expansive enough to elicit valuable discussion and feedback.<br><br>We transitioned from showing stakeholders high-level screens and interactions to more personable, workflow-specific flows. Regularly opening the product to testing also gave our stakeholders an idea of the project development schedule.<br><br>
+       Whenever the product’s surface area, design-wise, was expansive enough to elicit valuable discussion and feedback, we held in-person user feedback sessions.<br><br>We transitioned from showing stakeholders high-level screens and interactions to more personable, workflow-specific flows. Regularly opening the product to testing also gave our stakeholders an idea of the project development schedule.<br><br>
     </div>
     <div class="col-md-5ths">
     </div>
@@ -320,17 +318,36 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths">
-      <h2>Takeaways</h2><br><br>
-      1. Building reusable components makes it easier to scale later.<br><br>
-      2. Anticipate interactions across all three ends.<br>
-      Keeping the color-coded workflow in mind enabled me to identify features that facilitated end-to-end communication.<br><br>
-      3. Seek feedback early and often.<br>
-      Feedback is the most powerful driver of my design decisions– whether it involves backtracking to a previous decision or testing new assumptions.<br><br>
-      4. There is always someone I can serve better.<br>
-      It pays to go out of my way to get to know users, their habits and behaviors in person.
+      <h3><strong>TAKEAWAYS</strong></h3><br><br>
+      1. Building with reusable components makes for easier scaling.<br><br>
+      2. Feedback is the most powerful driver and validator of my assumptions and design decisions.<br><br>
+      4. It pays to go out of my way to get to know users, their habits and behaviors in person.
     </div>
     <div class="col-md-5ths">
     </div>
+  </div>
+
+
+  <!--Next Project-->
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <!--Project 3: Treasury Portal-->
+    <div class="col-md-2-5ths project-index">
+      <div class="project-image">
+        <img src="<%= image_path("images/treasury.png") %>" alt="treasury portal">
+      </div>
+    </div>
+    <div class="col-md-5ths text-center">
+      <h3 class="channel-orange">↓ NEXT</h3><br>
+      <h1><strong>Treasury Portal</strong></h1><br>
+      <h3>WEB APP</h3><br><br>
+      Designing an enterprise system with high data density<br><br>
+      <a href="/projects/treasury" class="dashed">See case study &rarr;</a>
+    </div>
+  </div>
   </div>
 
 </div>

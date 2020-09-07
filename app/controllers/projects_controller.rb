@@ -7,14 +7,8 @@ class ProjectsController < ApplicationController
     end
     def dish
     end
-    def pizza
-    end
-    def ice
-    end
     def luckycat
     end
     def disclosure
-    end
-    def freelance
     end
 end

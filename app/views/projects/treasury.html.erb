@@ -53,7 +53,7 @@
   <div class="row">
     <div class="col-md-5ths project-this">
       <h3 class="channel-orange">↓ THIS</h3><br>
-      <div class="channel-orange"><strong>Treasury Portal</strong></div><br><br>
+      <h1><strong>Treasury Portal</strong></h1><br><br>
       <!--Project Summary-->
       <div>
         <h3>ABOUT</h3><br>
@@ -85,11 +85,12 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths">
-      <br>NYU has ongoing, large-scale capital projects to support the needs and academic mission of the university. NYU uses tax free bond money to reimburse money spent on building maintenance and construction projects. <br><br>Tax exempt bonds have many regulations on exactly how the Bond money can be used. To avoid regulation violations, Treasury users currently work in a legacy system to manage bonds and generate reports and requests.<br><br>
+      <br><strong><h3>BACKGROUND</h3></strong><br>
+      <br>NYU uses tax free bond money to reimburse money spent on ongoing building maintenance and construction projects. <br><br> To avoid regulation violations, Treasury users currently work in a legacy system to manage bonds and generate reports and requests.<br><br>
       What does this legacy process look like?
     </div>
     <div class="col-md-5ths">
-      <br><strong>Designing an enterprise system with high data density</strong>
+      <br>
     </div>
   </div><br>
 
@@ -100,77 +101,8 @@
     </div>
     <div class="col-md-2-5ths case-image">
       <img src="<%= image_path("images/project-treasury/formula-sheet.png") %>" class="zoomImages" alt="A note on keeping/updating formulas manually embedded within one of their spreadsheets"><br><br>
-      <strong>Initial Observations</strong><br><br>
-      Treasury’s legacy processes involve <p class="channel-orange">a ton of manual labor–</p>querying, filtering, data transfer, math work (they maintain actual formula sheets), and back and forth between applications– to successfully generate a single report or request.
-    </div>
-    <div class="col-md-5ths">
-      <br><br><br><br><br><br><br><br>Specifically, Treasury users view, update, and collect and manage data on Microsoft Access and Excel.
-    </div>
-  </div><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths case-image">
-      <strong>Goals</strong><br><br>
-          1. To present complex data in a way that is (1) easy to understand and comprehend and (2) easier on the eyes so that users can <p class="channel-orange">focus on making decisions central to their workflow </p>instead of spending so much effort trying to look a piece of information up.<br><br>
-          2. <p class="channel-orange">To minimize manual data entry </p>for Treasury users.<br><br>
-          3. To augment this solutions package with a front end design for <p class="channel-orange">an enhanced user experience.</p>
-    </div>
-    <div class="col-md-5ths text-center">
-      <br><br><br><br><br><br><br><br><br>With these, we defined our design principles for this project.
-    </div>
-  </div><br><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths case-image">
-      <strong>Design Principles</strong><br><br>
-      <strong>1. Designing for data density<br></strong>
-      Data associated with NYU’s bonds accumulate exponentially over 30 years (a bond’s average lifespan in NYU's portfolio). My approach to designing Treasury Portal involved <p class="channel-orange">breaking down heavily layered data to optimize data capture and absorption.</p><br><br>
-      <strong>2. Automation<br></strong>
-      Given the unnecessary amount of manual work in the legacy system, I planned for <p class="channel-orange">as many checks and filters to be done on the back end as possible</p>, while keeping them visible as labels and tags on the front end.<br><br>
-      <strong>3. Ease of Use</strong><br>
-      For users to successfully transition to Treasury Portal with as little cognitive load possible, it was important to keep the design simple and straightforward with intuitive, actionable pieces. In creating <p class="channel-orange">a comfortable, controlled environment</p>, I hoped to increase the users’ confidence in navigating through the data and executing tasks within Treasury Portal.
-    </div>
-    <div class="col-md-5ths">
-    </div>
-  </div><br><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths case-image">
-      <strong>Designing the dashboard and menu</strong><br><br>
-      <img src="<%= image_path("images/project-treasury/ia.png") %>" class="zoomImages" alt="‘Chunking’ data into levels so that information and functionality are provided only as needed for tasks"><br><br>
-      <img src="<%= image_path("images/project-treasury/dashboard.png") %>" class="zoomImages" alt="Menu navigation: collapsed and expanded views"><br><br>
-    </div>
-    <div class="col-md-5ths">
-      <br><br>Learning about each user’s most commonly taken actions helped me define the scope of the system and structure the hierarchy of information within Treasury Portal.<br><br>
-      Mapping out data and functions provided framework for the dashboard and menu designs.
-    </div>
-  </div><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths">
-      <strong>User Goals</strong><br>
-      <ul>
-        <li>To eliminate as much manual labor (inputting, compiling, storing, and viewing data) possible</li>
-        <li>To provide opportunities for data mining</li>
-        <li>To minimize manual labor, paper and energy waste</li>
-        <li>To introduce a process that encourages maximum engagement from both SRP faculty and students</li>
-      </ul>
+      <strong><h3>INITIAL OBSERVATIONS</h3></strong><br><br>
+      Treasury’s legacy processes involve a ton of manual labor– querying, filtering, data transfer, math work (they maintain actual formula sheets!!!), and back and forth between applications– to successfully generate a single report or request.<br><br>
     </div>
     <div class="col-md-5ths">
     </div>
@@ -182,25 +114,15 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-      To give you a snapshot of <p class="channel-orange">how I designed Treasury Portal to combat inefficiencies presented by the legacy system</p>, I will walk you through comparative cases for two business processes that this enterprise system will facilitate: viewing a bond, and generating a reimbursement request.<br><br>
-      <strong>1. Viewing a Bond</strong><br><br>
-      Treasury users identify the bonds to be tracked in the portal. By doing so, Treasury will be able to submit Reimbursement Requests to DASNY and report on private use related to the bond series.<br><br>
-      Legacy Process: <strong>Microsoft Access database</strong><br><br>
-      In the legacy process, Treasury views bond information on this 22-column “Bonds” table on the Microsoft Access database.<br><br>
-      <img src="<%= image_path("images/project-treasury/access.png") %>" alt="Microsoft Access database table with 22 columns" class="zoomImages" id="prototype-treasury"><br><br>
-      Treasury Portal Process<br><br>
-      The <strong>View Bond</strong> user interface holds bond-related data that can be analyzed and manipulated.<br><br>
-      <img src="<%= image_path("images/project-treasury/view-bond.png") %>" class="zoomImages" alt="A snapshot of the Bond View page for a tax-exempt bond"><br><br>
-          <a class="btn__prototype btnRippleEffect"  type="button" href="https://invis.io/RSPI7D7Y5W8" target="_blank">
-              View Prototype
-          </a>
-      <div><link href="https://projects.invisionapp.com/static-signed/live-embed/209389636/330636942/1/latest/LsVpXYRDcIWdfoE4bmTQQJyX7gXsyzMTvZrI2RAEtZOeZk7bD7aFBK6g3BS5gOBM1CPKpV5WyYciSfMIv1qEHwlE/View-Bond-2x.png">
-      </div>
+      <strong><h3>GOALS</h3></strong><br><br>
+          1. To present complex data in a way that is (1) easy to understand and comprehend and (2) easier on the eyes so that users can focus on making decisions central to their workflow.<br><br>
+          2. To minimize manual data entry for Treasury users.<br><br>
+          3. To augment this solutions package with a front end design for an enhanced user experience.
     </div>
     <div class="col-md-5ths">
-      <br><br>
     </div>
   </div><br><br>
+
 
   <div class="row">
     <div class="col-md-5ths">
@@ -208,53 +130,8 @@
     <div class="col-md-5ths">
     </div>
     <div class="col-md-2-5ths case-image">
-        <strong>2. Generating a Reimbursement Request</strong><br><br>
-          Capital projects initially paid out of NYU working capital are later reimbursed from bond proceeds by identifying specific invoices and bundling them into a Reimbursement Request that is submitted to the bond’s issuer. The total of all invoices accepted by the issuer is then taken out of the bond and paid to NYU.<br><br>
-          Legacy Process: <strong>FAME > CPACSWeb > Excel > Export as PDF</strong><br><br>
-          <img src="<%= image_path("images/project-treasury/rr-legacy.png") %>" class="zoomImages" alt="The legacy process for generating a reimbursement request"><br><br>
+      <strong>Although most of my work is under NDA, I can walk through my thinking behind the external data import (EDI) feature.</strong><br><br>
     </div>
-    <div class="col-md-5ths case-image">
-      <br><br><br><br><br><br><br><br><br><br><br><br><br>Treasury’s legacy process is an <p class="channel-orange">intensive manual process</p>: invoices must be identified from FAME, their location checked in CPACSweb, and if still valid, the invoices are input into an Excel spreadsheet like this one on the left. Reimbursement budgets and requests are maintained in Excel spreadsheets compiled manually:<br><br>
-      <img src="<%= image_path("images/project-treasury/rr-sheet.png") %>" class="zoomImages" alt="">
-    </div>
-  </div><br><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths case-image">
-      <img src="<%= image_path("images/project-treasury/treasury-integration.png") %>" class="zoomImages" alt="Treasury Portal's integration with the university's Space Management and Capital Projects Administration and Control Systems"><br>
-      Treasury Portal aims to eliminate manual data collection and entry by integrating with Space Management System (SMS) and Capital Projects Administration and Control System (CPACSweb) to generate data on demand.<br><br>
-      <img src="<%= image_path("images/project-treasury/rr-ia.png") %>" class="zoomImages" alt="Treasury entities involved in the creation of a reimbursement request"><br><br>
-      <img src="<%= image_path("images/project-treasury/rr-sketch.png") %>" class="zoomImages" alt="A layout I explored for the 'Create Reimbursement Request' page"><br><br>
-      <img src="<%= image_path("images/project-treasury/rr-sketch-2.png") %>" class="zoomImages" alt="Data layering technique I explored but didn't pursue"><br><br>
-      By default, all payments will be selected and their full amount will be reimbursed. The complete submission packet will be generated by the system as a pdf. This <p class="channel-orange">reduces the number of clicks to complete a task.</p><br><br>
-      <video controls>
-          <source src="<%= image_path("images/project-treasury/tp__before_and_after__55_.mp4") %>" type="video/mp4">
-      </video><br>
-    </div>
-    <div class="col-md-5ths">
-      <strong>Treasury Portal Process</strong><br>
-      <br>In Treasury Portal, users can create a reimbursement request, track the amounts budgeted for each issuer initiative, and trace requests made from each initiative across all reimbursements. Users will be able to easily find invoices eligible for reimbursement and pull their attachments for submission to the bond’s issuer.<br><br>
-    </div>
-  </div><br><br>
-
-  <div class="row">
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-5ths">
-    </div>
-    <div class="col-md-2-5ths case-image">
-      <strong>Implementing Progressive Disclosure</strong><br><br>
-      I implemented progressive disclosure heavily throughout my design <p class="channel-orange">to provide information and functionality only as needed for tasks, hiding data from the Treasury user’s view otherwise.</p><br><br>
-      <img src="<%= image_path("images/project-treasury/sketch_bond.png") %>" class="zoomImages" alt="Organizing sets of data on a Bond View page"><br>
-      ↳ Organizing sets of data on a Bond View page<br><br>
-      <img src="<%= image_path("images/project-treasury/invoices-sketch.png") %>" class="zoomImages" alt="Exploring how much data to present at a time"><br>
-      ↳ Exploring how much data to present at a time<br><br>
-      This method of managing data density is evident in the modals, popups, mouse-overs, pipeline-layering, and expandable/collapsible menu across Treasury Portal.<br><br>
-  </div><br><br>
     <div class="col-md-5ths">
     </div>
   </div><br>
@@ -264,15 +141,50 @@
     </div>
     <div class="col-md-5ths">
     </div>
-    <div class="col-md-2-5ths">
-      <strong>Looking Forward</strong><br><br>
-      Upon deployment, Treasury users will be able to move away from the legacy system and towards this enterprise system with <p class="channel-orange">increased capacity and navigability.</p> As a result, they spend less time compiling data from different sources and <p class="channel-orange">more time analyzing those data to use bond proceeds as effectively as possible.</p>
+    <div class="col-md-2-5ths case-image">
+      <strong><h3>USER NEED</h3></strong><br><br>
+      Treasury users want to upload local data onto the portal so they can easily access and analyze them so they can use bond proceeds more effectively.<br><br><br>
+      <strong><h3>JTBD AND INITIAL EXPLORATIONS</h3></strong><br><br>
+      Using the JTBD framework, I synthesized my findings into three use cases and sketched out the flows for each case.<br><br>
+      <img src="<%= image_path("images/project-treasury/sketch-1.png") %>" class="zoomImages" alt=""><br><br>
+      <img src="<%= image_path("images/project-treasury/sketch-2.png") %>" class="zoomImages" alt=""><br><br>
     </div>
-    <div class="col-md-5ths case-image">
-      <strong>Thank you</strong><br><br>
-      James Walsh for taking a chance on sophomore year me. Brian, Nedim, Lilith ++ for your dev chops and mini stroopwafels.<br><br>
-      Especially Nichole Latimer, my manager, and Grant Ng, co-designer-dev-hybrid, for having my back (and for the laughs).
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong><h3>INVOLVING ENGINEERS</h3></strong><br><br>
+      I shared my early sketches with our engineers to validate my assumptions and evaluate the feasibility of my blue sky ideas for this feature. In doing so, I was able to iterate on my designs and copy, veer away from a heavy flip animation for the cards, and focus on infusing system-generated feedback messages into the external data upload experience.<br><br>
+      <img src="<%= image_path("images/project-treasury/edi.png") %>" class="zoomImages" alt="External data import feature"><br>
+      <img src="<%= image_path("images/project-treasury/edi-notice.png") %>" class="zoomImages" alt="External data import feature"><br>
+      <img src="<%= image_path("images/project-treasury/edi-choose.png") %>" class="zoomImages" alt="External data import feature"><br>
+      <img src="<%= image_path("images/project-treasury/edi-uploading.png") %>" class="zoomImages" alt="External data import feature"><br>
+      <img src="<%= image_path("images/project-treasury/edi-success.png") %>" class="zoomImages" alt="External data import feature"><br>
+    </div><br><br>
+    <div class="col-md-5ths">
+    </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-5ths">
+    </div>
+    <div class="col-md-2-5ths case-image">
+      <strong><h3>LOOKING AHEAD</h3></strong><br><br>
+      Upon deployment, Treasury users will be able to move away from the legacy system and towards this enterprise system with increased capacity and navigability. As a result, they spend less time compiling data from different sources and more time analyzing those data to use bond proceeds as effectively as possible.<br><br><br>
+      <strong><h3>THANK YOU</h3></strong><br><br>
+      James Walsh for taking a chance on sophomore year me. Brian, Nedim, Lilith ++ for your dev chops and mini stroopwafels. Especially Nichole Latimer, my manager, and Grant Ng, co-designer-dev-hybrid, for having my back (and for the laughs).
       <img src="<%= image_path("images/project-treasury/joke.png") %>" alt="joke of the day">
+    </div>
+    <div class="col-md-5ths case-image">
+
     </div>
   </div>
 
